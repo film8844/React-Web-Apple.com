@@ -4,12 +4,16 @@ import Home from './pages/Home';
 import { Switch, Route } from 'react-router-dom';
 import GlobalNavBar from './components/GlobalNavBar';
 import Iphone13Pro from './pages/Iphone13Pro';
+import Help from './pages/help';
 
 const App = () => {
   return (
     <Switch>
       <Route path="/iphone13pro" exact>
         <Iphone13Pro />
+      </Route>
+      <Route path="/help" exact>
+        <Help />
       </Route>
       <Route path="/" exact>
         <Home />
