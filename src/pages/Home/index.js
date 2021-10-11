@@ -1,9 +1,10 @@
 import React from 'react';
+import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <GlobalNavBar />
       <div>
         <div className="mt-20 text-center">
@@ -25,7 +26,8 @@ const Home = () => {
           style={{ maxWidth: '300px' }}
         />
       </div>
-    </div>
+      <Footer/>
+    </>
   );
 };
 
