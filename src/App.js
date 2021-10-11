@@ -3,7 +3,8 @@ import { Route } from 'react-router';
 import './App.css';
 import logo from './assets/logo.svg';
 import Home from './pages/Home';
-import { BrowserRouter as  route, Switch } from 'react-router-dom'
+import { BrowserRouter as route, Switch } from 'react-router-dom'
+import GlobalNavBar from './components/GlobalNavBar';
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
             <Home />
           </Route>
           <Route path="*" >
-            <h1>error 404</h1>
+            <GlobalNavBar />
+            <p className="text-center">error 404</p>
           </Route>
         </Switch>
       </div>

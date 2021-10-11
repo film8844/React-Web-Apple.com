@@ -1,6 +1,7 @@
 import React from 'react';
 import './GlobalNavBar.css';
 import logo from '../../assets/logo.svg';
+import { Link } from 'react-router-dom';
 
 const GlobalNavBar = (props) => {
   return (
@@ -8,9 +9,9 @@ const GlobalNavBar = (props) => {
       className={`global-nav ${!!props.disableSticky ? '' : 'sticky top-0'}`}
     >
       <div className="hidden md:flex max-w-screen-lg px-5 mx-auto  flex-row text-white text-sm font-extralight justify-between items-center">
-        <a>
+        <Link to="/">
           <img src={logo} />
-        </a>
+        </Link>
         <a>ร้าน</a>
         <a>Mac</a>
         <a>iPad</a>
