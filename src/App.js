@@ -1,12 +1,24 @@
 import React from 'react';
+import { Route } from 'react-router';
 import './App.css';
 import logo from './assets/logo.svg';
 import Home from './pages/Home';
+import { BrowserRouter as  route, Switch } from 'react-router-dom'
 
 const App = () => {
   return (
     <>
-      <Home/>
+      <div>
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="*" >
+            <h1>error 404</h1>
+          </Route>
+        </Switch>
+      </div>
+      {/* <Home />
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -38,7 +50,7 @@ const App = () => {
             Learn React
           </a>
         </header>
-      </div>
+      </div> */}
     </>
   );
 }
