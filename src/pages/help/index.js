@@ -10,6 +10,7 @@ const Help = () => {
     return (
         <>
             <GlobalNavBar />
+<<<<<<< HEAD
             <div class="text-center">
                 <img src="assets/src_image/help/psp-hero-banner-homepage-welcome.image.large_2x.jpg" alt="Avatar" class="object-cover w-full h-full" />
             </div>
@@ -44,6 +45,21 @@ const Help = () => {
                         <a>Tv</a>
                     </div>
                 </div>
+=======
+            <img
+                src="assets\src_image\help\psp-hero-banner-homepage-welcome.image.large_2x.jpg"
+                className="hidden md:block mx-auto"
+                style={{ maxWidth: '1050px' }}
+            />
+            <img
+                src="assets\src_image\help\psp-hero-banner-homepage-welcome.image.small_2x.jpg"
+                className="hidden md:block mx-auto"
+                style={{ maxWidth: '300px' }}
+            />
+            <div>
+                <h1>Help</h1>
+                <h2>Help</h2>
+>>>>>>> 3d7c96ed0f7740f150518b4912f96113fd77c988
             </div>
 
             <Footer />

@@ -1,6 +1,7 @@
 .product-nav {
     backdrop-filter: blur(7px);
     background-color: rgba(255, 255, 255, 0.8);
+    z-index: 99 !important;
 }
 .product-nav div {
     min-height: 52px;
