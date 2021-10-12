@@ -71,11 +71,11 @@ const Help = () => {
             </div>
             <hr />
 
-            <div className="grid grid-cols-1 w-7/12 mx-auto my-12 xl:grid-cols-2">
+            <div className="grid grid-cols-1  w-7/12 mx-auto my-12 xl:grid-cols-2 ">
                 <div className="flex">
-                    <img src="assets/src_image/help/featured-section-promo-ios15-ipados15_2x.jpg" className />
+                    <img src="assets/src_image/help/featured-section-promo-ios15-ipados15_2x.jpg" className="object-scale-down " />
                 </div>
-                <div className="flex flex-col xl:pr-64">
+                <div className="flex flex-col mt-4 text-center xl:pr-64 xl:text-left">
                     <h1 className="text-3xl text-black  font-medium">อัพเดทเป็น iOS 15 และ iPadOS 15</h1>
                     <p className="text-xl mt-4 text-gray-600">คุณสมบัติใหม่ๆ ที่จะช่วยให้คุณใช้ iPhone และiPad สานสัมพันธ์กับผู้อื่น มีสมาธิจดจ่อกับงาน และทำสิ่งต่างๆ ได้มากกว่าเดิม</p>
                     <a className="text-xl mt-20" style={{ color: '#0070c9' }}>รับเวอร์ชั่นล่าสุด {'>'}</a>
