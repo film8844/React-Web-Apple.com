@@ -19,7 +19,9 @@ const GlobalNavBar = (props) => {
         <a href="#">Watch</a>
         <a href="#">TV</a>
         <a href="#">Music</a>
-        <a href="#">บริการช่วยเหลือ</a>
+        <Link to="/help">
+          <a href="#">บริการช่วยเหลือ</a>
+        </Link>
         <a href="#">ค้นหา</a>
         <a href="#">ถุง</a>
       </div>
