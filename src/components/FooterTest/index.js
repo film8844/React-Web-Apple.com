@@ -2,272 +2,94 @@ import React from 'react';
 
 const FooterTest = () => {
     return (
-        <footer class="mt-16">
-            <div class="border-t md:px-4 md:pt-2 md:pb-5">
-                <div class="flex flex-wrap md:max-w-screen-lg mx-auto">
-                    <section
-                        class="relative text-gray-700 font-light font-light border-b px-4 pb-4 md:py-3 w-full md:border-none md:w-1/4"
-                    >
-                        <div class="md:hidden">
-                            <button
-                                onclick="toggleFooterSection(event)"
-                                class="uppercase text-xs font-bold tracking-wider text-pink-700 focus:outline-none border-t border-white py-4 w-full text-left"
-                                type="button"
-                            >
-                                Lorem ipsum dolor sit amet consectetur adipiscing elit maecenas
-                                mattis
-                            </button>
-                        </div>
-                        <a
-                            class="uppercase text-xs font-bold tracking-wider text-pink-700 hidden md:block"
-                            href="#"
-                        >
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit maecenas
-                            mattis
-                        </a>
-                        <article class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
-                            <ul class="my-5 text-sm tracking-wide">
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Fusce vel sem</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Ut venenatis tellus</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Vestibulum</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Nunc at ipsum</a>
-                                </li>
-                            </ul>
-                        </article>
-                    </section>
-                    <section
-                        class="relative text-gray-700 font-light font-light border-b px-4 pb-4 md:py-3 w-full md:border-none md:w-1/4"
-                    >
-                        <div class="md:hidden">
-                            <button
-                                onclick="toggleFooterSection(event)"
-                                class="uppercase text-xs font-bold tracking-wider text-pink-700 focus:outline-none border-t border-white py-4 w-full text-left"
-                                type="button"
-                            >
-                                Ut porta
-                            </button>
-                        </div>
-                        <a
-                            class="uppercase text-xs font-bold tracking-wider text-pink-700 hidden md:block"
-                            href="#"
-                        >
-                            Ut porta
-                        </a>
-                        <article class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
-                            <ul class="my-5 text-sm tracking-wide">
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Pellentesque rhoncus</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Aenean</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Curabitur bibendum</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Phasellus non mi</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Duis accumsa</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Curabitur nec enim</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Fusce ut augue</a>
-                                </li>
-                            </ul>
-                        </article>
-                    </section>
-                    <section
-                        class="relative text-gray-700 font-light font-light border-b px-4 pb-4 md:py-3 w-full md:border-none md:w-1/4"
-                    >
-                        <div class="md:hidden">
-                            <button
-                                onclick="toggleFooterSection(event)"
-                                class="uppercase text-xs font-bold tracking-wider text-pink-700 focus:outline-none border-t border-white py-4 w-full text-left"
-                                type="button"
-                            >
-                                Praesent elementum
-                            </button>
-                        </div>
-                        <a
-                            class="uppercase text-xs font-bold tracking-wider text-pink-700 hidden md:block"
-                            href="#"
-                        >
-                            Praesent elementum
-                        </a>
-                        <article class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
-                            <ul class="my-5 text-sm tracking-wide">
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Mauris mattis nunc</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Nunc viverra risus</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Etiam a libero</a>
-                                </li>
-                            </ul>
-                        </article>
-                    </section>
-                    <section
-                        class="relative text-gray-700 font-light font-light border-b px-4 pb-4 md:py-3 w-full md:border-none md:w-1/4"
-                    >
-                        <div class="md:hidden">
-                            <button
-                                onclick="toggleFooterSection(event)"
-                                class="uppercase text-xs font-bold tracking-wider text-pink-700 focus:outline-none border-t border-white py-4 w-full text-left"
-                                type="button"
-                            >
-                                Aenean gravida orci in sem varius
-                            </button>
-                        </div>
-                        <a
-                            class="uppercase text-xs font-bold tracking-wider text-pink-700 hidden md:block"
-                            href="#"
-                        >
-                            Aenean gravida orci in sem varius
-                        </a>
-                        <article class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
-                            <ul class="my-5 text-sm tracking-wide">
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Cras id ipsum</a>
-                                </li>
-                            </ul>
-                        </article>
-                    </section>
-                    <section
-                        class="relative text-gray-700 font-light font-light border-b px-4 pb-4 md:py-3 w-full md:border-none md:w-1/4"
-                    >
-                        <div class="md:hidden">
-                            <button
-                                onclick="toggleFooterSection(event)"
-                                class="uppercase text-xs font-bold tracking-wider text-pink-700 focus:outline-none border-t border-white py-4 w-full text-left"
-                                type="button"
-                            >
-                                Donec a lorem
-                            </button>
-                        </div>
-                        <a
-                            class="uppercase text-xs font-bold tracking-wider text-pink-700 hidden md:block"
-                            href="#"
-                        >
-                            Donec a lorem
-                        </a>
-                        <article class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
-                            <ul class="my-5 text-sm tracking-wide">
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Sed a diam</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Nullam luctus felis</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Sed euismod</a>
-                                </li>
-                            </ul>
-                        </article>
-                    </section>
-                    <section
-                        class="relative text-gray-700 font-light font-light border-b px-4 pb-4 md:py-3 w-full md:border-none md:w-1/4"
-                    >
-                        <div class="md:hidden">
-                            <button
-                                onclick="toggleFooterSection(event)"
-                                class="uppercase text-xs font-bold tracking-wider text-pink-700 focus:outline-none border-t border-white py-4 w-full text-left"
-                                type="button"
-                            >
-                                Integer interdum
-                            </button>
-                        </div>
-                        <a
-                            class="uppercase text-xs font-bold tracking-wider text-pink-700 hidden md:block"
-                            href="#"
-                        >
-                            Integer interdum
-                        </a>
-                        <article class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
-                            <ul class="my-5 text-sm tracking-wide">
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Dignissim gravida</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Eu mollis elit</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Hendrerit purus id</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Ut luctus dui tincidunt</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Pellentesque at ligula</a>
-                                </li>
-                            </ul>
-                        </article>
-                    </section>
-                    <section
-                        class="relative text-gray-700 font-light font-light border-b px-4 pb-4 md:py-3 w-full md:border-none md:w-1/4"
-                    >
-                        <div class="md:hidden">
-                            <button
-                                onclick="toggleFooterSection(event)"
-                                class="uppercase text-xs font-bold tracking-wider text-pink-700 focus:outline-none border-t border-white py-4 w-full text-left"
-                                type="button"
-                            >
-                                Quisque
-                            </button>
-                        </div>
-                        <a
-                            class="uppercase text-xs font-bold tracking-wider text-pink-700 hidden md:block"
-                            href="#"
-                        >
-                            Quisque
-                        </a>
-                        <article class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
-                            <ul class="my-5 text-sm tracking-wide">
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Finibus nulla eget</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Pellentesque</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Duis efficitur</a>
-                                </li>
-                                <li class="my-3 tracking-wide">
-                                    <a href="#">Cras at lacus</a>
-                                </li>
-                            </ul>
-                        </article>
-                    </section>
+        <footer className="bg-gray-200">
+        <div className="max-w-screen-lg p-5 mx-auto">
+          <div className="divide-y divide-gray-300 ">
+            
+            <div className="mb-1">
+            <div class="grid grid-rows-2 md:grid-flow-col gap-5 mb-4">
+                <div class="row-span-2">
+                    <p className="text-sm text-gray-500 mb-1"><b>เลือกซื้อและเรียนรู้</b></p>
+                    <div class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
+                    <p className="text-sm text-gray-500 mb-1">Mac</p>
+                    <p className="text-sm text-gray-500 mb-1">iPad</p>
+                    <p className="text-sm text-gray-500 mb-1">iPhone</p>
+                    <p className="text-sm text-gray-500 mb-1">Apple Watch</p>
+                    <p className="text-sm text-gray-500 mb-1">TV</p>
+                    <p className="text-sm text-gray-500 mb-1">เพลง</p>
+                    <p className="text-sm text-gray-500 mb-1">iTunes</p>
+                    <p className="text-sm text-gray-500 mb-1">iPod touch</p>
+                    <p className="text-sm text-gray-500 mb-1">อุปกรณ์เสริม</p>
+                    <p className="text-sm text-gray-500 mb-1">บัตรของขวัญ</p>
+                    </div>
                 </div>
+                <div class="row-span-2">
+                <p className="text-sm text-gray-500 mb-1"><b>Apple Store</b></p>
+                <div class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
+                    <p className="text-sm text-gray-500 mb-1">เลือกซื้อออนไลน์</p>
+                    <p className="text-sm text-gray-500 mb-1">แอป Apple Store</p>
+                    <p className="text-sm text-gray-500 mb-1">บริการด้านการเงิน</p>
+                    <p className="text-sm text-gray-500 mb-1">สถานะคำสั่งซื้อ</p>
+                    <p className="text-sm text-gray-500 mb-1">บริการช่วยเหลือด้านการซื้อ</p>
+                </div>
+                </div>
+                <div class="">
+                <p className="text-sm text-gray-500 mb-1"><b>สำหรับการศึกษา</b></p>
+                <div class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
+                    <p className="text-sm text-gray-500 mb-1">Apple กับการศึกษา</p>
+                    <p className="text-sm text-gray-500 mb-1">เลือกซื้อสินค้าสำหรับมหาวิทยาลัย</p>
+                </div>
+                </div>
+                <div class="">
+                <p className="text-sm text-gray-500 mb-1"><b>สำหรับธุรกิจ</b></p>
+                <div class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
+                    <p className="text-sm text-gray-500 mb-1">Apple กับธุรกิจ</p>
+                    <p className="text-sm text-gray-500 mb-1">เลือกซื้อสินค้าสำหรับธุรกิจของคุณ</p>
+                </div>
+                </div>
+                <div class="">
+                <p className="text-sm text-gray-500 mb-1"><b>บัญชี</b></p>
+                <div class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
+                    <p className="text-sm text-gray-500 mb-1">จัดการกับ Apple ID ของคุณ</p>
+                    <p className="text-sm text-gray-500 mb-1">บัญชีสำหรับ Apple Store</p>
+                    <p className="text-sm text-gray-500 mb-1">iCloud.com</p>
+                </div>
+                </div>
+                <div class="">
+                <p className="text-sm text-gray-500 mb-1"><b>ค่านิยมของ Apple</b></p>
+                <div class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
+                    <p className="text-sm text-gray-500 mb-1">การช่วยการเข้าถึง</p>
+                    <p className="text-sm text-gray-500 mb-1">สิ่งแวดล้อม</p>
+                    <p className="text-sm text-gray-500 mb-1">ความเป็นส่วนตัว</p>
+                    <p className="text-sm text-gray-500 mb-1">ความรับผิดชอบของซัพพลายเออร์</p>
+                </div>
+                </div>
+                <div class="row-span-2">
+                <p className="text-sm text-gray-500 mb-1"><b>เกี่ยวกับ Apple</b></p>
+                <div class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">
+                    <p className="text-sm text-gray-500 mb-1">Newsroom</p>
+                    <p className="text-sm text-gray-500 mb-1">นักลงทุน</p>
+                    <p className="text-sm text-gray-500 mb-1">จริยธรรมและการปฏิบัติตาม</p>
+                    <p className="text-sm text-gray-500 mb-1">กิจกรรม</p>
+                    <p className="text-sm text-gray-500 mb-1">ติดต่อ Apple</p>
+                </div>
+                </div>
+                </div>
+              <p className="text-sm text-gray-500">
+                อีกหลากหลายวิธีในการเลือกซื้อ: ค้นหา Apple Store หรือ ร้านค้าอื่นๆ
+                ใกล้คุณ หรือโทร. 001-800-65-6957
+              </p>
             </div>
-            <div class="max-w-screen-lg mx-auto border-none px-4">
-                <section
-                    class="flex flex-col md:flex-row md:justify-between md:border-solid md:border-t text-gray-700 font-light text-sm pt-4 pb-6 md:pt-5 md:pb-6 w-full"
-                >
-                    <div>
-                        <p class="leading-8 tracking-wide">
-                            &copy; Lorem Ipsum Co., 123 Lorem Street, New York, NY
-                        </p>
-                    </div>
-                    <div>
-                        <p class="leading-8 tracking-wide">Privacy Policy</p>
-                    </div>
-                </section>
+            <div className="pt-2">
+              <p className="text-sm text-gray-500">
+                Copyright © 2021 Apple Inc. สงวนสิทธิ์ทุกประการ
+              </p>
             </div>
-        </footer>
+          </div>
+        </div>
+      </footer>
 
-        
+
     );
 };
 
