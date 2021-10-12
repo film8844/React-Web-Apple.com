@@ -5,13 +5,31 @@ import ProductNavBar from '../../components/ProductNavBar';
 import VariantOption from '../../components/VariantOption';
 
 const Iphone13Pro = () => {
+  const [priceText, setPriceText] = useState('เริ่มต้นที่ ฿38,900');
+  const [productImage, setProductImage] = useState('iphone13pro-hero.png');
   const [variantType, setVariantType] = useState('');
   const handleChangeVariantType = (event) => {
     setVariantType(event.target.value);
+    if (event.target.value === 'pro') {
+      setPriceText('เริ่มต้นที่ ฿38,900');
+      if (!!variantColor) {
+        setProductImage(`iphone13pro-pro-${variantColor}.png`);
+      } else {
+        setProductImage('iphone13pro-pro-family.jfif');
+      }
+    } else if (event.target.value === 'promax') {
+      setPriceText('เริ่มต้นที่ ฿42,900');
+      if (!!variantColor) {
+        setProductImage(`iphone13pro-promax-${variantColor}.png`);
+      } else {
+        setProductImage('iphone13pro-promax-family.jfif');
+      }
+    }
   };
   const [variantColor, setVariantColor] = useState('');
   const handleChangeVariantColor = (event) => {
     setVariantColor(event.target.value);
+    setProductImage(`iphone13pro-${variantType}-${event.target.value}.png`);
   };
   const [variantStorage, setVariantStorage] = useState('');
   const handleChangeVariantStorage = (event) => {
@@ -25,18 +43,13 @@ const Iphone13Pro = () => {
   return (
     <>
       <GlobalNavBar disableSticky={true} />
-      <ProductNavBar
-        productName="iPhone 13 Pro"
-        priceText={'เริ่มต้นที่ ฿38,900'}
-      />
+      <ProductNavBar productName="iPhone 13 Pro" priceText={priceText} />
       <div className="max-w-screen-lg mx-auto px-5 min-h-screen mb-24">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div>
             <div className="sticky top-0">
               <img
-                src={
-                  '/assets/src_image/iphon13Pro/product/iphone-13-pro-family-hero.png'
-                }
+                src={`/assets/products/iphone13pro/${productImage}`}
                 alt="iPhone 13 Pro"
                 className="block mx-auto mt-14"
               />
@@ -78,7 +91,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="type"
                       value="pro"
-                      selected={variantType == 'pro'}
+                      checked={variantType === 'pro'}
                       onChange={handleChangeVariantType}
                     >
                       <div className="flex flex-row justify-between items-center">
@@ -92,15 +105,17 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="type"
                       value="promax"
-                      selected={variantType == 'promax'}
+                      checked={variantType === 'promax'}
                       onChange={handleChangeVariantType}
                     >
                       <div className="flex flex-row justify-between items-center">
                         <div>
-                          <p className="text-lg font-medium">iPhone 13 Pro</p>
+                          <p className="text-lg font-medium">
+                            iPhone 13 Pro Max
+                          </p>
                           <p className="text-sm">จอภาพขนาด 6.1 นิ้ว¹</p>
                         </div>
-                        <span>เริ่มต้นที่ ฿38,900</span>
+                        <span>เริ่มต้นที่ ฿42,900</span>
                       </div>
                     </VariantOption>
                   </div>
@@ -117,11 +132,11 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="color"
                       value="blue"
-                      selected={variantColor == 'blue'}
+                      checked={variantColor === 'blue'}
                       onChange={handleChangeVariantColor}
                     >
                       <img
-                        src="/assets/src_image/iphon13Pro/product/iphone-finish-blue-2021.jpg"
+                        src="/assets/productVariantColors/iphone13pro/blue.jpg"
                         alt="variant-color-blue"
                         style={{ maxWidth: '32px' }}
                         className="block mx-auto"
@@ -131,12 +146,12 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="color"
                       value="silver"
-                      selected={variantColor == 'silver'}
+                      checked={variantColor === 'silver'}
                       onChange={handleChangeVariantColor}
                     >
                       <img
-                        src="/assets/src_image/iphon13Pro/product/iphone-finish-silver-2021.jpg"
-                        alt="variant-color-blue"
+                        src="/assets/productVariantColors/iphone13pro/silver.jpg"
+                        alt="variant-color-silver"
                         style={{ maxWidth: '32px' }}
                         className="block mx-auto"
                       />
@@ -145,12 +160,12 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="color"
                       value="gold"
-                      selected={variantColor == 'gold'}
+                      checked={variantColor === 'gold'}
                       onChange={handleChangeVariantColor}
                     >
                       <img
-                        src="/assets/src_image/iphon13Pro/product/iphone-finish-gold-2021.jpg"
-                        alt="variant-color-blue"
+                        src="/assets/productVariantColors/iphone13pro/gold.jpg"
+                        alt="variant-color-gold"
                         style={{ maxWidth: '32px' }}
                         className="block mx-auto"
                       />
@@ -159,12 +174,12 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="color"
                       value="graphite"
-                      selected={variantColor == 'graphite'}
+                      checked={variantColor === 'graphite'}
                       onChange={handleChangeVariantColor}
                     >
                       <img
-                        src="/assets/src_image/iphon13Pro/product/iphone-finish-graphite-2021.jpg"
-                        alt="variant-color-blue"
+                        src="/assets/productVariantColors/iphone13pro/graphite.jpg"
+                        alt="variant-color-graphite"
                         style={{ maxWidth: '32px' }}
                         className="block mx-auto"
                       />
@@ -187,7 +202,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="storage"
                       value="128GB"
-                      selected={variantStorage == '128GB'}
+                      checked={variantStorage === '128GB'}
                       onChange={handleChangeVariantStorage}
                     >
                       <div className="flex flex-col text-center py-1">
@@ -201,7 +216,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="storage"
                       value="256GB"
-                      selected={variantStorage == '256GB'}
+                      checked={variantStorage === '256GB'}
                       onChange={handleChangeVariantStorage}
                     >
                       <div className="flex flex-col text-center py-1">
@@ -215,7 +230,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="storage"
                       value="512GB"
-                      selected={variantStorage == '512GB'}
+                      checked={variantStorage === '512GB'}
                       onChange={handleChangeVariantStorage}
                     >
                       <div className="flex flex-col text-center py-1">
@@ -229,7 +244,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="storage"
                       value="1TB"
-                      selected={variantStorage == '1TB'}
+                      checked={variantStorage === '1TB'}
                       onChange={handleChangeVariantStorage}
                     >
                       <div className="flex flex-col text-center py-1">
@@ -257,8 +272,8 @@ const Iphone13Pro = () => {
                   <div id="varaintTypeOptions" className="space-y-3">
                     <VariantOption
                       variant="applecare"
-                      value="false"
-                      selected={variantAppleCare == 'false'}
+                      value="0"
+                      checked={variantAppleCare === '0'}
                       onChange={handleChangeVariantAppleCare}
                     >
                       <p className="text-lg font-semibold">
@@ -267,8 +282,8 @@ const Iphone13Pro = () => {
                     </VariantOption>
                     <VariantOption
                       variant="applecare"
-                      value="true"
-                      selected={variantAppleCare == 'true'}
+                      value="1"
+                      checked={variantAppleCare === '1'}
                       onChange={handleChangeVariantAppleCare}
                     >
                       <div className="divide-y divide-gray-300">
