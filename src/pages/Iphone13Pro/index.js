@@ -3,6 +3,7 @@ import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
 import ProductNavBar from '../../components/ProductNavBar';
 import VariantOption from '../../components/VariantOption';
+import VariantSelection from '../../components/VariantSelection';
 
 const iphone13proPrice = {
   pro: {
@@ -120,14 +121,14 @@ const Iphone13Pro = () => {
               </div>
             </div>
           </div>
+
           <div className="md:pl-20">
             <div className="mt-14">
               <p className="text-red-600 text-xl mb-2">ใหม่</p>
               <h1 className="text-4xl font-semibold">ซื้อ iPhone 13 Pro</h1>
-
               <div className="divide-y divide-gray-300">
-                <div id="variantType" className="mt-5">
-                  <div className="mb-2 pt-5">
+                <VariantSelection id="variantType" allowSelect={true}>
+                  <div className="mb-2">
                     <h4 className="text-xl font-bold">เลือกรุ่น</h4>
                     <span className="text-blue-600">รุ่นไหนเหมาะกับคุณ</span>
                   </div>
@@ -135,7 +136,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="type"
                       value="pro"
-                      checked={variantType === 'pro'}
+                      selected={variantType === 'pro'}
                       onChange={handleChangeVariantType}
                     >
                       <div className="flex flex-row justify-between items-center">
@@ -149,7 +150,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="type"
                       value="promax"
-                      checked={variantType === 'promax'}
+                      selected={variantType === 'promax'}
                       onChange={handleChangeVariantType}
                     >
                       <div className="flex flex-row justify-between items-center">
@@ -163,15 +164,10 @@ const Iphone13Pro = () => {
                       </div>
                     </VariantOption>
                   </div>
-                </div>
+                </VariantSelection>
 
-                <div id="variantColor" className="mt-5 relative">
-                  <div
-                    className={`${
-                      !!variantType ? 'hidden' : ''
-                    } absolute bg-white bg-opacity-50 h-full w-full`}
-                  ></div>
-                  <div className="mb-2 pt-5">
+                <VariantSelection id="variantColor" allowSelect={!!variantType}>
+                  <div className="mb-2">
                     <h4 className="text-xl font-bold">เลือกสี</h4>
                   </div>
                   <div
@@ -181,7 +177,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="color"
                       value="blue"
-                      checked={variantColor === 'blue'}
+                      selected={variantColor === 'blue'}
                       onChange={handleChangeVariantColor}
                     >
                       <img
@@ -195,7 +191,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="color"
                       value="silver"
-                      checked={variantColor === 'silver'}
+                      selected={variantColor === 'silver'}
                       onChange={handleChangeVariantColor}
                     >
                       <img
@@ -209,7 +205,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="color"
                       value="gold"
-                      checked={variantColor === 'gold'}
+                      selected={variantColor === 'gold'}
                       onChange={handleChangeVariantColor}
                     >
                       <img
@@ -223,7 +219,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="color"
                       value="graphite"
-                      checked={variantColor === 'graphite'}
+                      selected={variantColor === 'graphite'}
                       onChange={handleChangeVariantColor}
                     >
                       <img
@@ -235,14 +231,12 @@ const Iphone13Pro = () => {
                       <p className="mt-2 text-center text-sm">กราไฟต์</p>
                     </VariantOption>
                   </div>
-                </div>
+                </VariantSelection>
 
-                <div id="variantStorage" className="mt-5 relative">
-                  <div
-                    className={`${
-                      !!variantColor ? 'hidden' : ''
-                    } absolute bg-white bg-opacity-70 h-full w-full`}
-                  ></div>
+                <VariantSelection
+                  id="variantStorage"
+                  allowSelect={!!variantColor}
+                >
                   <div className="mb-2 pt-5">
                     <h4 className="text-xl font-bold">เลือกความจุ</h4>
                     <span className="text-blue-600">
@@ -256,7 +250,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="storage"
                       value="128GB"
-                      checked={variantStorage === '128GB'}
+                      selected={variantStorage === '128GB'}
                       onChange={handleChangeVariantStorage}
                     >
                       <div className="flex flex-col text-center py-1">
@@ -280,7 +274,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="storage"
                       value="256GB"
-                      checked={variantStorage === '256GB'}
+                      selected={variantStorage === '256GB'}
                       onChange={handleChangeVariantStorage}
                     >
                       <div className="flex flex-col text-center py-1">
@@ -304,7 +298,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="storage"
                       value="512GB"
-                      checked={variantStorage === '512GB'}
+                      selected={variantStorage === '512GB'}
                       onChange={handleChangeVariantStorage}
                     >
                       <div className="flex flex-col text-center py-1">
@@ -328,7 +322,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="storage"
                       value="1TB"
-                      checked={variantStorage === '1TB'}
+                      selected={variantStorage === '1TB'}
                       onChange={handleChangeVariantStorage}
                     >
                       <div className="flex flex-col text-center py-1">
@@ -350,11 +344,12 @@ const Iphone13Pro = () => {
                       </div>
                     </VariantOption>
                   </div>
-                </div>
+                </VariantSelection>
 
-                <div
+                <VariantSelection
                   id="variantType"
-                  className={`mt-5 ${!!variantStorage ? '' : 'hidden'}`}
+                  allowSelect={true}
+                  hidden={!variantStorage}
                 >
                   <div className="mb-5 pt-5">
                     <h4 className="text-lg font-bold">
@@ -370,7 +365,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="applecare"
                       value="0"
-                      checked={variantAppleCare === '0'}
+                      selected={variantAppleCare === '0'}
                       onChange={handleChangeVariantAppleCare}
                     >
                       <p className="text-lg font-semibold">
@@ -380,7 +375,7 @@ const Iphone13Pro = () => {
                     <VariantOption
                       variant="applecare"
                       value="1"
-                      checked={variantAppleCare === '1'}
+                      selected={variantAppleCare === '1'}
                       onChange={handleChangeVariantAppleCare}
                     >
                       <div className="divide-y divide-gray-300">
@@ -404,11 +399,55 @@ const Iphone13Pro = () => {
                       </div>
                     </VariantOption>
                   </div>
+                </VariantSelection>
+              </div>
+            </div>
+            <div className={`p-5 mt-16 divide-y divide-gray-300 ${!!variantStorage ? '': 'hidden'}`}>
+              <div className="mb-5">
+                <p className="text-3xl font-medium">{priceText}</p>
+                <p className="text-xs">
+                  รวม VAT โดยประมาณ: ฿
+                  {Number((price / 1.07) * 0.07).toLocaleString('en', {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2,
+                  })}
+                  *
+                </p>
+                <p className="text-sm text-blue-500">
+                  {Number(price / 10).toLocaleString('en', {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2,
+                  })}
+                  /เดือน ดอกเบี้ย 0% เป็นเวลา 10 เดือน
+                </p>
+              </div>
+              <div className="pt-5">
+                <div className="mb-4">
+                  <p className="text-sm leading-none">
+                    <span className="font-bold">การจัดส่ง:</span>
+                    <br />
+                    4-5 สัปดาห์
+                    <br />
+                    บริการจัดส่งฟรี
+                    <br />
+                    <span className="text-blue-500">ดูวันส่งมอบสินค้า</span>
+                  </p>
                 </div>
+                <div className="mb-8"><p className="text-sm leading-none">
+                  <span className="font-bold">การรับสินค้า:</span>
+                  <br />
+                  ขณะนี้ยังไม่มีจำหน่ายที่ Apple Iconsiam
+                  <br />
+                  <span className="text-blue-500">ดูร้านอื่น</span>
+                </p></div>
+                <button className="w-full bg-blue-500 hover:bg-blue-600 text-xl text-white rounded-lg p-1">
+                  ใส่ลงในถุง
+                </button>
               </div>
             </div>
           </div>
         </div>
+
         <div className="mt-20">
           <h2 className="text-4xl font-semibold text-center">
             สิ่งที่มีมาให้ในกล่อง
