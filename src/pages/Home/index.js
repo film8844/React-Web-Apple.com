@@ -3,6 +3,7 @@ import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
 import './index.css';
 import logo from '../../assets/logo.svg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
         </div>
         <div className="mt-5 text-center text-xl text-blue-600">
           <a className="mr-4">ดูเพิ่มเติม</a>
-          <a>ซื้อ</a>
+          <Link to="/iphone13pro">ซื้อ</Link>
         </div>
         <img
           src="/assets/home_images/hero_iphone13pro.jpg"
@@ -70,7 +71,7 @@ const Home = () => {
           style={{ maxWidth: '550px' }}
         />
         <img
-          src="/assets/home_images/hero_iphone13pro_small.jpg"
+          src="/assets/home_images/apple_watch.jpg"
           className="block md:hidden mx-auto px-5 mt-10"
           style={{ maxWidth: '300px' }}
         />
