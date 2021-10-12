@@ -4,18 +4,22 @@ import GlobalNavBar from '../../components/GlobalNavBar';
 
 
 
+
 const Help = () => {
 
 
     return (
         <>
             <GlobalNavBar />
-            <div class="text-center">
-                <img src="assets/src_image/help/psp-hero-banner-homepage-welcome.image.large_2x.jpg" alt="Avatar" className="object-cover" />
+            <div class="relative text-center">
+                <img src="assets/src_image/help/psp-hero-banner-homepage-welcome.image.large_2x.jpg" className="object-cover" />
+                <div class="relative md:top-12 inset-x-0 top-0 md:absolute">
+                    <h1 className="text-2xl text-black font-medium md:text-white md:text-5xl mt-4">บริการช่วยเหลือของ Apple</h1>
+                </div>
             </div>
-            <div className='grid grid-cols-2 md:grid-cols-3 justify-items-center xl:grid-cols-7 text-center xl:mx-96 xl:my-24'>
+            <div className='grid grid-cols-2 md:grid-cols-3 justify-items-center xl:grid-cols-7 text-center xl:mx-96 xl:my-24 ' >
                 {/* <div className="flex flex-row space-x-20 text-center"> */}
-                <div className="w-16 flex flex-col space-y-4 object-scale-down">
+                <div className="w-16 flex flex-col space-y-4">
                     <img src='assets/src_image/help/homepage_productnav_iphone_family_2x.png' />
                     <a>iPhone</a>
                 </div>
@@ -45,6 +49,22 @@ const Help = () => {
                 </div>
                 {/* </div> */}
             </div>
+            <hr />
+            <div class="grid grid-cols-1 text-center gap-20 xl:my-20 xl:mx-96 xl:grid-cols-3 xl:divide-x xl:gap-0" style={{ color: '#0070c9' }}>
+                <div className="flex flex-col ">
+                    <img src='assets/src_image/help/promo-icon-homepage-password_2x.png' className='mx-auto mb-4 w-10' />
+                    <a >ลืม Apple ID หรือรหัสผ่าน {'>'}</a>
+                </div>
+                <div className="flex-1 ">
+                    <img src='assets/src_image/help/promo-icon-homepage-subscriptions_2x.png' className='mx-auto mb-4 w-10' />
+                    <a>การเรียกเก็บเงินและการสมัครรับ {'>'}</a>
+                </div>
+                <div className="flex-1 ">
+                    <img src='assets/src_image/help/promo-icon-find-my_2x.png' className='mx-auto mb-4 w-10' />
+                    <a>ค้นหาของฉัน {'>'}</a>
+                </div>
+            </div>
+            <hr />
 
             <Footer />
         </>
