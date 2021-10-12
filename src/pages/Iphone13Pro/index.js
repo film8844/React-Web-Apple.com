@@ -93,10 +93,14 @@ const Iphone13Pro = () => {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div>
             <div className="sticky top-0">
+              <div className="md:hidden text-center mt-14">
+                <p className="text-red-600 mb-2">ใหม่</p>
+                <h1 className="text-4xl font-semibold">ซื้อ iPhone 13 Pro</h1>
+              </div>
               <img
                 src={`/assets/products/iphone13pro/${productImage}`}
                 alt="iPhone 13 Pro"
-                className="block mx-auto mt-14"
+                className="block mx-auto md:mt-14 mb-5"
               />
               <div className="divide-y divide-gray-300">
                 <div className="grid grid-cols-2 gap-3 mb-5">
@@ -124,8 +128,10 @@ const Iphone13Pro = () => {
 
           <div className="md:pl-20">
             <div className="mt-14">
-              <p className="text-red-600 text-xl mb-2">ใหม่</p>
-              <h1 className="text-4xl font-semibold">ซื้อ iPhone 13 Pro</h1>
+              <div className="hidden md:block">
+                <p className="text-red-600 text-xl mb-2">ใหม่</p>
+                <h1 className="text-4xl font-semibold">ซื้อ iPhone 13 Pro</h1>
+              </div>
               <div className="divide-y divide-gray-300">
                 <VariantSelection id="variantType" allowSelect={true}>
                   <div className="mb-2">
@@ -144,7 +150,7 @@ const Iphone13Pro = () => {
                           <p className="text-lg font-medium">iPhone 13 Pro</p>
                           <p className="text-sm">จอภาพขนาด 6.1 นิ้ว¹</p>
                         </div>
-                        <span>เริ่มต้นที่ ฿38,900</span>
+                        <span className="text-right">เริ่มต้นที่ ฿38,900</span>
                       </div>
                     </VariantOption>
                     <VariantOption
@@ -160,7 +166,7 @@ const Iphone13Pro = () => {
                           </p>
                           <p className="text-sm">จอภาพขนาด 6.1 นิ้ว¹</p>
                         </div>
-                        <span>เริ่มต้นที่ ฿42,900</span>
+                        <span className="text-right">เริ่มต้นที่ ฿42,900</span>
                       </div>
                     </VariantOption>
                   </div>
@@ -402,7 +408,11 @@ const Iphone13Pro = () => {
                 </VariantSelection>
               </div>
             </div>
-            <div className={`p-5 mt-16 divide-y divide-gray-300 ${!!variantStorage ? '': 'hidden'}`}>
+            <div
+              className={`p-5 mt-16 divide-y divide-gray-300 ${
+                !!variantStorage ? '' : 'hidden'
+              }`}
+            >
               <div className="mb-5">
                 <p className="text-3xl font-medium">{priceText}</p>
                 <p className="text-xs">
@@ -433,13 +443,15 @@ const Iphone13Pro = () => {
                     <span className="text-blue-500">ดูวันส่งมอบสินค้า</span>
                   </p>
                 </div>
-                <div className="mb-8"><p className="text-sm leading-none">
-                  <span className="font-bold">การรับสินค้า:</span>
-                  <br />
-                  ขณะนี้ยังไม่มีจำหน่ายที่ Apple Iconsiam
-                  <br />
-                  <span className="text-blue-500">ดูร้านอื่น</span>
-                </p></div>
+                <div className="mb-8">
+                  <p className="text-sm leading-none">
+                    <span className="font-bold">การรับสินค้า:</span>
+                    <br />
+                    ขณะนี้ยังไม่มีจำหน่ายที่ Apple Iconsiam
+                    <br />
+                    <span className="text-blue-500">ดูร้านอื่น</span>
+                  </p>
+                </div>
                 <button className="w-full bg-blue-500 hover:bg-blue-600 text-xl text-white rounded-lg p-1">
                   ใส่ลงในถุง
                 </button>
