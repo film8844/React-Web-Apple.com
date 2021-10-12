@@ -15,6 +15,7 @@ const VariantOption = (props) => {
         name={`variant-${variant}`}
         onChange={handleChangeVariant}
         className="hidden"
+        checked={selected}
       />
       <label htmlFor={`varaint-${variant}-${value}`}>
         <div

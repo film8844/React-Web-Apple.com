@@ -1,4 +1,4 @@
 .global-nav {
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(12px);
     background-color: rgba(0,0,0,0.8);
 }

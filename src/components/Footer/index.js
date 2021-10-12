@@ -2,6 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
+    
     <footer className="bg-gray-200">
       <div className="max-w-screen-lg p-5 mx-auto">
         <div className="divide-y divide-gray-300 ">

@@ -10,25 +10,27 @@ const GlobalNavBar = (props) => {
     >
       <div className="hidden md:flex max-w-screen-lg px-5 mx-auto flex-row text-white text-sm font-extralight justify-between items-center">
         <Link to="/">
-          <img src={logo} />
+          <img src={logo} alt="Apple" />
         </Link>
-        <a>ร้าน</a>
-        <a>Mac</a>
-        <a>iPad</a>
-        <a>iPhone</a>
-        <a>Watch</a>
-        <a>TV</a>
-        <a>Music</a>
-        <a>บริการช่วยเหลือ</a>
-        <a>ค้นหา</a>
-        <a>ถุง</a>
+        <a href="#">ร้าน</a>
+        <a href="#">Mac</a>
+        <a href="#">iPad</a>
+        <a href="#">iPhone</a>
+        <a href="#">Watch</a>
+        <a href="#">TV</a>
+        <a href="#">Music</a>
+        <Link to="/help">
+          <a href="#">บริการช่วยเหลือ</a>
+        </Link>
+        <a href="#">ค้นหา</a>
+        <a href="#">ถุง</a>
       </div>
       <div className="flex md:hidden px-5 mx-auto flex-row text-white text-sm font-extralight justify-between items-center">
-        <a>เมนู</a>
-        <a>
-          <img src={logo} />
-        </a>
-        <a>ถุง</a>
+        <a href="#">เมนู</a>
+        <Link to="/">
+          <img src={logo} alt="Apple" />
+        </Link>
+        <a href="#">ถุง</a>
       </div>
     </nav>
   );
