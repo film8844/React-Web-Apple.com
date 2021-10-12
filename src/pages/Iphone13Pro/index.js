@@ -1,36 +1,56 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
 import ProductNavBar from '../../components/ProductNavBar';
 import VariantOption from '../../components/VariantOption';
 
+const iphone13proPrice = {
+  pro: {
+    '128GB': 38900,
+    '256GB': 42900,
+    '512GB': 50900,
+    '1TB': 58900,
+  },
+  promax: {
+    '128GB': 42900,
+    '256GB': 46900,
+    '512GB': 54900,
+    '1TB': 62900,
+  },
+};
+
 const Iphone13Pro = () => {
+  const [price, setPrice] = useState(iphone13proPrice['pro']['128GB']);
   const [priceText, setPriceText] = useState('เริ่มต้นที่ ฿38,900');
   const [productImage, setProductImage] = useState('iphone13pro-hero.png');
+
   const [variantType, setVariantType] = useState('');
-  const handleChangeVariantType = (event) => {
+  const handleChangeVariantType = async (event) => {
     setVariantType(event.target.value);
-    if (event.target.value === 'pro') {
-      setPriceText('เริ่มต้นที่ ฿38,900');
-      if (!!variantColor) {
-        setProductImage(`iphone13pro-pro-${variantColor}.png`);
-      } else {
-        setProductImage('iphone13pro-pro-family.jfif');
-      }
-    } else if (event.target.value === 'promax') {
-      setPriceText('เริ่มต้นที่ ฿42,900');
-      if (!!variantColor) {
-        setProductImage(`iphone13pro-promax-${variantColor}.png`);
-      } else {
-        setProductImage('iphone13pro-promax-family.jfif');
-      }
+    switch (event.target.value) {
+      case 'pro':
+        if (!!variantColor) {
+          setProductImage(`iphone13pro-pro-${variantColor}.png`);
+        } else {
+          setProductImage('iphone13pro-pro-family.jfif');
+        }
+        break;
+      case 'promax':
+        if (!!variantColor) {
+          setProductImage(`iphone13pro-promax-${variantColor}.png`);
+        } else {
+          setProductImage('iphone13pro-promax-family.jfif');
+        }
+        break;
     }
   };
+
   const [variantColor, setVariantColor] = useState('');
   const handleChangeVariantColor = (event) => {
     setVariantColor(event.target.value);
     setProductImage(`iphone13pro-${variantType}-${event.target.value}.png`);
   };
+
   const [variantStorage, setVariantStorage] = useState('');
   const handleChangeVariantStorage = (event) => {
     setVariantStorage(event.target.value);
@@ -39,6 +59,30 @@ const Iphone13Pro = () => {
   const handleChangeVariantAppleCare = (event) => {
     setVariantAppleCare(event.target.value);
   };
+
+  useEffect(() => {
+    let calPrice;
+    if (!variantStorage) {
+      calPrice = iphone13proPrice[!!variantType ? variantType : 'pro']['128GB'];
+      setPriceText(
+        `เริ่มต้นที่ ฿${Number(
+          iphone13proPrice[!!variantType ? variantType : 'pro']['128GB']
+        ).toLocaleString('en')}`
+      );
+    } else {
+      calPrice = iphone13proPrice[variantType][variantStorage];
+      if ([false, true][parseInt(variantAppleCare)]) {
+        calPrice += 8290;
+      }
+      setPriceText(
+        `฿${Number(calPrice).toLocaleString('en', {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2,
+        })}`
+      );
+    }
+    setPrice(calPrice);
+  }, [variantType, variantStorage, variantAppleCare]);
 
   return (
     <>
@@ -121,7 +165,12 @@ const Iphone13Pro = () => {
                   </div>
                 </div>
 
-                <div id="variantColor" className="mt-5">
+                <div id="variantColor" className="mt-5 relative">
+                  <div
+                    className={`${
+                      !!variantType ? 'hidden' : ''
+                    } absolute bg-white bg-opacity-50 h-full w-full`}
+                  ></div>
                   <div className="mb-2 pt-5">
                     <h4 className="text-xl font-bold">เลือกสี</h4>
                   </div>
@@ -188,7 +237,12 @@ const Iphone13Pro = () => {
                   </div>
                 </div>
 
-                <div id="variantStorage" className="mt-5">
+                <div id="variantStorage" className="mt-5 relative">
+                  <div
+                    className={`${
+                      !!variantColor ? 'hidden' : ''
+                    } absolute bg-white bg-opacity-70 h-full w-full`}
+                  ></div>
                   <div className="mb-2 pt-5">
                     <h4 className="text-xl font-bold">เลือกความจุ</h4>
                     <span className="text-blue-600">
@@ -210,7 +264,17 @@ const Iphone13Pro = () => {
                           <span className="text-3xl">128</span>
                           <span className="font-medium text-lg">GB²</span>
                         </p>
-                        <span className="text-sm">฿42,900.00</span>
+                        <span className="text-sm">
+                          ฿
+                          {Number(
+                            iphone13proPrice[
+                              !!variantType ? variantType : 'pro'
+                            ]['128GB']
+                          ).toLocaleString('en', {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
+                          })}
+                        </span>
                       </div>
                     </VariantOption>
                     <VariantOption
@@ -224,7 +288,17 @@ const Iphone13Pro = () => {
                           <span className="text-3xl">256</span>
                           <span className="font-medium text-lg">GB²</span>
                         </p>
-                        <span className="text-sm">฿46,900.00</span>
+                        <span className="text-sm">
+                          ฿
+                          {Number(
+                            iphone13proPrice[
+                              !!variantType ? variantType : 'pro'
+                            ]['256GB']
+                          ).toLocaleString('en', {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
+                          })}
+                        </span>
                       </div>
                     </VariantOption>
                     <VariantOption
@@ -238,7 +312,17 @@ const Iphone13Pro = () => {
                           <span className="text-3xl">512</span>
                           <span className="font-medium text-lg">GB²</span>
                         </p>
-                        <span className="text-sm">฿54,900.00</span>
+                        <span className="text-sm">
+                          ฿
+                          {Number(
+                            iphone13proPrice[
+                              !!variantType ? variantType : 'pro'
+                            ]['512GB']
+                          ).toLocaleString('en', {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
+                          })}
+                        </span>
                       </div>
                     </VariantOption>
                     <VariantOption
@@ -252,13 +336,26 @@ const Iphone13Pro = () => {
                           <span className="text-3xl">1</span>
                           <span className="font-medium text-lg">TB²</span>
                         </p>
-                        <span className="text-sm">฿62,900.00</span>
+                        <span className="text-sm">
+                          ฿
+                          {Number(
+                            iphone13proPrice[
+                              !!variantType ? variantType : 'pro'
+                            ]['1TB']
+                          ).toLocaleString('en', {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
+                          })}
+                        </span>
                       </div>
                     </VariantOption>
                   </div>
                 </div>
 
-                <div id="variantType" className="mt-5">
+                <div
+                  id="variantType"
+                  className={`mt-5 ${!!variantStorage ? '' : 'hidden'}`}
+                >
                   <div className="mb-5 pt-5">
                     <h4 className="text-lg font-bold">
                       คุณต้องการเพิ่มความคุ้มครอง AppleCare+ หรือไม่
