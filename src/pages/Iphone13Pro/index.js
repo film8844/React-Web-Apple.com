@@ -351,9 +351,8 @@ const Iphone13Pro = () => {
                     </VariantOption>
                   </div>
                 </VariantSelection>
-
                 <VariantSelection
-                  id="variantType"
+                  id="variantAppleCare"
                   allowSelect={true}
                   hidden={!variantStorage}
                 >
@@ -367,7 +366,7 @@ const Iphone13Pro = () => {
                       iPhone ของคุณดีที่สุด
                     </p>
                   </div>
-                  <div id="varaintTypeOptions" className="space-y-3">
+                  <div id="varaintAppleCareOptions" className="space-y-3">
                     <VariantOption
                       variant="applecare"
                       value="0"
@@ -407,6 +406,16 @@ const Iphone13Pro = () => {
                   </div>
                 </VariantSelection>
               </div>
+            </div>
+            <div
+              className={`p-5 mt-16 relative ${
+                !!variantStorage ? 'hidden' : ''
+              }`}
+            >
+              <div className="absolute bg-white bg-opacity-50 h-full w-full"></div>
+              <button className="w-full bg-blue-500 hover:bg-blue-600 text-xl text-white rounded-lg p-1">
+                ต่อไป
+              </button>
             </div>
             <div
               className={`p-5 mt-16 divide-y divide-gray-300 ${
