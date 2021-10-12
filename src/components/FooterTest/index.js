@@ -7,7 +7,7 @@ const FooterTest = () => {
           <div className="divide-y divide-gray-300 ">
             
             <div className="mb-1">
-            <div class="grid grid-rows-2 md:grid-flow-col gap-5 mb-4">
+            <div class="grid grid-rows-2 md:grid-flow-col gap-4 mb-4">
                 <div class="row-span-2">
                     <p className="text-sm text-gray-500 mb-1"><b>เลือกซื้อและเรียนรู้</b></p>
                     <div class="h-0 md:h-auto -mt-4 md:mt-0 overflow-hidden">

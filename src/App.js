@@ -22,6 +22,7 @@ const App = () => {
       <Route path="*">
         <GlobalNavBar />
         <p className="text-center">error 404</p>
+        {/* <Question /> */}
         <FooterTest />
       </Route>
     </Switch>
