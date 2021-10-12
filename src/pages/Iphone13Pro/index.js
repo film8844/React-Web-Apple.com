@@ -243,7 +243,7 @@ const Iphone13Pro = () => {
                   id="variantStorage"
                   allowSelect={!!variantColor}
                 >
-                  <div className="mb-2 pt-5">
+                  <div className="mb-2">
                     <h4 className="text-xl font-bold">เลือกความจุ</h4>
                     <span className="text-blue-600">
                       ความจุเท่าไหร่ที่เหมาะกับคุณ
@@ -357,7 +357,7 @@ const Iphone13Pro = () => {
                   allowSelect={true}
                   hidden={!variantStorage}
                 >
-                  <div className="mb-5 pt-5">
+                  <div className="mb-5">
                     <h4 className="text-lg font-bold">
                       คุณต้องการเพิ่มความคุ้มครอง AppleCare+ หรือไม่
                     </h4>
