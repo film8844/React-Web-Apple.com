@@ -5,7 +5,6 @@ import { Switch, Route } from 'react-router-dom';
 import GlobalNavBar from './components/GlobalNavBar';
 import Iphone13Pro from './pages/Iphone13Pro';
 import Help from './pages/help';
-import Footer from './components/Footer';
 import FooterTest from './components/FooterTest';
 
 const App = () => {
