@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
 import ProductNavBar from '../../components/ProductNavBar';
+import QuestionBox from '../../components/QuestionBox';
 import VariantOption from '../../components/VariantOption';
 import VariantSelection from '../../components/VariantSelection';
 
@@ -475,6 +476,7 @@ const Iphone13Pro = () => {
         </div>
         <InTheBox />
       </div>
+      <QuestionBox />
       <Footer />
     </>
   );

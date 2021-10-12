@@ -5,7 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import GlobalNavBar from './components/GlobalNavBar';
 import Iphone13Pro from './pages/Iphone13Pro';
 import Help from './pages/help';
-import FooterTest from './components/FooterTest';
+import QuestionBox from './components/QuestionBox';
 
 const App = () => {
   return (
@@ -22,8 +22,7 @@ const App = () => {
       <Route path="*">
         <GlobalNavBar />
         <p className="text-center">error 404</p>
-        {/* <Question /> */}
-        <FooterTest />
+        <QuestionBox/ >
       </Route>
     </Switch>
   );
