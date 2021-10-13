@@ -170,7 +170,7 @@ const Iphone13Pro = () => {
                           <p className="text-lg font-medium">
                             iPhone 13 Pro Max
                           </p>
-                          <p className="text-sm">จอภาพขนาด 6.1 นิ้ว¹</p>
+                          <p className="text-sm">จอภาพขนาด 6.7 นิ้ว¹</p>
                         </div>
                         <span className="text-right">เริ่มต้นที่ ฿42,900</span>
                       </div>
