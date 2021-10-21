@@ -1,11 +1,29 @@
 import React from 'react';
 
-const InTheBox = () => {
+const WhatsInTheBox = () => {
   return (
     <div className="mb-20">
       <h2 className="text-4xl font-semibold text-center mt-20">
         สิ่งที่มีมาให้ในกล่อง
       </h2>
+      <div className="flex flex-row flex-wrap justify-center gap-20 mb-16">
+        <div className="text-center">
+          <img
+            src="/assets/whatsInTheBox/iphone13pro.jpg"
+            className="mb-5 mx-auto"
+            style={{ maxHeight: '340px' }}
+          />
+          <span>iPhone</span>
+        </div>
+        <div className="text-center">
+          <img
+            src="/assets/whatsInTheBox/typectolightningcable.jpg"
+            className="mb-5 mx-auto"
+            style={{ maxHeight: '340px' }}
+          />
+          <span>สาย USB-C เป็น ​Lightning</span>
+        </div>
+      </div>
       <p className="text-sm text-center mt-10 text-gray-600">
         iPhone 13 Pro และ iPhone 13 Pro Max ไม่มีอะแดปเตอร์แปลงไฟหรือ EarPods
         ให้มาด้วย{' '}
@@ -26,4 +44,4 @@ const InTheBox = () => {
   );
 };
 
-export default InTheBox;
+export default WhatsInTheBox;

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import CompareTest from '../../components/CompareTest';
 import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
 import ProductNavBar from '../../components/ProductNavBar';
@@ -6,7 +7,7 @@ import QuestionBox from '../../components/QuestionBox';
 import VariantOption from '../../components/VariantOption';
 import VariantSelection from '../../components/VariantSelection';
 
-import InTheBox from './InTheBox';
+import WhatsInTheBox from './WhatsInTheBox';
 
 const iphone13proPrice = {
   pro: {
@@ -474,7 +475,7 @@ const Iphone13Pro = () => {
             </div>
           </div>
         </div>
-        <InTheBox />
+        <WhatsInTheBox />
       </div>
       <QuestionBox />
       <Footer />
