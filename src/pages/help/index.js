@@ -102,6 +102,24 @@ const Help = () => {
                         {'>'}</a>
                 </div>
             </div>
+            <hr />
+            <div className="grid grid-cols-1 justify-items-center my-12 text-center">
+                <div>
+                    <img src="assets/src_image/help/contentlink-warrantyandrepair_2x.png" className="object-scale-down w-64" />
+                </div>
+                <div className='w-7/12'>
+                    <h1 className="text-5xl text-black font-medium my-4">การรับประกันและการซ่อมแซม</h1>
+                    <a className="text-xl inline" style={{ color: '#0070c9' }}>ดูว่าผลิตภัณฑ์ Apple ของคุณเข้าเกณฑ์ </a>
+                    <p className="text-xl text-gray-600 inline ">
+                        การรับบริการและบริการช่วยเหลือภายใต้การรับประกันแบบจำกัดของเราหรือไม่ มีการซ่อมที่อยู่ระหว่างดำเนินการแล้วใช่หรือไม่
+                    </p>
+                    <a className="text-xl inline" style={{ color: '#0070c9' }}> มาตรวจสอบสถานะกัน</a>
+                </div>
+            </div>
+            <hr className="w-8/12 mx-auto" />
+            <div className="grid grid-cols-1 justify-items-center my-12 text-center">
+                <h1 className="text-3xl text-black  font-medium">โปรดระวังชิ้นส่วนของปลอม</h1>
+            </div>
 
 
 
