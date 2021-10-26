@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom'
+import { useStore } from '../../store/store';
+
 import CompareTest from '../../components/CompareTest';
 import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
@@ -24,7 +27,17 @@ const iphone13proPrice = {
   },
 };
 
+const colorNameTH = {
+  blue: 'เซียร์ร่าบลู',
+  silver: 'เงิน',
+  gold: 'ทอง',
+  graphite: 'กราไฟต์',
+};
+
 const Iphone13Pro = () => {
+  const history = useHistory();
+  const store = useStore();
+
   const [price, setPrice] = useState(iphone13proPrice['pro']['128GB']);
   const [priceText, setPriceText] = useState('เริ่มต้นที่ ฿38,900');
   const [productImage, setProductImage] = useState('iphone13pro-hero.png');
@@ -76,7 +89,7 @@ const Iphone13Pro = () => {
       );
     } else {
       calPrice = iphone13proPrice[variantType][variantStorage];
-      if ([false, true][parseInt(variantAppleCare)]) {
+      if (variantAppleCare === '1') {
         calPrice += 8290;
       }
       setPriceText(
@@ -88,6 +101,29 @@ const Iphone13Pro = () => {
     }
     setPrice(calPrice);
   }, [variantType, variantStorage, variantAppleCare]);
+
+  const addProductToBag = () => {
+    console.log('add product');
+    const { bag, setBag } = store;
+    const product = {
+      id: Date.now(),
+      product: 'iphone13pro',
+      name: `iPhone 13 Pro ${
+        variantType === 'promax' ? 'Max' : ''
+      } ความจุ ${variantStorage} สี${colorNameTH[variantColor]}`,
+      shortName: `iPhone 13 Pro ${
+        variantType === 'promax' ? 'Max' : ''
+      }`,
+      color: variantColor,
+      type: variantType,
+      storage: variantStorage,
+      appleCare: variantAppleCare === '1',
+      appleCareCost: 8290,
+      price: price,
+    };
+    setBag([...bag, product]);
+    history.push('/bag');
+  };
 
   return (
     <>
@@ -358,6 +394,7 @@ const Iphone13Pro = () => {
                     </VariantOption>
                   </div>
                 </VariantSelection>
+
                 <VariantSelection
                   id="variantAppleCare"
                   allowSelect={true}
@@ -468,7 +505,10 @@ const Iphone13Pro = () => {
                     <span className="text-blue-500">ดูร้านอื่น</span>
                   </p>
                 </div>
-                <button className="w-full bg-blue-500 hover:bg-blue-600 text-xl text-white rounded-lg p-1">
+                <button
+                  onClick={addProductToBag}
+                  className="w-full bg-blue-500 hover:bg-blue-600 text-xl text-white rounded-lg p-1"
+                >
                   ใส่ลงในถุง
                 </button>
               </div>
