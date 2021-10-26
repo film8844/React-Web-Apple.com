@@ -2,7 +2,6 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
 import './index.css';
-import logo from '../../assets/logo.svg';
 import { Link } from 'react-router-dom';
 
 const Iphone13Pro = () => {

@@ -1,6 +1,5 @@
 import React from 'react';
 import './ProductNavBar.css';
-import logo from '../../assets/logo.svg';
 
 const ProductNavBar = (props) => {
   return (
