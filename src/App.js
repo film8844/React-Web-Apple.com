@@ -7,6 +7,7 @@ import Iphone13Pro from './pages/Iphone13Pro';
 import Help from './pages/help';
 import QuestionBox from './components/QuestionBox';
 import CompareTest from './components/CompareTest';
+import Bag from './pages/Bag';
 
 const App = () => {
   return (
@@ -16,6 +17,9 @@ const App = () => {
       </Route>
       <Route path="/help" exact>
         <Help />
+      </Route>
+      <Route path="/bag" exact>
+        <Bag />
       </Route>
       <Route path="/" exact>
         <Home />

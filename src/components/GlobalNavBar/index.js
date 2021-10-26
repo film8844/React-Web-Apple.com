@@ -23,14 +23,14 @@ const GlobalNavBar = (props) => {
           <a href="#">บริการช่วยเหลือ</a>
         </Link>
         <a href="#">ค้นหา</a>
-        <a href="#">ถุง</a>
+        <Link to="/bag">ถุง</Link>
       </div>
       <div className="flex md:hidden px-5 mx-auto flex-row text-white text-sm font-extralight justify-between items-center">
         <a href="#">เมนู</a>
         <Link to="/">
           <img src={logo} alt="Apple" />
         </Link>
-        <a href="#">ถุง</a>
+        <Link to="/bag">ถุง</Link>
       </div>
     </nav>
   );
