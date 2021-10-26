@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom';
 import { useStore } from '../../store/store';
 
 import CompareTest from '../../components/CompareTest';
@@ -11,6 +11,7 @@ import VariantOption from '../../components/VariantOption';
 import VariantSelection from '../../components/VariantSelection';
 
 import WhatsInTheBox from './WhatsInTheBox';
+import AppleButton from '../../components/AppleButton';
 
 const iphone13proPrice = {
   pro: {
@@ -111,9 +112,7 @@ const Iphone13Pro = () => {
       name: `iPhone 13 Pro ${
         variantType === 'promax' ? 'Max' : ''
       } ความจุ ${variantStorage} สี${colorNameTH[variantColor]}`,
-      shortName: `iPhone 13 Pro ${
-        variantType === 'promax' ? 'Max' : ''
-      }`,
+      shortName: `iPhone 13 Pro ${variantType === 'promax' ? 'Max' : ''}`,
       color: variantColor,
       type: variantType,
       storage: variantStorage,
@@ -147,16 +146,52 @@ const Iphone13Pro = () => {
               />
               <div className="divide-y divide-gray-300">
                 <div className="grid grid-cols-2 gap-3 mb-5">
-                  <div>
-                    <p className="text-sm font-bold text-center">จัดส่งฟรี</p>
+                  <div className="flex flex-col items-center">
+                    <svg
+                      viewBox="0 0 35 35"
+                      role="img"
+                      aria-hidden="true"
+                      width="35px"
+                      height="35px"
+                    >
+                      <path fill="none" d="M0 0h35v35H0z"></path>
+                      <path d="M27.687 10.547l-9-4.852a2.5 2.5 0 00-2.373 0l-9 4.852A2.5 2.5 0 006 12.748v9.471a2.494 2.494 0 001.313 2.2l9 4.852a2.5 2.5 0 002.373 0l9-4.852a2.5 2.5 0 001.314-2.2v-9.471a2.5 2.5 0 00-1.313-2.201zm-10.9-3.971a1.5 1.5 0 011.424 0l9 4.852c.041.022.072.055.11.081l-4.41 2.507-9.628-5.55zm-4.538 2.446l9.651 5.566-4.4 2.5-9.823-5.58c.038-.026.07-.059.111-.081zM7.788 23.539A1.5 1.5 0 017 22.219v-9.471a1.494 1.494 0 01.069-.436L17 17.957v10.516a1.494 1.494 0 01-.212-.082zM28 22.219a1.5 1.5 0 01-.788 1.32l-9 4.851a1.481 1.481 0 01-.212.082V17.957l9.931-5.646a1.5 1.5 0 01.069.436z"></path>
+                    </svg>
+                    <p className="text-sm font-bold">จัดส่งฟรี</p>
                   </div>
-                  <div>
-                    <p className="text-sm font-bold text-center">
-                      ส่งคืนสะดวกและฟรี
-                    </p>
+                  <div className="flex flex-col items-center">
+                    <svg
+                      viewBox="0 0 35 35"
+                      role="img"
+                      aria-hidden="true"
+                      width="35px"
+                      height="35px"
+                    >
+                      <path fill="none" d="M0 0h35v35H0z"></path>
+                      <path
+                        d="M12.249 9.022l-4.461 2.4c-.041.022-.073.055-.111.081l9.823 5.588 4.4-2.5zM27.322 11.507c-.038-.025-.069-.058-.11-.081l-9-4.852a1.5 1.5 0 00-1.424 0l-3.5 1.889 9.628 5.55zM10.8 18.5a.5.5 0 01-.5.5H7v3.219a1.5 1.5 0 00.788 1.32l9 4.852a1.494 1.494 0 00.212.082V17.957l-9.931-5.645a1.494 1.494 0 00-.069.436V18h3.3a.5.5 0 01.5.5zM18 17.957v10.515a1.481 1.481 0 00.212-.082l9-4.851a1.5 1.5 0 00.788-1.32v-9.471a1.5 1.5 0 00-.069-.436z"
+                        fill="none"
+                      ></path>
+                      <path d="M27.687 10.547l-9-4.852a2.5 2.5 0 00-2.373 0l-9 4.852A2.5 2.5 0 006 12.748V17h1v-4.252a1.494 1.494 0 01.069-.436L17 17.957v10.516a1.494 1.494 0 01-.212-.082l-9-4.852A1.5 1.5 0 017 22.219V20H6v2.219a2.494 2.494 0 001.313 2.2l9 4.852a2.5 2.5 0 002.373 0l9-4.852a2.5 2.5 0 001.314-2.2v-9.471a2.5 2.5 0 00-1.313-2.201zm-10.9-3.971a1.5 1.5 0 011.424 0l9 4.852c.041.022.072.055.11.081l-4.41 2.507-9.628-5.55zm-9.11 4.932c.038-.026.07-.059.111-.081l4.461-2.4 9.651 5.561-4.4 2.5zM28 22.219a1.5 1.5 0 01-.788 1.32l-9 4.851a1.481 1.481 0 01-.212.082V17.957l9.931-5.646a1.5 1.5 0 01.069.436z"></path>
+                      <path d="M2.507 18l1.646-1.646a.5.5 0 00-.707-.707l-2.5 2.5a.5.5 0 000 .707l2.5 2.5a.5.5 0 10.707-.707L2.507 19H6v-1zM10.3 19a.5.5 0 000-1H7v1zM6 18h1v1H6z"></path>
+                    </svg>
+                    <p className="text-sm font-bold">ส่งคืนสะดวกและฟรี</p>
                   </div>
                 </div>
                 <div className="pt-5 flex justify-center">
+                  <svg
+                    viewBox="0 0 35 35"
+                    role="img"
+                    aria-hidden="true"
+                    width="35px"
+                    height="35px"
+                    className="mr-3"
+                  >
+                    {' '}
+                    <path fill="none" d="M0 .213h35v35H0z"></path>{' '}
+                    <path d="M14.4 21.048a13.284 13.284 0 01-1.344.076q-.411 0-.829-.025l-.334-.02-.279.185a15.461 15.461 0 01-4.388 2.109 16.182 16.182 0 001.365-2.054l.484-.923-.941-.446a7.127 7.127 0 01-4.384-6.276c0-4.114 4.274-7.461 9.529-7.461s9.529 3.347 9.529 7.461c0 .059-.009.116-.011.174.33-.029.664-.046 1-.046 0-.043.008-.085.008-.128 0-4.677-4.67-8.461-10.529-8.461S2.75 9 2.75 13.674a8.1 8.1 0 004.95 7.181 18.048 18.048 0 01-1.573 2.305c-.481.6-.236 1.28.613 1.28 1.17 0 3.557-1.1 5.425-2.343q.448.027.888.027c.455 0 .9-.028 1.34-.069-.011-.157-.029-.312-.029-.472 0-.183.018-.357.036-.535z"></path>{' '}
+                    <path d="M32.25 21.583c0-3.749-3.745-6.782-8.443-6.782h-.1c-.351 0-.694.027-1.032.063-3.876.413-6.886 2.906-7.269 6.036a5.584 5.584 0 00-.042.678c0 .117.015.23.021.345.222 3.737 3.994 6.428 8.6 6.428.235 0 .473-.007.712-.021a10.723 10.723 0 004.35 1.878c.681 0 .878-.543.492-1.026a14.459 14.459 0 01-1.263-1.848 6.5 6.5 0 003.974-5.751zm-4.4 4.852l-.942.446.484.923a10.673 10.673 0 00.759 1.2 14.28 14.28 0 01-2.9-1.5l-.279-.185-.334.02c-.219.013-.437.019-.653.019-4.21 0-7.515-2.462-7.614-5.629 0-.048-.009-.1-.009-.144a4.521 4.521 0 01.1-.922c.5-2.386 2.87-4.288 5.908-4.75a9.506 9.506 0 011.092-.1c.113 0 .225-.013.339-.013 4.1 0 7.443 2.594 7.443 5.782a5.517 5.517 0 01-3.394 4.853z"></path>{' '}
+                  </svg>
                   <p className="text-sm font-bold">
                     หากมีคำถามเกี่ยวกับการสั่งซื้อ iPhone
                     <br />
@@ -505,12 +540,28 @@ const Iphone13Pro = () => {
                     <span className="text-blue-500">ดูร้านอื่น</span>
                   </p>
                 </div>
-                <button
-                  onClick={addProductToBag}
-                  className="w-full bg-blue-500 hover:bg-blue-600 text-xl text-white rounded-lg p-1"
-                >
-                  ใส่ลงในถุง
-                </button>
+                <div className="flex">
+                  <AppleButton
+                    onClick={addProductToBag}
+                    className="w-full text-xl"
+                  >
+                    ใส่ลงในถุง
+                  </AppleButton>
+                  <svg
+                    viewBox="0 0 35 35"
+                    role="img"
+                    aria-hidden="true"
+                    width="35px"
+                    height="35px"
+                    className="ml-5"
+                  >
+                    <path fill="none" d="M0 1.213h35v35H0z"></path>
+                    <path
+                      fill="#0071e3"
+                      d="M17.5 29.263a1.194 1.194 0 01-.85-.352L6.967 19.2a6.531 6.531 0 01.46-9.617 6.708 6.708 0 018.943.647l1.13 1.133 1.13-1.133a6.706 6.706 0 018.943-.647 6.531 6.531 0 01.46 9.617l-9.683 9.711a1.192 1.192 0 01-.85.352zm-6.06-20a5.154 5.154 0 00-3.31 1.167 5.352 5.352 0 00-1.948 3.913 5.424 5.424 0 001.564 4.081l9.684 9.711.53.388-.39-.388 9.684-9.711a5.424 5.424 0 001.564-4.081 5.352 5.352 0 00-1.948-3.913 5.6 5.6 0 00-7.461.577l-1.7 1.7a.3.3 0 01-.425 0l-1.7-1.7a5.89 5.89 0 00-4.144-1.741z"
+                    ></path>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
