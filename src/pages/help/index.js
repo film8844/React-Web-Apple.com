@@ -84,44 +84,42 @@ const Help = () => {
                 </div>
             </div>
             <hr />
-
-            <div className="grid grid-cols-1  w-7/12 mx-auto my-12 xl:grid-cols-2 ">
-                <div className="flex">
+            <div className="grid grid-cols-1  mx-10 xl:w-5/12 xl:mx-auto my-12 xl:grid-cols-2">
+                <div className="flex ">
                     <img src="assets/src_image/help/featured-section-promo-ios15-ipados15_2x.jpg" className="object-scale-down " />
                 </div>
-                <div className="flex flex-col mt-4 text-center xl:pr-64 xl:text-left">
-                    <h1 className="text-3xl text-black  font-medium">อัพเดทเป็น iOS 15 และ iPadOS 15</h1>
-                    <p className="text-xl mt-4 text-gray-600">คุณสมบัติใหม่ๆ ที่จะช่วยให้คุณใช้ iPhone และiPad สานสัมพันธ์กับผู้อื่น มีสมาธิจดจ่อกับงาน และทำสิ่งต่างๆ ได้มากกว่าเดิม</p>
-                    <a className="text-xl mt-14" style={{ color: '#0070c9' }}>รับเวอร์ชั่นล่าสุด {'>'}</a>
+                <div className="mt-4 xl:pr-12">
+                    <h1 className="text-3xl text-black font-medium my-4 ">อัพเดทเป็น iOS 15 และ iPadOS 15</h1>
+                    <p className="text-xl mt-4 mb-14 text-gray-600">คุณสมบัติใหม่ๆ ที่จะช่วยให้คุณใช้ iPhone และiPad สานสัมพันธ์กับผู้อื่น มีสมาธิจดจ่อกับงาน และทำสิ่งต่างๆ ได้มากกว่าเดิม</p>
+                    <a className="text-xl " style={{ color: '#0070c9' }}>	รับเวอร์ชั่นล่าสุด {'>'}</a>
                 </div>
             </div>
-
             <div class="relative my-12 object-contain">
                 <img src="assets/src_image/help/psp-hero-banner-homepage-getsupport.image.large_2x.jpg" className='object-contain h-full' />
-                <div class="relative ml-4 md:inset-y-1/4 md:left-1/4 md:absolute md:">
-                    <h1 className="text-3xl text-black font-medium md:text-white md:text-5xl mt-4">รับบริการช่วยเหลือ</h1>
-                    <p className="text-xl text-gray-600 my-4 md:text-white">เลือกผลิตภัณฑ์ แล้วเราจะหาวิธีแก้ปัญหาที่ดีที่สุดให้กับคุณ<br /></p>
+                <div class="relative ml-4 xl:inset-y-1/4 xl:left-1/4 xl:absolute ">
+                    <h1 className="text-3xl text-black font-medium xl:text-white md:text-5xl mt-4">รับบริการช่วยเหลือ</h1>
+                    <p className="text-xl text-gray-600 my-4 xl:text-white">เลือกผลิตภัณฑ์ แล้วเราจะหาวิธีแก้ปัญหาที่ดีที่สุดให้กับคุณ<br /></p>
                     <a className="text-xl " style={{ color: '#6BF' }}>เริ่มเลย {'>'}<br /><br /></a>
                     <a className="text-xl " style={{ color: '#6BF' }}>ดาวน์โหลดแอพ Apple Support {'>'}</a>
                 </div>
             </div>
-            <div className="grid grid-cols-1  w-5/12 mx-auto my-12 xl:grid-cols-2 ">
-                <div className="flex">
+            <div className="grid grid-cols-1  mx-10 xl:w-5/12 xl:mx-auto my-12 xl:grid-cols-2">
+                <div className="flex ">
                     <img src="assets/src_image/help/applecare-products_2x.png" className="object-scale-down " />
                 </div>
-                <div className="flex flex-col mt-4 xl:pr-12 ">
-                    <h1 className="text-3xl text-black font-medium my-4">บริการและความช่วยเหลือจากผู้เชี่ยวชาญของ Apple</h1>
-                    <p className="text-xl mt-4 text-gray-600">ผลิตภัณฑ์ AppleCare มีตัวเลือกบริการด้านฮาร์ดแวร์เพิ่มเติมและการสนับสนุนด้านเทคนิคโดยผู้เชี่ยวชาญจาก Apple</p>
-                    <a className="text-xl mt-14" style={{ color: '#0070c9' }}>	ดูข้อมูลเกี่ยวกับแผน AppleCare
-                        {'>'}</a>
+                <div className="mt-4 xl:pr-12">
+                    <h1 className="text-3xl text-black font-medium my-4 ">บริการและความช่วยเหลือจากผู้เชี่ยวชาญของ Apple</h1>
+                    <p className="text-xl mt-4 mb-14 text-gray-600">ผลิตภัณฑ์ AppleCare มีตัวเลือกบริการด้านฮาร์ดแวร์เพิ่มเติมและการสนับสนุนด้านเทคนิคโดยผู้เชี่ยวชาญจาก Apple</p>
+                    <a className="text-xl " style={{ color: '#0070c9' }}>	ดูข้อมูลเกี่ยวกับแผน AppleCare{'>'}</a>
                 </div>
+
             </div>
             <hr />
             <div className="grid grid-cols-1 justify-items-center my-12 text-center">
                 <div>
                     <img src="assets/src_image/help/contentlink-warrantyandrepair_2x.png" className="object-scale-down w-64" />
                 </div>
-                <div className='w-7/12'>
+                <div className='mx-10 xl:w-7/12'>
                     <h1 className="text-5xl text-black font-medium my-4">การรับประกันและการซ่อมแซม</h1>
                     <a className="text-xl inline" style={{ color: '#0070c9' }}>ดูว่าผลิตภัณฑ์ Apple ของคุณเข้าเกณฑ์ </a>
                     <p className="text-xl text-gray-600 inline ">
@@ -135,7 +133,7 @@ const Help = () => {
                 <h1 className="text-3xl text-black  font-medium">โปรดระวังชิ้นส่วนของปลอม</h1>
             </div>
             <div className="grid grid-cols-1 justify-items-center my-12 text-center">
-                <div className='w-7/12'>
+                <div className='mx-10 xl:w-7/12'>
                     <p className="text-xl text-gray-600 inline ">
                         อะแดปเตอร์แปลงไฟและแบตเตอรี่ที่เป็นของปลอมหรือของผู้ให้บริการรายอื่นอาจไม่ได้รับการออกแบบมาอย่างเหมาะ
                         สมและสามารถส่งผลให้เกิดปัญหาด้านความปลอดภัยได้ เพื่อให้แน่ใจว่าคุณได้รับแบตเตอรี่ Apple ของแท้ในระหว่าง
@@ -150,20 +148,20 @@ const Help = () => {
                 </div>
             </div>
             <hr />
-            <div className="grid grid-cols-1  w-5/12 mx-auto my-12 xl:grid-cols-2 ">
-                <div className="flex flex-col mt-4 xl:pr-12 float-right">
-                    <h1 className="text-5xl text-black font-medium my-4">บริการช่วยเหลือของฉัน</h1>
-                    <p className="text-xl mt-4 text-gray-600">ตรวจสอบความคุ้มครองของบริการและการสนับสนุน และรับข้อมูลเกี่ยวกับผลิตภัณฑ์ Apple ของคุณได้ในที่เดียว</p>
-                    <a className="text-xl mt-14" style={{ color: '#0070c9' }}>	ดูข้อมูลเกี่ยวกับแผน AppleCare
-                        {'>'}</a>
+            <div className="grid grid-cols-1  mx-10 xl:w-5/12 xl:mx-auto my-12 xl:grid-cols-2">
+                <div className="mt-4 xl:pr-12">
+                    <h1 className="text-3xl text-black font-medium my-4 xl:text-5xl ">บริการช่วยเหลือของฉัน</h1>
+                    <p className="text-xl mt-4 mb-14 text-gray-600">ตรวจสอบความคุ้มครองของบริการและการสนับสนุน และรับข้อมูลเกี่ยวกับผลิตภัณฑ์ Apple ของคุณได้ในที่เดียว</p>
+                    <a className="text-xl " style={{ color: '#0070c9' }}>	ดูข้อมูลเกี่ยวกับแผน AppleCare{'>'}</a>
                 </div>
                 <div className="flex">
                     <img src="assets/src_image/help/featured-section-my-support_2x.jpg" className="object-scale-down " />
                 </div>
             </div>
             <hr />
-            <div className="grid grid-cols-1 justify-items-center my-12 ">
-                <div><h1 className="text-3xl text-black font-medium my-4">โปรแกรมการให้บริการของ Apple</h1>
+            <div className="grid grid-cols-1 justify-items-center my-12 mx-10">
+                <div>
+                    <h1 className="text-3xl text-black font-medium my-4">โปรแกรมการให้บริการของ Apple</h1>
                     <ul className="list-none space-y-4 ">
                         <li><a className="text-xl mt-14" style={{ color: '#0070c9' }}>	โปรแกรมการให้บริการสำหรับ iPhone 12 และ iPhone 12 Pro สำหรับปัญหาเครื่องในกรณีที่ไม่มีเสียง{'>'}</a></li>
                         <li><a className="text-xl mt-14" style={{ color: '#0070c9' }}>	โปรแกรมการเปลี่ยนโมดูลจอแสดงผล iPhone 11 สำหรับปัญหาเกี่ยวกับพื้นผิวระบบสัมผัส</a></li>
@@ -171,10 +169,8 @@ const Help = () => {
                         <li><a className="text-xl mt-14" style={{ color: '#0070c9' }}>	โปรแกรมการให้บริการ iPad Air (รุ่นที่ 3) สำหรับปัญหาหน้าจอว่างเปล่า</a></li>
                         <li><a className="text-xl mt-14" style={{ color: '#0070c9' }}>	โปรแกรมการเรียกคืนแบตเตอรี่ MacBook Pro รุ่น 15 นิ้ว</a></li>
                         <li><a className="text-xl mt-14" style={{ color: '#0070c9' }}>	ดูโปรแกรมทั้งหมด {'>'}</a></li>
-
-                    </ul></div>
-
-
+                    </ul>
+                </div>
             </div>
 
 
