@@ -27,7 +27,7 @@ const Iphone13Pro = () => {
       />
     </div>
   );
-}
+};
 
 const Iphone13 = () => {
   return (
@@ -57,13 +57,12 @@ const Iphone13 = () => {
       />
     </div>
   );
-}
+};
 
 const Watch = () => {
   return (
     <div className="pt-20 my-2 bg-iPhone13pro">
       <div className="text-center">
-
         <h2 className="text-4xl font-bold"> WATCH</h2>
         <p className="text-3l mt-0 text-red-600">SERIES 7</p>
         <p className="text-3xl mt-2">จัดเต็มแบบเต็มจอ</p>
@@ -82,10 +81,9 @@ const Watch = () => {
         className="block md:hidden mx-auto px-5 mt-10"
         style={{ maxWidth: '300px' }}
       />
-
     </div>
   );
-}
+};
 
 const IpadMini = () => {
   return (
@@ -110,7 +108,7 @@ const IpadMini = () => {
       />
     </div>
   );
-}
+};
 
 const Airtag = () => {
   return (
@@ -127,7 +125,7 @@ const Airtag = () => {
       />
     </div>
   );
-}
+};
 
 const IMac = () => {
   return (
@@ -144,7 +142,7 @@ const IMac = () => {
       />
     </div>
   );
-}
+};
 
 const Ipad = () => {
   return (
@@ -161,27 +159,30 @@ const Ipad = () => {
       />
     </div>
   );
-}
-
-
+};
 
 const Home = () => {
   return (
     <>
       <GlobalNavBar />
-
+      <div className="bg-gray-100">
+        <div className="max-w-screen-lg m-auto">
+          <p className="text-center text-sm px-5 py-3">
+            <span className="text-blue-600">เลือกซื้อสินค้าออนไลน์</span>{' '}
+            แล้วรับความช่วยเหลือจาก Specialist พร้อมบริการจัดส่งฟรีและอีกมากมาย
+          </p>
+        </div>
+      </div>
       <Iphone13Pro />
       <Iphone13 />
 
       <Watch />
 
       <div className="grid grid-cols-1 gap-2 md:grid-cols-2 text-center ">
-
         <IMac />
         <IpadMini />
         <Airtag />
         <Ipad />
-
       </div>
       <Footer />
     </>
