@@ -43,7 +43,7 @@ const Iphone13 = () => {
       </div>
       <div className="mt-5 text-center text-xl text-blue-600">
         <a className="mr-4">ดูเพิ่มเติม</a>
-        <a>ซื้อ</a>
+        <Link to="/iphone13">ซื้อ{'>'}</Link>
       </div>
       <img
         src="/assets/home_images/hero_iphone13.png"

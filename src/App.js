@@ -8,12 +8,16 @@ import Help from './pages/help';
 import QuestionBox from './components/QuestionBox';
 import CompareTest from './components/CompareTest';
 import Bag from './pages/Bag';
+import Iphone13 from './pages/Iphone13';
 
 const App = () => {
   return (
     <Switch>
       <Route path="/iphone13pro" exact>
         <Iphone13Pro />
+      </Route>
+      <Route path="/iphone13" exact>
+        <Iphone13 />
       </Route>
       <Route path="/help" exact>
         <Help />
@@ -27,7 +31,7 @@ const App = () => {
       <Route path="*">
         <GlobalNavBar />
         <p className="text-center">error 404</p>
-        <CompareTest/>
+        <CompareTest />
         {/* <QuestionBox/ > */}
       </Route>
     </Switch>
