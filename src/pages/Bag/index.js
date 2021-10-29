@@ -12,7 +12,7 @@ const Bag = () => {
   const [grandTotal, setGrandTotal] = useState(0);
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior:'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
   useEffect(() => {
@@ -76,26 +76,27 @@ const Bag = () => {
                         minimumFractionDigits: 2,
                         maximumFractionDigits: 2,
                       })}`}</p>
-                      
                     </div>
-                    
                   </div>
                   <div className="text-right">
                     <p className="text-sm text-gray-500">
-                        รวม VAT จำนวน{' '}
-                        {`฿${Number(grandTotal).toLocaleString('en', {
+                      รวม VAT จำนวน{' '}
+                      {`฿${Number((grandTotal / 1.07) * 0.07).toLocaleString(
+                        'en',
+                        {
                           minimumFractionDigits: 2,
                           maximumFractionDigits: 2,
-                        })}`}
-                      </p>
-                      <p className="text-sm text-blue-600 mt-1">
-                        {`฿${Number(grandTotal / 10).toLocaleString('en', {
-                          minimumFractionDigits: 2,
-                          maximumFractionDigits: 2,
-                        })}`}
-                        /เดือน เป็นเวลา 10 เดือน ดอกเบี้ย 0%
-                      </p>
-                    </div>
+                        }
+                      )}`}
+                    </p>
+                    <p className="text-sm text-blue-600 mt-1 hover:underline cursor-pointer">
+                      {`฿${Number(grandTotal / 10).toLocaleString('en', {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
+                      })}`}
+                      /เดือน เป็นเวลา 10 เดือน ดอกเบี้ย 0%
+                    </p>
+                  </div>
                   <AppleButton className="w-full md:w-1/2 p-3 text-lg block ml-auto mt-8 rounded-2xl">
                     ชำระเงิน
                   </AppleButton>
@@ -105,14 +106,16 @@ const Bag = () => {
           </div>
         </div>
         <div className="border-t border-gray-300">
-            <div className="max-w-screen-lg mx-auto px-5 py-5">
-              <p>
-                ต้องการความช่วยเหลือเพิ่มเติม{' '}
-                <span className="text-blue-600">แชท</span> หรือโทร{' '}
-                <span className="text-blue-600">001‑800‑65‑6957</span>
-              </p>
-            </div>
+          <div className="max-w-screen-lg mx-auto px-5 py-5">
+            <p>
+              ต้องการความช่วยเหลือเพิ่มเติม{' '}
+              <span className="text-blue-600 hover:underline cursor-pointer">
+                แชท
+              </span>{' '}
+              หรือโทร 001‑800‑65‑6957
+            </p>
           </div>
+        </div>
         <Footer />
       </>
     );

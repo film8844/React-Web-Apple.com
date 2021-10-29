@@ -40,7 +40,7 @@ const Item = (props) => {
               minimumFractionDigits: 2,
               maximumFractionDigits: 2,
             })}`}</p>
-            <span className="text-xl text-blue-600">ลบออก</span>
+            <span className="text-xl text-blue-600 hover:underline cursor-pointer">ลบออก</span>
           </div>
         </div>
       );
@@ -74,11 +74,11 @@ const Item = (props) => {
                 <li>ความคุ้มครองสำหรับ iPhone รวมถึงแบตเตอรี่</li>
                 <li>ความคุ้มครองด้านความเสียหายจากอุบัติเหตุ</li>
               </ul>
-              <span className="text-sm text-blue-600">ดูเพิ่มเติม</span>
+              <span className="text-sm text-blue-600 hover:underline cursor-pointer">ดูเพิ่มเติม</span>
             </div>
           </div>
           <div className="text-right">
-            <span className="text-xl text-blue-600">เพิ่ม</span>
+            <span className="text-xl text-blue-600 hover:underline cursor-pointer">เพิ่ม</span>
           </div>
         </div>
       );
@@ -108,7 +108,7 @@ const Item = (props) => {
                 minimumFractionDigits: 2,
                 maximumFractionDigits: 2,
               })}`}</p>
-              <span className="text-xl text-blue-600">ลบออก</span>
+              <span className="text-xl text-blue-600 hover:underline cursor-pointer">ลบออก</span>
             </div>
           </div>
         </div>
