@@ -46,9 +46,9 @@ const GlobalNavBar = (props) => {
           อุปกรณ์เสริม
         </a>
         <Link to="/help">
-          <a href="#" className="text-gray-300 hover:text-white">
+          <span className="text-gray-300 hover:text-white">
             บริการช่วยเหลือ
-          </a>
+          </span>
         </Link>
         <a href="#">
           <svg
