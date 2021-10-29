@@ -10,8 +10,9 @@ const Bag = () => {
   const { bag } = store;
 
   const [grandTotal, setGrandTotal] = useState(0);
+
   useEffect(() => {
-    window.scrollTo({ top: 0 });
+    window.scrollTo({ top: 0, behavior:'smooth' });
   }, []);
 
   useEffect(() => {

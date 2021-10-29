@@ -37,6 +37,10 @@ const Iphone13 = () => {
   const history = useHistory();
   const store = useStore();
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   const [price, setPrice] = useState(iphone13Price['mini']['128GB']);
   const [priceText, setPriceText] = useState('เริ่มต้นที่ ฿25,900');
   const [productImage, setProductImage] = useState('iphone13-hero.jpg');
@@ -60,21 +64,49 @@ const Iphone13 = () => {
         }
         break;
     }
+
+    const element = document.getElementById('variantColor');
+    const yOffset = -50;
+    const y =
+      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
   };
 
   const [variantColor, setVariantColor] = useState('');
   const handleChangeVariantColor = (event) => {
     setVariantColor(event.target.value);
     setProductImage(`iphone13-${variantType}-${event.target.value}.png`);
+
+    const element = document.getElementById('variantStorage');
+    const yOffset = -50;
+    const y =
+      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
   };
 
   const [variantStorage, setVariantStorage] = useState('');
   const handleChangeVariantStorage = (event) => {
     setVariantStorage(event.target.value);
+
+    setTimeout(() => {
+      const element = document.getElementById('variantAppleCare');
+      const yOffset = -50;
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }, 100);
   };
+
   const [variantAppleCare, setVariantAppleCare] = useState(null);
   const handleChangeVariantAppleCare = (event) => {
     setVariantAppleCare(event.target.value);
+
+    const element = document.getElementById('checkout');
+    const yOffset = -50;
+    const y =
+      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
   };
 
   useEffect(() => {
@@ -245,9 +277,7 @@ const Iphone13 = () => {
                     >
                       <div className="flex flex-row justify-between items-center">
                         <div>
-                          <p className="text-lg font-medium">
-                            iPhone 13
-                          </p>
+                          <p className="text-lg font-medium">iPhone 13</p>
                           <p className="text-sm">จอภาพขนาด 6.1 นิ้ว¹</p>
                         </div>
                         <span className="text-right">เริ่มต้นที่ ฿29,900</span>
@@ -365,9 +395,9 @@ const Iphone13 = () => {
                         <span className="text-sm">
                           ฿
                           {Number(
-                            iphone13Price[
-                              !!variantType ? variantType : 'mini'
-                            ]['128GB']
+                            iphone13Price[!!variantType ? variantType : 'mini'][
+                              '128GB'
+                            ]
                           ).toLocaleString('en', {
                             minimumFractionDigits: 2,
                             maximumFractionDigits: 2,
@@ -389,9 +419,9 @@ const Iphone13 = () => {
                         <span className="text-sm">
                           ฿
                           {Number(
-                            iphone13Price[
-                              !!variantType ? variantType : 'mini'
-                            ]['256GB']
+                            iphone13Price[!!variantType ? variantType : 'mini'][
+                              '256GB'
+                            ]
                           ).toLocaleString('en', {
                             minimumFractionDigits: 2,
                             maximumFractionDigits: 2,
@@ -413,9 +443,9 @@ const Iphone13 = () => {
                         <span className="text-sm">
                           ฿
                           {Number(
-                            iphone13Price[
-                              !!variantType ? variantType : 'mini'
-                            ]['512GB']
+                            iphone13Price[!!variantType ? variantType : 'mini'][
+                              '512GB'
+                            ]
                           ).toLocaleString('en', {
                             minimumFractionDigits: 2,
                             maximumFractionDigits: 2,
@@ -507,7 +537,8 @@ const Iphone13 = () => {
               </div>
             </div>
             <div
-              className={`p-5 mt-16 divide-y divide-gray-300 ${
+              id="checkout"
+              className={`p-5 pt-16 divide-y divide-gray-300 ${
                 !!variantStorage ? '' : 'hidden'
               }`}
             >
@@ -597,6 +628,12 @@ const Iphone13 = () => {
                     ></path>
                   </svg>
                 </div>
+                <p
+                  className="mt-14 text-center mx-auto"
+                  style={{ maxWidth: '350px' }}
+                >
+                  รายละเอียดการจัดส่งสำหรับพื้นที่ของคุณจะปรากฏในขั้นตอนการชำระเงิน
+                </p>
               </div>
             </div>
           </div>

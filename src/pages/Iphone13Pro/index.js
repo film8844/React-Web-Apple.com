@@ -39,6 +39,10 @@ const Iphone13Pro = () => {
   const history = useHistory();
   const store = useStore();
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   const [price, setPrice] = useState(iphone13proPrice['pro']['128GB']);
   const [priceText, setPriceText] = useState('เริ่มต้นที่ ฿38,900');
   const [productImage, setProductImage] = useState('iphone13pro-hero.png');
@@ -62,21 +66,48 @@ const Iphone13Pro = () => {
         }
         break;
     }
+
+    const element = document.getElementById('variantColor');
+    const yOffset = -50;
+    const y =
+      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
   };
 
   const [variantColor, setVariantColor] = useState('');
   const handleChangeVariantColor = (event) => {
     setVariantColor(event.target.value);
     setProductImage(`iphone13pro-${variantType}-${event.target.value}.png`);
+
+    const element = document.getElementById('variantStorage');
+    const yOffset = -50;
+    const y =
+      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
   };
 
   const [variantStorage, setVariantStorage] = useState('');
   const handleChangeVariantStorage = (event) => {
     setVariantStorage(event.target.value);
+
+    setTimeout(() => {
+      const element = document.getElementById('variantAppleCare');
+      const yOffset = -50;
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }, 100);
   };
   const [variantAppleCare, setVariantAppleCare] = useState(null);
   const handleChangeVariantAppleCare = (event) => {
     setVariantAppleCare(event.target.value);
+
+    const element = document.getElementById('checkout');
+    const yOffset = -50;
+    const y =
+      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
   };
 
   useEffect(() => {
@@ -519,7 +550,8 @@ const Iphone13Pro = () => {
               </div>
             </div>
             <div
-              className={`p-5 mt-16 divide-y divide-gray-300 ${
+              id="checkout"
+              className={`p-5 pt-16 divide-y divide-gray-300 ${
                 !!variantStorage ? '' : 'hidden'
               }`}
             >
@@ -609,6 +641,12 @@ const Iphone13Pro = () => {
                     ></path>
                   </svg>
                 </div>
+                <p
+                  className="mt-14 text-center mx-auto"
+                  style={{ maxWidth: '350px' }}
+                >
+                  รายละเอียดการจัดส่งสำหรับพื้นที่ของคุณจะปรากฏในขั้นตอนการชำระเงิน
+                </p>
               </div>
             </div>
           </div>
