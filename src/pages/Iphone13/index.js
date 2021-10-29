@@ -26,11 +26,11 @@ const iphone13Price = {
 };
 
 const colorNameTH = {
-  pink: 'ชมพู',
-  blue: 'น้ำเงิน',
-  midnight: 'มิดไนท์',
-  startlight: 'สตาร์ไลท์',
-  red: '(PRODUCT)RED',
+  pink: 'สีชมพู',
+  blue: 'สีน้ำเงิน',
+  midnight: 'สีมิดไนท์',
+  startlight: 'สีสตาร์ไลท์',
+  red: 'รุ่น (PRODUCT)RED',
 };
 
 const Iphone13 = () => {
@@ -109,7 +109,7 @@ const Iphone13 = () => {
       product: 'iphone13',
       name: `iPhone 13 ${
         variantType === 'mini' ? 'mini' : ''
-      } ความจุ ${variantStorage} สี${colorNameTH[variantColor]}`,
+      } ความจุ ${variantStorage} ${colorNameTH[variantColor]}`,
       shortName: `iPhone 13 Pro ${variantType === 'mini' ? 'mini' : ''}`,
       color: variantColor,
       type: variantType,
@@ -308,7 +308,7 @@ const Iphone13 = () => {
                     </VariantOption>
                     <VariantOption
                       variant="color"
-                      value="graphite"
+                      value="starlight"
                       selected={variantColor === 'starlight'}
                       onChange={handleChangeVariantColor}
                     >
