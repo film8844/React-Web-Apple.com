@@ -91,6 +91,7 @@ const Item = (props) => {
           style={{ maxWidth: '200px' }}
           className="mx-auto mb-5"
           src={`/assets/products/${item.product}/${item.product}-${item.type}-${item.color}.png`}
+          alt={item.name}
         />
       </div>
       <div className="col-span-3 divide-y divide-gray-300">
