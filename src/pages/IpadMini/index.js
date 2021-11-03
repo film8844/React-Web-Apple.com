@@ -43,23 +43,23 @@ const IpadMini = () => {
   const [productImage, setProductImage] = useState('ipadmini-family.jpeg');
 
   const [variantType, setVariantType] = useState('');
-  const handleChangeVariantType = type => {
+  const handleChangeVariantType = (type) => {
     setVariantType(type);
   };
 
   const [variantColor, setVariantColor] = useState('');
-  const handleChangeVariantColor = color => {
+  const handleChangeVariantColor = (color) => {
     setVariantColor(color);
     setProductImage(`ipadmini-${color}.png`);
   };
 
   const [variantStorage, setVariantStorage] = useState('');
-  const handleChangeVariantStorage = storage => {
+  const handleChangeVariantStorage = (storage) => {
     setVariantStorage(storage);
   };
 
   const [variantEngraving, setVariantEngraving] = useState('');
-  const handleChangeVariantEngraving = engraving => {
+  const handleChangeVariantEngraving = (engraving) => {
     setVariantEngraving(engraving);
     setTimeout(() => {
       const element = document.getElementById('checkout');
@@ -146,7 +146,7 @@ const IpadMini = () => {
                 alt="iPad mini"
                 className="block mx-auto md:mt-14 mb-5"
               />
-              <div className="mt-20 grid grid-cols-3 gap-3 mb-5">
+              <div className="mt-20 grid grid-cols-3 gap-3 mb-5 text-center">
                 <div className="flex flex-col items-center">
                   <svg
                     viewBox="0 0 35 35"
@@ -391,14 +391,14 @@ const IpadMini = () => {
 
 export default IpadMini;
 
-const VariantColorSelection = props => {
+const VariantColorSelection = (props) => {
   const [show, setShow] = useState(true);
   const toggleShow = () => {
     setShow(!show);
   };
   const { variantColor, onChange } = props;
 
-  const handleChangeVariantColor = event => {
+  const handleChangeVariantColor = (event) => {
     onChange(event.target.value);
     toggleShow();
   };
@@ -408,11 +408,15 @@ const VariantColorSelection = props => {
       <>
         <div className="mt-5"></div>
         <button onClick={toggleShow} className="block w-full">
-        <div className="py-5 flex justify-between items-center hover:text-blue-600">
-          <h4 className="text-2xl font-medium">{colorNameTH[variantColor]}</h4>
-          <span className="text-sm text-blue-600 hover:underline">เปลี่ยน</span>
-        </div>
-      </button>
+          <div className="py-5 flex justify-between items-center hover:text-blue-600">
+            <h4 className="text-2xl font-medium">
+              {colorNameTH[variantColor]}
+            </h4>
+            <span className="text-sm text-blue-600 hover:underline">
+              เปลี่ยน
+            </span>
+          </div>
+        </button>
       </>
     );
   } else {
@@ -484,13 +488,13 @@ const VariantColorSelection = props => {
   }
 };
 
-const VariantStorageSelection = props => {
+const VariantStorageSelection = (props) => {
   const [show, setShow] = useState(true);
   const toggleShow = () => {
     setShow(!show);
   };
   const { variantStorage, onChange, allowSelect } = props;
-  const handleChangeVariantStorage = event => {
+  const handleChangeVariantStorage = (event) => {
     onChange(event.target.value);
     toggleShow();
   };
@@ -551,14 +555,14 @@ const VariantStorageSelection = props => {
   }
 };
 
-const VariantTypeSelection = props => {
+const VariantTypeSelection = (props) => {
   const [show, setShow] = useState(true);
   const toggleShow = () => {
     setShow(!show);
   };
   const { variantStorage, variantType, onChange, allowSelect } = props;
 
-  const handleChangeVariantType = event => {
+  const handleChangeVariantType = (event) => {
     onChange(event.target.value);
     toggleShow();
   };
@@ -635,14 +639,14 @@ const VariantTypeSelection = props => {
   }
 };
 
-const VariantEngravingSelection = props => {
+const VariantEngravingSelection = (props) => {
   const [show, setShow] = useState(true);
   const toggleShow = () => {
     setShow(!show);
   };
   const { variantEngraving, onChange, allowSelect } = props;
 
-  const handleChangeVariantEngraving = event => {
+  const handleChangeVariantEngraving = (event) => {
     onChange(event.target.value);
     toggleShow();
   };
