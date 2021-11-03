@@ -4,7 +4,7 @@ const VariantSelection = (props) => {
   return (
     <div
       id={props.id}
-      className={`mt-5 pt-5 relative ${props.hidden ? 'hidden' : ''}`}
+      className={`py-5 relative ${props.hidden ? 'hidden' : ''}`}
     >
       <div
         className={`${
