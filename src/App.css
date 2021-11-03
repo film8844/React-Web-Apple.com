@@ -4,6 +4,10 @@
   font-family: 'IBM Plex Sans Thai', sans-serif;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }
