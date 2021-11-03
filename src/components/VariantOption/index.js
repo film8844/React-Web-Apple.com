@@ -13,7 +13,7 @@ const VariantOption = (props) => {
         id={`varaint-${variant}-${value}`}
         value={value}
         name={`variant-${variant}`}
-        onChange={handleChangeVariant}
+        onClick={handleChangeVariant}
         className="hidden"
         checked={selected}
       />
