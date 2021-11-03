@@ -90,7 +90,7 @@ const Item = (props) => {
         <img
           style={{ maxWidth: '200px' }}
           className="mx-auto mb-5"
-          src={`/assets/products/${item.product}/${item.product}-${item.type}-${item.color}.png`}
+          src={item.image}
           alt={item.name}
         />
       </div>
