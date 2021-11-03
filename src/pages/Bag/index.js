@@ -147,8 +147,8 @@ const Bag = () => {
             <div className="max-w-screen-lg mx-auto px-5 py-5">
               <p>
                 ต้องการความช่วยเหลือเพิ่มเติม{' '}
-                <span className="text-blue-600">แชท</span> หรือโทร{' '}
-                <span className="text-blue-600">001‑800‑65‑6957</span>
+                <span className="text-blue-600">แชท</span> หรือโทร
+                001‑800‑65‑6957
               </p>
             </div>
           </div>
