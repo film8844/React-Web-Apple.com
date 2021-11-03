@@ -12,7 +12,7 @@ import VariantSelection from "../../components/VariantSelection";
 import WhatsInTheBox from "./WhatsInTheBox";
 import AppleButton from "../../components/AppleButton";
 
-const ipadMiniPrice = {
+const ipadminiPrice = {
   wifi: {
     "64GB": 17900,
     "256GB": 23400,
@@ -38,7 +38,7 @@ const IpadMini = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
-  const [price, setPrice] = useState(ipadMiniPrice["wifi"]["64GB"]);
+  const [price, setPrice] = useState(ipadminiPrice["wifi"]["64GB"]);
   const [priceText, setPriceText] = useState("เริ่มต้นที่ ฿17,900");
   const [productImage, setProductImage] = useState("ipadmini-family.jpeg");
 
@@ -96,10 +96,10 @@ const IpadMini = () => {
     let calPrice;
     if (!variantType) {
       calPrice =
-        ipadMiniPrice["wifi"][!!variantStorage ? variantStorage : "64GB"];
+        ipadminiPrice["wifi"][!!variantStorage ? variantStorage : "64GB"];
       setPriceText(`เริ่มต้นที่ ฿${Number(calPrice).toLocaleString("en")}`);
     } else {
-      calPrice = ipadMiniPrice[variantType][variantStorage];
+      calPrice = ipadminiPrice[variantType][variantStorage];
       if (variantAppleCare) {
         calPrice += 2590;
       }
@@ -129,7 +129,7 @@ const IpadMini = () => {
       appleCare: variantAppleCare,
       appleCareCost: 2590,
       price: price,
-      image: `/assets/products/ipadmini/${productImage}`
+      image: `/assets/products/ipadmini/${productImage}`,
     };
     setBag([...bag, product]);
     history.push("/bag");
@@ -326,7 +326,7 @@ const IpadMini = () => {
                         </p>
                         <span className="text-xs">
                           เริ่มต้นที่ ฿
-                          {Number(ipadMiniPrice["wifi"]["64GB"]).toLocaleString(
+                          {Number(ipadminiPrice["wifi"]["64GB"]).toLocaleString(
                             "en"
                           )}
                         </span>
@@ -346,7 +346,7 @@ const IpadMini = () => {
                         <span className="text-xs">
                           เริ่มต้นที่ ฿
                           {Number(
-                            ipadMiniPrice["wifi"]["256GB"]
+                            ipadminiPrice["wifi"]["256GB"]
                           ).toLocaleString("en")}
                         </span>
                       </div>
@@ -379,13 +379,13 @@ const IpadMini = () => {
                         <span className="text-xs">
                           {!!variantStorage
                             ? `฿${Number(
-                                ipadMiniPrice["wifi"][variantStorage]
+                                ipadminiPrice["wifi"][variantStorage]
                               ).toLocaleString("en", {
                                 minimumFractionDigits: 2,
                                 maximumFractionDigits: 2,
                               })}`
                             : `เริ่มต้นที่ ฿${Number(
-                                ipadMiniPrice["wifi"]["64GB"]
+                                ipadminiPrice["wifi"]["64GB"]
                               ).toLocaleString("en")}`}
                         </span>
                       </div>
@@ -405,13 +405,13 @@ const IpadMini = () => {
                         <span className="text-xs">
                           {!!variantStorage
                             ? `฿${Number(
-                                ipadMiniPrice["cellular"][variantStorage]
+                                ipadminiPrice["cellular"][variantStorage]
                               ).toLocaleString("en", {
                                 minimumFractionDigits: 2,
                                 maximumFractionDigits: 2,
                               })}`
                             : `เริ่มต้นที่ ฿${Number(
-                                ipadMiniPrice["cellular"]["64GB"]
+                                ipadminiPrice["cellular"]["64GB"]
                               ).toLocaleString("en")}`}
                         </span>
                       </div>

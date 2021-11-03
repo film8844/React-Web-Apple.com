@@ -9,37 +9,29 @@ const WhatsInTheBox = () => {
       <div className="flex flex-row flex-wrap justify-center gap-20 mb-16">
         <div className="text-center">
           <img
-            src="/assets/whatsInTheBox/iphone13pro.jpg"
+            src="/assets/whatsInTheBox/ipadmini.jfif"
             className="mb-5 mx-auto"
-            style={{ maxHeight: '340px' }}
+            style={{ maxHeight: '300px' }}
           />
-          <span>iPhone</span>
+          <span>iPad mini</span>
         </div>
         <div className="text-center">
           <img
-            src="/assets/whatsInTheBox/typectolightningcable.jpg"
+            src="/assets/whatsInTheBox/typeccable.jfif"
             className="mb-5 mx-auto"
-            style={{ maxHeight: '340px' }}
+            style={{ maxHeight: '300px' }}
           />
-          <span>สาย USB-C เป็น ​Lightning</span>
+          <span>สายชาร์จ USB-C</span>
+        </div>
+        <div className="text-center">
+          <img
+            src="/assets/whatsInTheBox/ipadmini-power.jfif"
+            className="mb-5 mx-auto"
+            style={{ maxHeight: '300px' }}
+          />
+          <span>อะแดปเตอร์แปลงไฟ USB-C ขนาด 20 วัตต์</span>
         </div>
       </div>
-      <p className="text-sm text-center mt-10 text-gray-600">
-        iPhone 13 Pro และ iPhone 13 Pro Max ไม่มีอะแดปเตอร์แปลงไฟหรือ EarPods
-        ให้มาด้วย{' '}
-        <span className="text-blue-500">
-          ซึ่งเป็นส่วนหนึ่งในความพยายามของเราที่จะลดผลกระทบต่อสิ่งแวดล้อม
-        </span>{' '}
-        สิ่งที่มีมาให้ในกล่องได้แก่สาย USB‑C เป็น Lightning
-        ที่รองรับการชาร์จเร็วและใช้งานได้กับอะแดปเตอร์แปลงไฟ USB-C
-        รวมถึงพอร์ตคอมพิวเตอร์ต่างๆ <br />
-        <br />
-        เราส่งเสริมให้คุณใช้ซ้ำสาย USB‑A เป็น Lightning
-        รวมถึงอะแดปเตอร์แปลงไฟและหูฟังที่คุณมีอยู่แล้วในตอนนี้
-        ซึ่งสามารถใช้งานได้กับ iPhone รุ่นต่างๆ เหล่านี้
-        แต่หากคุณต้องการอะแดปเตอร์แปลงไฟหรือหูุฟังของ Apple อันใหม่
-        ก็มีวางจำหน่ายให้เลือกซื้อได้
-      </p>
     </div>
   );
 };

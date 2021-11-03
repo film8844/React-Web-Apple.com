@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Item = (props) => {
   const { item } = props;
@@ -15,7 +15,7 @@ const Item = (props) => {
         <div className="pt-5 flex justify-between gap-2 mb-5">
           <div className="flex">
             <div className="pt-1 mr-2">
-            <svg width="18px" height="18px" viewBox="0 0 256 315">
+              <svg width="18px" height="18px" viewBox="0 0 256 315">
                 <g>
                   <path
                     d="M213.803394,167.030943 C214.2452,214.609646 255.542482,230.442639 256,230.644727 C255.650812,231.761357 249.401383,253.208293 234.24263,275.361446 C221.138555,294.513969 207.538253,313.596333 186.113759,313.991545 C165.062051,314.379442 158.292752,301.507828 134.22469,301.507828 C110.163898,301.507828 102.642899,313.596301 82.7151126,314.379442 C62.0350407,315.16201 46.2873831,293.668525 33.0744079,274.586162 C6.07529317,235.552544 -14.5576169,164.286328 13.147166,116.18047 C26.9103111,92.2909053 51.5060917,77.1630356 78.2026125,76.7751096 C98.5099145,76.3877456 117.677594,90.4371851 130.091705,90.4371851 C142.497945,90.4371851 165.790755,73.5415029 190.277627,76.0228474 C200.528668,76.4495055 229.303509,80.1636878 247.780625,107.209389 C246.291825,108.132333 213.44635,127.253405 213.803394,167.030988 M174.239142,50.1987033 C185.218331,36.9088319 192.607958,18.4081019 190.591988,0 C174.766312,0.636050225 155.629514,10.5457909 144.278109,23.8283506 C134.10507,35.5906758 125.195775,54.4170275 127.599657,72.4607932 C145.239231,73.8255433 163.259413,63.4970262 174.239142,50.1987249"
@@ -36,11 +36,13 @@ const Item = (props) => {
           <div className="text-right">
             <p className="text-xl font-medium">{`฿${Number(
               item.appleCareCost
-            ).toLocaleString('en', {
+            ).toLocaleString("en", {
               minimumFractionDigits: 2,
               maximumFractionDigits: 2,
             })}`}</p>
-            <span className="text-xl text-blue-600 hover:underline cursor-pointer">ลบออก</span>
+            <span className="text-xl text-blue-600 hover:underline cursor-pointer">
+              ลบออก
+            </span>
           </div>
         </div>
       );
@@ -60,8 +62,8 @@ const Item = (props) => {
             </div>
             <div>
               <p className="text-lg font-medium">
-                เพิ่ม AppleCare+ สำหรับ {item.shortName} ในราคา{' '}
-                {`฿${Number(item.appleCareCost).toLocaleString('en', {
+                เพิ่ม AppleCare+ สำหรับ {item.shortName} ในราคา{" "}
+                {`฿${Number(item.appleCareCost).toLocaleString("en", {
                   minimumFractionDigits: 2,
                   maximumFractionDigits: 2,
                 })}`}
@@ -74,11 +76,15 @@ const Item = (props) => {
                 <li>ความคุ้มครองสำหรับ iPhone รวมถึงแบตเตอรี่</li>
                 <li>ความคุ้มครองด้านความเสียหายจากอุบัติเหตุ</li>
               </ul>
-              <span className="text-sm text-blue-600 hover:underline cursor-pointer">ดูเพิ่มเติม</span>
+              <span className="text-sm text-blue-600 hover:underline cursor-pointer">
+                ดูเพิ่มเติม
+              </span>
             </div>
           </div>
           <div className="text-right">
-            <span className="text-xl text-blue-600 hover:underline cursor-pointer">เพิ่ม</span>
+            <span className="text-xl text-blue-600 hover:underline cursor-pointer">
+              เพิ่ม
+            </span>
           </div>
         </div>
       );
@@ -88,7 +94,7 @@ const Item = (props) => {
     <div className="pt-20 mb-20 grid grid-cols-1 md:grid-cols-4">
       <div>
         <img
-          style={{ maxWidth: '200px' }}
+          style={{ maxWidth: "200px" }}
           className="mx-auto mb-5"
           src={item.image}
           alt={item.name}
@@ -104,20 +110,22 @@ const Item = (props) => {
             <div className="text-right">
               <p className="text-2xl font-medium">{`฿${Number(
                 price
-              ).toLocaleString('en', {
+              ).toLocaleString("en", {
                 minimumFractionDigits: 2,
                 maximumFractionDigits: 2,
               })}`}</p>
-              <span className="text-xl text-blue-600 hover:underline cursor-pointer">ลบออก</span>
+              <span className="text-xl text-blue-600 hover:underline cursor-pointer">
+                ลบออก
+              </span>
             </div>
           </div>
         </div>
         {AppleCare()}
         <div className="pt-5">
           <p className="text-lg font-medium">
-            ดูว่าคุณจะได้รับสินค้ารายการนี้เร็วที่สุดเมื่อไหร่{' '}
+            ดูว่าคุณจะได้รับสินค้ารายการนี้เร็วที่สุดเมื่อไหร่{" "}
             <span className="font-normal text-blue-600">
-              โปรดระบุรหัสไปรษณีย์ v
+              โปรดระบุรหัสไปรษณีย์{" "}
             </span>
           </p>
           <div className="mt-1 grid grid-cols-2">

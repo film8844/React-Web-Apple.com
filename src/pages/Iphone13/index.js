@@ -149,6 +149,7 @@ const Iphone13 = () => {
       appleCare: variantAppleCare === '1',
       appleCareCost: 5990,
       price: price,
+      image: `/assets/products/iphone13/${productImage}`
     };
     setBag([...bag, product]);
     history.push('/bag');
