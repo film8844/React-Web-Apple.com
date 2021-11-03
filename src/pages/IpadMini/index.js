@@ -43,48 +43,31 @@ const IpadMini = () => {
   const [productImage, setProductImage] = useState('ipadmini-family.jpeg');
 
   const [variantType, setVariantType] = useState('');
-  const handleChangeVariantType = async event => {
-    setVariantType(event.target.value);
-
-    const element = document.getElementById('variantEngraving');
-    const yOffset = -50;
-    const y =
-      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: 'smooth' });
+  const handleChangeVariantType = type => {
+    setVariantType(type);
   };
 
   const [variantColor, setVariantColor] = useState('');
-  const handleChangeVariantColor = event => {
-    setVariantColor(event.target.value);
-    setProductImage(`ipadmini-${event.target.value}.png`);
-
-    const element = document.getElementById('variantStorage');
-    const yOffset = -50;
-    const y =
-      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: 'smooth' });
+  const handleChangeVariantColor = color => {
+    setVariantColor(color);
+    setProductImage(`ipadmini-${color}.png`);
   };
 
   const [variantStorage, setVariantStorage] = useState('');
-  const handleChangeVariantStorage = event => {
-    setVariantStorage(event.target.value);
-
-    const element = document.getElementById('variantType');
-    const yOffset = -50;
-    const y =
-      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: 'smooth' });
+  const handleChangeVariantStorage = storage => {
+    setVariantStorage(storage);
   };
 
-  const [variantEngraving, setVariantEngraving] = useState(null);
-  const handleChangeVariantEngraving = event => {
-    setVariantEngraving(event.target.value);
-
-    const element = document.getElementById('checkout');
-    const yOffset = -50;
-    const y =
-      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: 'smooth' });
+  const [variantEngraving, setVariantEngraving] = useState('');
+  const handleChangeVariantEngraving = engraving => {
+    setVariantEngraving(engraving);
+    setTimeout(() => {
+      const element = document.getElementById('checkout');
+      const yOffset = -50;
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }, 100);
   };
 
   const [variantAppleCare, setVariantAppleCare] = useState(false);
@@ -220,225 +203,26 @@ const IpadMini = () => {
                 <h1 className="text-4xl font-semibold">ซื้อ iPad mini</h1>
               </div>
               <div className="divide-y divide-gray-300">
-                <VariantSelection id="variantColor" allowSelect={true}>
-                  <div className="mb-2">
-                    <h4 className="text-xl font-bold">สี</h4>
-                  </div>
-                  <div
-                    id="variantColorOptions"
-                    className="grid grid-cols-2 gap-3"
-                  >
-                    <VariantOption
-                      variant="color"
-                      value="spacegray"
-                      selected={variantColor === 'spacegray'}
-                      onChange={handleChangeVariantColor}
-                    >
-                      <img
-                        src="/assets/productVariantColors/ipadmini/spacegray.png"
-                        alt="variant-color-spacegray"
-                        style={{ maxWidth: '32px' }}
-                        className="block mx-auto"
-                      />
-                      <p className="mt-2 text-center text-sm">เทาสเปซเกรย์</p>
-                    </VariantOption>
-                    <VariantOption
-                      variant="color"
-                      value="pink"
-                      selected={variantColor === 'pink'}
-                      onChange={handleChangeVariantColor}
-                    >
-                      <img
-                        src="/assets/productVariantColors/ipadmini/pink.png"
-                        alt="variant-color-pink"
-                        style={{ maxWidth: '32px' }}
-                        className="block mx-auto"
-                      />
-                      <p className="mt-2 text-center text-sm">ชมพู</p>
-                    </VariantOption>
-                    <VariantOption
-                      variant="color"
-                      value="purple"
-                      selected={variantColor === 'purple'}
-                      onChange={handleChangeVariantColor}
-                    >
-                      <img
-                        src="/assets/productVariantColors/ipadmini/purple.png"
-                        alt="variant-color-purple"
-                        style={{ maxWidth: '32px' }}
-                        className="block mx-auto"
-                      />
-                      <p className="mt-2 text-center text-sm">ม่วง</p>
-                    </VariantOption>
-                    <VariantOption
-                      variant="color"
-                      value="starlight"
-                      selected={variantColor === 'starlight'}
-                      onChange={handleChangeVariantColor}
-                    >
-                      <img
-                        src="/assets/productVariantColors/ipadmini/starlight.png"
-                        alt="variant-color-starlight"
-                        style={{ maxWidth: '32px' }}
-                        className="block mx-auto"
-                      />
-                      <p className="mt-2 text-center text-sm">สตาร์ไลท์</p>
-                    </VariantOption>
-                  </div>
-                </VariantSelection>
-
-                <VariantSelection
-                  id="variantStorage"
+                <VariantColorSelection
+                  variantColor={variantColor}
+                  onChange={handleChangeVariantColor}
+                />
+                <VariantStorageSelection
                   allowSelect={!!variantColor}
-                >
-                  <div className="mb-2">
-                    <h4 className="text-xl font-semibold">
-                      พื้นที่จัดเก็บข้อมูล
-                    </h4>
-                    <span className="text-blue-600">
-                      ความจุเท่าไหร่ที่เหมาะกับคุณ
-                    </span>
-                  </div>
-                  <div
-                    id="variantStorageOptions"
-                    className="grid grid-cols-2 gap-3"
-                  >
-                    <VariantOption
-                      variant="storage"
-                      value="64GB"
-                      selected={variantStorage === '64GB'}
-                      onChange={handleChangeVariantStorage}
-                    >
-                      <div className="flex flex-col text-center py-1">
-                        <p>
-                          <span className="text-3xl">64</span>
-                          <span className="font-medium text-lg">GB¹</span>
-                        </p>
-                        <span className="text-xs">
-                          เริ่มต้นที่ ฿
-                          {Number(ipadminiPrice['wifi']['64GB']).toLocaleString(
-                            'en'
-                          )}
-                        </span>
-                      </div>
-                    </VariantOption>
-                    <VariantOption
-                      variant="storage"
-                      value="256GB"
-                      selected={variantStorage === '256GB'}
-                      onChange={handleChangeVariantStorage}
-                    >
-                      <div className="flex flex-col text-center py-1">
-                        <p>
-                          <span className="text-3xl">256</span>
-                          <span className="font-medium text-lg">GB¹</span>
-                        </p>
-                        <span className="text-xs">
-                          เริ่มต้นที่ ฿
-                          {Number(
-                            ipadminiPrice['wifi']['256GB']
-                          ).toLocaleString('en')}
-                        </span>
-                      </div>
-                    </VariantOption>
-                  </div>
-                </VariantSelection>
-
-                <VariantSelection
-                  id="variantType"
+                  variantStorage={variantStorage}
+                  onChange={handleChangeVariantStorage}
+                />
+                <VariantTypeSelection
                   allowSelect={!!variantStorage}
-                >
-                  <div className="mb-2">
-                    <h4 className="text-xl font-bold">การเชื่อมต่อ</h4>
-                    <span className="text-blue-600">รุ่นไหนเหมาะกับคุณ</span>
-                  </div>
-                  <div
-                    id="variantTypeOptions"
-                    className="grid grid-cols-2 gap-3"
-                  >
-                    <VariantOption
-                      variant="type"
-                      value="wifi"
-                      selected={variantType === 'wifi'}
-                      onChange={handleChangeVariantType}
-                    >
-                      <div className="flex flex-col text-center py-1">
-                        <p>
-                          <span className="font-medium text-lg">Wi-Fi</span>
-                        </p>
-                        <span className="text-xs">
-                          {!!variantStorage
-                            ? `฿${Number(
-                                ipadminiPrice['wifi'][variantStorage]
-                              ).toLocaleString('en', {
-                                minimumFractionDigits: 2,
-                                maximumFractionDigits: 2,
-                              })}`
-                            : `เริ่มต้นที่ ฿${Number(
-                                ipadminiPrice['wifi']['64GB']
-                              ).toLocaleString('en')}`}
-                        </span>
-                      </div>
-                    </VariantOption>
-                    <VariantOption
-                      variant="type"
-                      value="cellular"
-                      selected={variantType === 'cellular'}
-                      onChange={handleChangeVariantType}
-                    >
-                      <div className="flex flex-col text-center py-1">
-                        <p>
-                          <span className="font-medium text-lg">
-                            Wi-Fi + Cellular
-                          </span>
-                        </p>
-                        <span className="text-xs">
-                          {!!variantStorage
-                            ? `฿${Number(
-                                ipadminiPrice['cellular'][variantStorage]
-                              ).toLocaleString('en', {
-                                minimumFractionDigits: 2,
-                                maximumFractionDigits: 2,
-                              })}`
-                            : `เริ่มต้นที่ ฿${Number(
-                                ipadminiPrice['cellular']['64GB']
-                              ).toLocaleString('en')}`}
-                        </span>
-                      </div>
-                    </VariantOption>
-                  </div>
-                </VariantSelection>
-                <VariantSelection
-                  id="variantEngraving"
+                  variantType={variantType}
+                  variantStorage={variantStorage}
+                  onChange={handleChangeVariantType}
+                />
+                <VariantEngravingSelection
                   allowSelect={!!variantType}
-                >
-                  <div className="mb-5">
-                    <h4 className="text-lg font-bold">
-                      ใส่ความเป็นคุณบนอุปกรณ์
-                    </h4>
-                  </div>
-                  <div id="varaintEngravingOptions" className="space-y-3">
-                    <VariantOption
-                      variant="engraving"
-                      value="0"
-                      selected={variantEngraving === '0'}
-                      onChange={handleChangeVariantEngraving}
-                    >
-                      <div className="flex justify-between">
-                        <p className="text-lg font-semibold">เพิ่มการสลัก</p>
-                        <p className="text-lg">ฟรี</p>
-                      </div>
-                    </VariantOption>
-                    <VariantOption
-                      variant="engraving"
-                      value="1"
-                      selected={variantEngraving === '1'}
-                      onChange={handleChangeVariantEngraving}
-                    >
-                      <p className="text-lg font-semibold">ไม่สลัก</p>
-                    </VariantOption>
-                  </div>
-                </VariantSelection>
+                  variantEngraving={variantEngraving}
+                  onChange={handleChangeVariantEngraving}
+                />
               </div>
             </div>
             <div id="checkout" className="p-5 pt-16 divide-y">
@@ -606,3 +390,301 @@ const IpadMini = () => {
 };
 
 export default IpadMini;
+
+const VariantColorSelection = props => {
+  const [show, setShow] = useState(true);
+  const toggleShow = () => {
+    setShow(!show);
+  };
+  const { variantColor, onChange } = props;
+
+  const handleChangeVariantColor = event => {
+    onChange(event.target.value);
+    toggleShow();
+  };
+
+  if (!show) {
+    return (
+      <>
+        <div className="mt-5"></div>
+        <button onClick={toggleShow} className="block w-full">
+        <div className="py-5 flex justify-between items-center hover:text-blue-600">
+          <h4 className="text-2xl font-medium">{colorNameTH[variantColor]}</h4>
+          <span className="text-sm text-blue-600 hover:underline">เปลี่ยน</span>
+        </div>
+      </button>
+      </>
+    );
+  } else {
+    return (
+      <VariantSelection id="variantColor" allowSelect={true}>
+        <div className="mb-2">
+          <h4 className="text-xl font-bold">สี</h4>
+        </div>
+        <div id="variantColorOptions" className="grid grid-cols-2 gap-3">
+          <VariantOption
+            variant="color"
+            value="spacegray"
+            selected={variantColor === 'spacegray'}
+            onChange={handleChangeVariantColor}
+          >
+            <img
+              src="/assets/productVariantColors/ipadmini/spacegray.png"
+              alt="variant-color-spacegray"
+              style={{ maxWidth: '32px' }}
+              className="block mx-auto"
+            />
+            <p className="mt-2 text-center text-sm">เทาสเปซเกรย์</p>
+          </VariantOption>
+          <VariantOption
+            variant="color"
+            value="pink"
+            selected={variantColor === 'pink'}
+            onChange={handleChangeVariantColor}
+          >
+            <img
+              src="/assets/productVariantColors/ipadmini/pink.png"
+              alt="variant-color-pink"
+              style={{ maxWidth: '32px' }}
+              className="block mx-auto"
+            />
+            <p className="mt-2 text-center text-sm">ชมพู</p>
+          </VariantOption>
+          <VariantOption
+            variant="color"
+            value="purple"
+            selected={variantColor === 'purple'}
+            onChange={handleChangeVariantColor}
+          >
+            <img
+              src="/assets/productVariantColors/ipadmini/purple.png"
+              alt="variant-color-purple"
+              style={{ maxWidth: '32px' }}
+              className="block mx-auto"
+            />
+            <p className="mt-2 text-center text-sm">ม่วง</p>
+          </VariantOption>
+          <VariantOption
+            variant="color"
+            value="starlight"
+            selected={variantColor === 'starlight'}
+            onChange={handleChangeVariantColor}
+          >
+            <img
+              src="/assets/productVariantColors/ipadmini/starlight.png"
+              alt="variant-color-starlight"
+              style={{ maxWidth: '32px' }}
+              className="block mx-auto"
+            />
+            <p className="mt-2 text-center text-sm">สตาร์ไลท์</p>
+          </VariantOption>
+        </div>
+      </VariantSelection>
+    );
+  }
+};
+
+const VariantStorageSelection = props => {
+  const [show, setShow] = useState(true);
+  const toggleShow = () => {
+    setShow(!show);
+  };
+  const { variantStorage, onChange, allowSelect } = props;
+  const handleChangeVariantStorage = event => {
+    onChange(event.target.value);
+    toggleShow();
+  };
+  if (!show) {
+    return (
+      <button onClick={toggleShow} className="block w-full">
+        <div className="py-5 flex justify-between items-center hover:text-blue-600">
+          <h4 className="text-2xl font-medium">{variantStorage}¹</h4>
+          <span className="text-sm text-blue-600 hover:underline">เปลี่ยน</span>
+        </div>
+      </button>
+    );
+  } else {
+    return (
+      <VariantSelection id="variantStorage" allowSelect={allowSelect}>
+        <div className="mb-2">
+          <h4 className="text-xl font-semibold">พื้นที่จัดเก็บข้อมูล</h4>
+          <span className="text-blue-600">ความจุเท่าไหร่ที่เหมาะกับคุณ</span>
+        </div>
+        <div id="variantStorageOptions" className="grid grid-cols-2 gap-3">
+          <VariantOption
+            variant="storage"
+            value="64GB"
+            selected={variantStorage === '64GB'}
+            onChange={handleChangeVariantStorage}
+          >
+            <div className="flex flex-col text-center py-1">
+              <p>
+                <span className="text-3xl">64</span>
+                <span className="font-medium text-lg">GB¹</span>
+              </p>
+              <span className="text-xs">
+                เริ่มต้นที่ ฿
+                {Number(ipadminiPrice['wifi']['64GB']).toLocaleString('en')}
+              </span>
+            </div>
+          </VariantOption>
+          <VariantOption
+            variant="storage"
+            value="256GB"
+            selected={variantStorage === '256GB'}
+            onChange={handleChangeVariantStorage}
+          >
+            <div className="flex flex-col text-center py-1">
+              <p>
+                <span className="text-3xl">256</span>
+                <span className="font-medium text-lg">GB¹</span>
+              </p>
+              <span className="text-xs">
+                เริ่มต้นที่ ฿
+                {Number(ipadminiPrice['wifi']['256GB']).toLocaleString('en')}
+              </span>
+            </div>
+          </VariantOption>
+        </div>
+      </VariantSelection>
+    );
+  }
+};
+
+const VariantTypeSelection = props => {
+  const [show, setShow] = useState(true);
+  const toggleShow = () => {
+    setShow(!show);
+  };
+  const { variantStorage, variantType, onChange, allowSelect } = props;
+
+  const handleChangeVariantType = event => {
+    onChange(event.target.value);
+    toggleShow();
+  };
+  if (!show) {
+    return (
+      <button onClick={toggleShow} className="block w-full">
+        <div className="py-5 flex justify-between items-center hover:text-blue-600">
+          <h4 className="text-2xl font-medium">
+            {variantType === 'wifi' ? 'Wi-Fi' : 'Wi-Fi + Cellular'}
+          </h4>
+          <span className="text-sm text-blue-600 hover:underline">เปลี่ยน</span>
+        </div>
+      </button>
+    );
+  } else {
+    return (
+      <VariantSelection id="variantType" allowSelect={allowSelect}>
+        <div className="mb-2">
+          <h4 className="text-xl font-bold">การเชื่อมต่อ</h4>
+          <span className="text-blue-600">รุ่นไหนเหมาะกับคุณ</span>
+        </div>
+        <div id="variantTypeOptions" className="grid grid-cols-2 gap-3">
+          <VariantOption
+            variant="type"
+            value="wifi"
+            selected={variantType === 'wifi'}
+            onChange={handleChangeVariantType}
+          >
+            <div className="flex flex-col text-center py-1">
+              <p>
+                <span className="font-medium text-lg">Wi-Fi</span>
+              </p>
+              <span className="text-xs">
+                {!!variantStorage
+                  ? `฿${Number(
+                      ipadminiPrice['wifi'][variantStorage]
+                    ).toLocaleString('en', {
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2,
+                    })}`
+                  : `เริ่มต้นที่ ฿${Number(
+                      ipadminiPrice['wifi']['64GB']
+                    ).toLocaleString('en')}`}
+              </span>
+            </div>
+          </VariantOption>
+          <VariantOption
+            variant="type"
+            value="cellular"
+            selected={variantType === 'cellular'}
+            onChange={handleChangeVariantType}
+          >
+            <div className="flex flex-col text-center py-1">
+              <p>
+                <span className="font-medium text-lg">Wi-Fi + Cellular</span>
+              </p>
+              <span className="text-xs">
+                {!!variantStorage
+                  ? `฿${Number(
+                      ipadminiPrice['cellular'][variantStorage]
+                    ).toLocaleString('en', {
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2,
+                    })}`
+                  : `เริ่มต้นที่ ฿${Number(
+                      ipadminiPrice['cellular']['64GB']
+                    ).toLocaleString('en')}`}
+              </span>
+            </div>
+          </VariantOption>
+        </div>
+      </VariantSelection>
+    );
+  }
+};
+
+const VariantEngravingSelection = props => {
+  const [show, setShow] = useState(true);
+  const toggleShow = () => {
+    setShow(!show);
+  };
+  const { variantEngraving, onChange, allowSelect } = props;
+
+  const handleChangeVariantEngraving = event => {
+    onChange(event.target.value);
+    toggleShow();
+  };
+  if (!show) {
+    return (
+      <button onClick={toggleShow} className="block w-full">
+        <div className="py-5 flex justify-between items-center hover:text-blue-600">
+          <h4 className="text-2xl font-medium">
+            {variantEngraving === '1' ? 'เพิ่มการสลัก' : 'ไม่สลัก'}
+          </h4>
+          <span className="text-sm text-blue-600 hover:underline">เปลี่ยน</span>
+        </div>
+      </button>
+    );
+  } else {
+    return (
+      <VariantSelection id="variantEngraving" allowSelect={allowSelect}>
+        <div className="mb-5">
+          <h4 className="text-lg font-bold">ใส่ความเป็นคุณบนอุปกรณ์</h4>
+        </div>
+        <div id="varaintEngravingOptions" className="space-y-3">
+          <VariantOption
+            variant="engraving"
+            value="1"
+            selected={variantEngraving === '1'}
+            onChange={handleChangeVariantEngraving}
+          >
+            <div className="flex justify-between">
+              <p className="text-lg font-semibold">เพิ่มการสลัก</p>
+              <p className="text-lg">ฟรี</p>
+            </div>
+          </VariantOption>
+          <VariantOption
+            variant="engraving"
+            value="0"
+            selected={variantEngraving === '0'}
+            onChange={handleChangeVariantEngraving}
+          >
+            <p className="text-lg font-semibold">ไม่สลัก</p>
+          </VariantOption>
+        </div>
+      </VariantSelection>
+    );
+  }
+};
