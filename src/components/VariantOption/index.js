@@ -19,7 +19,7 @@ const VariantOption = (props) => {
       />
       <label htmlFor={`varaint-${variant}-${value}`}>
         <div
-          className={`rounded-xl p-5 ${
+          className={`h-full rounded-xl p-5 ${
             selected
               ? 'border border-blue-500 outline-blue-500'
               : 'border border-gray-300'
