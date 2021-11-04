@@ -10,6 +10,7 @@ import VariantSelection from '../../components/VariantSelection';
 
 import WhatsInTheBox from './WhatsInTheBox';
 import AppleButton from '../../components/AppleButton';
+import Iphone13FAQ from './FAQ';
 
 const iphone13Price = {
   mini: {
@@ -640,6 +641,7 @@ const Iphone13 = () => {
         </div>
         <WhatsInTheBox />
       </div>
+      <Iphone13FAQ/>
       <Footer />
     </>
   );
