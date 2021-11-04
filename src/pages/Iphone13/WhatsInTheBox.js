@@ -1,4 +1,9 @@
 import React from 'react';
+import { Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/swiper.min.css';
+import 'swiper/components/pagination/pagination.min.css';
 
 const WhatsInTheBox = () => {
   return (
@@ -6,23 +11,87 @@ const WhatsInTheBox = () => {
       <h2 className="text-4xl font-semibold text-center mt-20">
         สิ่งที่มีมาให้ในกล่อง
       </h2>
-      <div className="flex flex-row flex-wrap justify-center gap-20 mb-16">
-        <div className="text-center">
-          <img
-            src="/assets/whatsInTheBox/iphone13.jpg"
-            className="mb-5 mx-auto"
-            style={{ maxHeight: '340px' }}
-          />
-          <span>iPhone</span>
+      <div className="mt-14 hidden lg:block">
+        <div
+          className="grid grid-cols-2"
+          style={{
+            backgroundColor: '#fafafa',
+            maxHeight: '300px',
+          }}
+        >
+          <div>
+            <img
+              src="/assets/whatsInTheBox/iphone13.jpg"
+              className="mx-auto"
+              style={{ height: '300px' }}
+            />
+          </div>
+          <div>
+            <img
+              src="/assets/whatsInTheBox/lightning-cable.jpg"
+              className="mx-auto"
+              style={{ height: '300px' }}
+            />
+          </div>
         </div>
-        <div className="text-center">
-          <img
-            src="/assets/whatsInTheBox/typectolightningcable.jpg"
-            className="mb-5 mx-auto"
-            style={{ maxHeight: '340px' }}
-          />
-          <span>สาย USB-C เป็น ​Lightning</span>
+        <div className="grid grid-cols-2 mt-5">
+          <div className="text-center">
+            <span>iPhone</span>
+          </div>
+          <div className="text-center">
+            <span>สาย USB-C เป็น ​Lightning</span>
+          </div>
         </div>
+      </div>
+      <div className="mt-14 block lg:hidden">
+        <Swiper
+          modules={[Pagination]}
+          slidesPerView={1}
+          onSlideChange={() => console.log('slide change')}
+          onSwiper={(swiper) => console.log(swiper)}
+          pagination={{
+            clickable: true,
+          }}
+        >
+          <SwiperSlide>
+            <div>
+              <div
+                style={{
+                  backgroundColor: '#fafafa',
+                  maxHeight: '300px',
+                }}
+              >
+                <img
+                  src="/assets/whatsInTheBox/iphone13.jpg"
+                  className="mx-auto"
+                  style={{ height: '300px' }}
+                />
+              </div>
+              <div className="text-center mt-5">
+                <span>iPhone</span>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div>
+              <div
+                style={{
+                  backgroundColor: '#fafafa',
+                  maxHeight: '300px',
+                }}
+              >
+                <img
+                  src="/assets/whatsInTheBox/lightning-cable.jpg"
+                  className="mx-auto"
+                  style={{ height: '300px' }}
+                />
+              </div>
+              <div className="text-center mt-5">
+                <span>สาย USB-C เป็น ​Lightning</span>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
       <p className="text-sm text-center mt-10 text-gray-600">
         iPhone 13 และ iPhone 13 mini ไม่มีอะแดปเตอร์แปลงไฟหรือ EarPods
@@ -45,3 +114,4 @@ const WhatsInTheBox = () => {
 };
 
 export default WhatsInTheBox;
+
