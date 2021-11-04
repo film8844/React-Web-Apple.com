@@ -16,28 +16,28 @@ const WhatsInTheBox = () => {
           className="grid grid-cols-3"
           style={{
             backgroundColor: '#fafafa',
-            maxHeight: '300px',
+            maxHeight: '330px',
           }}
         >
           <div>
             <img
               src="/assets/whatsInTheBox/ipadmini.jpg"
               className="mx-auto"
-              style={{ height: '300px' }}
+              style={{ height: '330px' }}
             />
           </div>
           <div>
             <img
               src="/assets/whatsInTheBox/typec-cable.jpg"
               className="mx-auto"
-              style={{ height: '300px' }}
+              style={{ height: '330px' }}
             />
           </div>
           <div>
             <img
               src="/assets/whatsInTheBox/20w-adapter.jpg"
               className="mx-auto"
-              style={{ height: '300px' }}
+              style={{ height: '330px' }}
             />
           </div>
         </div>
@@ -68,13 +68,13 @@ const WhatsInTheBox = () => {
               <div
                 style={{
                   backgroundColor: '#fafafa',
-                  maxHeight: '300px',
+                  maxHeight: '330px',
                 }}
               >
                 <img
                   src="/assets/whatsInTheBox/ipadmini.jpg"
                   className="mx-auto"
-                  style={{ height: '300px' }}
+                  style={{ height: '330px' }}
                 />
               </div>
               <div className="text-center mt-5">
@@ -87,13 +87,13 @@ const WhatsInTheBox = () => {
               <div
                 style={{
                   backgroundColor: '#fafafa',
-                  maxHeight: '300px',
+                  maxHeight: '330px',
                 }}
               >
                 <img
                   src="/assets/whatsInTheBox/typec-cable.jpg"
                   className="mx-auto"
-                  style={{ height: '300px' }}
+                  style={{ height: '330px' }}
                 />
               </div>
               <div className="text-center mt-5">
@@ -106,13 +106,13 @@ const WhatsInTheBox = () => {
               <div
                 style={{
                   backgroundColor: '#fafafa',
-                  maxHeight: '300px',
+                  maxHeight: '330px',
                 }}
               >
                 <img
                   src="/assets/whatsInTheBox/20w-adapter.jpg"
                   className="mx-auto"
-                  style={{ height: '300px' }}
+                  style={{ height: '330px' }}
                 />
               </div>
               <div className="text-center mt-5">
