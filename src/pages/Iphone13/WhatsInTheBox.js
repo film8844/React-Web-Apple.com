@@ -24,6 +24,7 @@ const WhatsInTheBox = () => {
               src="/assets/whatsInTheBox/iphone13.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
+              alt="WITB iPhone 13"
             />
           </div>
           <div>
@@ -31,6 +32,7 @@ const WhatsInTheBox = () => {
               src="/assets/whatsInTheBox/lightning-cable.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
+              alt="WITB Lightning Cable"
             />
           </div>
         </div>
@@ -65,6 +67,7 @@ const WhatsInTheBox = () => {
                   src="/assets/whatsInTheBox/iphone13.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
+                  alt="WITB iPhone 13"
                 />
               </div>
               <div className="text-center mt-5">
@@ -84,6 +87,7 @@ const WhatsInTheBox = () => {
                   src="/assets/whatsInTheBox/lightning-cable.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
+                  alt="WITB Lightning Cable"
                 />
               </div>
               <div className="text-center mt-5">
@@ -94,8 +98,7 @@ const WhatsInTheBox = () => {
         </Swiper>
       </div>
       <p className="text-sm text-center mt-10 text-gray-600">
-        iPhone 13 และ iPhone 13 mini ไม่มีอะแดปเตอร์แปลงไฟหรือ EarPods
-        ให้มาด้วย{' '}
+        iPhone 13 และ iPhone 13 mini ไม่มีอะแดปเตอร์แปลงไฟหรือ EarPods ให้มาด้วย{' '}
         <span className="text-blue-500">
           ซึ่งเป็นส่วนหนึ่งในความพยายามของเราที่จะลดผลกระทบต่อสิ่งแวดล้อม
         </span>{' '}
@@ -114,4 +117,3 @@ const WhatsInTheBox = () => {
 };
 
 export default WhatsInTheBox;
-

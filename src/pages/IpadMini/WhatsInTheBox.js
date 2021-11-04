@@ -24,6 +24,7 @@ const WhatsInTheBox = () => {
               src="/assets/whatsInTheBox/ipadmini.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
+              alt="WITB iPad mini"
             />
           </div>
           <div>
@@ -31,6 +32,7 @@ const WhatsInTheBox = () => {
               src="/assets/whatsInTheBox/typec-cable.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
+              alt="WITB Type-C Cable"
             />
           </div>
           <div>
@@ -38,6 +40,7 @@ const WhatsInTheBox = () => {
               src="/assets/whatsInTheBox/20w-adapter.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
+              alt="WITB 20W Adapter"
             />
           </div>
         </div>
@@ -75,6 +78,7 @@ const WhatsInTheBox = () => {
                   src="/assets/whatsInTheBox/ipadmini.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
+                  alt="WITB iPad mini"
                 />
               </div>
               <div className="text-center mt-5">
@@ -94,6 +98,7 @@ const WhatsInTheBox = () => {
                   src="/assets/whatsInTheBox/typec-cable.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
+                  alt="WITB Type-C Cable"
                 />
               </div>
               <div className="text-center mt-5">
@@ -113,6 +118,7 @@ const WhatsInTheBox = () => {
                   src="/assets/whatsInTheBox/20w-adapter.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
+                  alt="WITB 20W Adapter"
                 />
               </div>
               <div className="text-center mt-5">
@@ -127,4 +133,3 @@ const WhatsInTheBox = () => {
 };
 
 export default WhatsInTheBox;
-

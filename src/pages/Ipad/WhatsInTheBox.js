@@ -24,6 +24,7 @@ const WhatsInTheBox = () => {
               src="/assets/whatsInTheBox/ipad.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
+              alt="WITB iPad"
             />
           </div>
           <div>
@@ -31,6 +32,7 @@ const WhatsInTheBox = () => {
               src="/assets/whatsInTheBox/lightning-cable.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
+              alt="WITB Lightning Cable"
             />
           </div>
           <div>
@@ -38,6 +40,7 @@ const WhatsInTheBox = () => {
               src="/assets/whatsInTheBox/20w-adapter.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
+              alt="WITB 20W Adapter"
             />
           </div>
         </div>
@@ -75,6 +78,7 @@ const WhatsInTheBox = () => {
                   src="/assets/whatsInTheBox/ipad.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
+                  alt="WITB iPad"
                 />
               </div>
               <div className="text-center mt-5">
@@ -94,6 +98,7 @@ const WhatsInTheBox = () => {
                   src="/assets/whatsInTheBox/lightning-cable.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
+                  alt="WITB Lightning Cable"
                 />
               </div>
               <div className="text-center mt-5">
@@ -113,6 +118,7 @@ const WhatsInTheBox = () => {
                   src="/assets/whatsInTheBox/20w-adapter.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
+                  alt="WITB 20W Adapter"
                 />
               </div>
               <div className="text-center mt-5">
