@@ -5,7 +5,6 @@ import { useStore } from '../../store/store';
 import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
 import ProductNavBar from '../../components/ProductNavBar';
-import QuestionBox from '../../components/QuestionBox';
 import VariantOption from '../../components/VariantOption';
 import VariantSelection from '../../components/VariantSelection';
 
@@ -383,7 +382,6 @@ const IpadMini = () => {
         </div>
         <WhatsInTheBox />
       </div>
-      <QuestionBox />
       <Footer />
     </>
   );
