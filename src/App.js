@@ -10,6 +10,7 @@ import Bag from './pages/Bag';
 import Iphone13Pro from './pages/Iphone13Pro';
 import Iphone13 from './pages/Iphone13';
 import IpadMini from './pages/IpadMini';
+import Ipad from './pages/Ipad';
 
 const App = () => {
   return (
@@ -22,6 +23,9 @@ const App = () => {
       </Route>
       <Route path="/ipadmini" exact>
         <IpadMini />
+      </Route>
+      <Route path="/ipad" exact>
+        <Ipad />
       </Route>
       <Route path="/help" exact>
         <Help />
