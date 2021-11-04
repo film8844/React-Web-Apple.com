@@ -144,7 +144,7 @@ const IpadMini = () => {
               <img
                 src={`/assets/products/ipadmini/${productImage}`}
                 alt="iPad mini"
-                className="block mx-auto md:mt-14 mb-5"
+                className="block mx-auto pt-10 mt-28 md:mt-14 mb-5"
               />
               <div className="mt-20 grid grid-cols-3 gap-3 mb-5 text-center">
                 <div className="flex flex-col items-center">
@@ -257,8 +257,8 @@ const IpadMini = () => {
                     ปกป้อง iPad mini เครื่องใหม่ของคุณ
                   </h4>
                   <div className="mt-3 flex justify-between gap-2 mb-5">
-                    <div className="flex">
-                      <div className="pt-1 mr-2">
+                    <div className="flex gap-2">
+                      <div className="pt-1 ml-1 mr-1">
                         <svg width="18px" height="18px" viewBox="0 0 256 315">
                           <g>
                             <path
