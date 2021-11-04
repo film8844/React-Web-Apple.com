@@ -5,12 +5,12 @@ import { useStore } from '../../store/store';
 import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
 import ProductNavBar from '../../components/ProductNavBar';
-import QuestionBox from '../../components/QuestionBox';
 import VariantOption from '../../components/VariantOption';
 import VariantSelection from '../../components/VariantSelection';
+import AppleButton from '../../components/AppleButton';
 
 import WhatsInTheBox from './WhatsInTheBox';
-import AppleButton from '../../components/AppleButton';
+import Iphone13ProFAQ from './FAQ';
 
 const iphone13proPrice = {
   pro: {
@@ -653,7 +653,7 @@ const Iphone13Pro = () => {
         </div>
         <WhatsInTheBox />
       </div>
-      <QuestionBox />
+      <Iphone13ProFAQ/>
       <Footer />
     </>
   );
