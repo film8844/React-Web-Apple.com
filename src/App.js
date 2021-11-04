@@ -4,7 +4,6 @@ import Home from './pages/Home';
 import { Switch, Route } from 'react-router-dom';
 import GlobalNavBar from './components/GlobalNavBar';
 import Help from './pages/help';
-import QuestionBox from './components/QuestionBox';
 import CompareTest from './components/CompareTest';
 import Bag from './pages/Bag';
 import Iphone13Pro from './pages/Iphone13Pro';
