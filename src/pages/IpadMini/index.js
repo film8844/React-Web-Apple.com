@@ -510,9 +510,15 @@ const VariantStorageSelection = (props) => {
   } else {
     return (
       <VariantSelection id="variantStorage" allowSelect={allowSelect}>
-        <div className="mb-2">
+        <div className="mb-5">
           <h4 className="text-xl font-semibold">พื้นที่จัดเก็บข้อมูล</h4>
-          <span className="text-blue-600">ความจุเท่าไหร่ที่เหมาะกับคุณ</span>
+        </div>
+        <div className="bg-gray-100 rounded-2xl p-5 mb-5">
+          <p className="text-xs">
+            <span className="font-bold">วางแผนล่วงหน้า เผื่อวันข้างหน้า</span>{' '}
+            ยิ่ง iPad mini ของคุณมีพื้นที่จัดเก็บข้อมูลมากขึ้นเท่าไหร่
+            คุณก็ยิ่งมีพื้นที่ในการจัดเก็บคอนเทนต์แบบดิจิทัลทั้งในปัจจุบันและอนาคตมากขึ้นเท่านั้น
+          </p>
         </div>
         <div id="variantStorageOptions" className="grid grid-cols-2 gap-3">
           <VariantOption
@@ -580,9 +586,15 @@ const VariantTypeSelection = (props) => {
   } else {
     return (
       <VariantSelection id="variantType" allowSelect={allowSelect}>
-        <div className="mb-2">
-          <h4 className="text-xl font-bold">การเชื่อมต่อ</h4>
-          <span className="text-blue-600">รุ่นไหนเหมาะกับคุณ</span>
+        <div className="mb-5">
+          <h4 className="text-xl font-semibold">การเชื่อมต่อ</h4>
+        </div>
+        <div className="bg-gray-100 rounded-2xl p-5 mb-5">
+          <p className="text-xs">
+            <span className="font-bold">สองวิธีในการต่อติดที่รวดเร็ว</span> iPad
+            ทุกเครื่องสามารถเชื่อมต่อกับเครือข่าย Wi-Fi ได้ รุ่น Wi-Fi +
+            Cellular ช่วยให้คุณต่อติดกับทุกเรื่องได้เสมอ แม้ไม่มีสัญญาณ Wi-Fi
+          </p>
         </div>
         <div id="variantTypeOptions" className="grid grid-cols-2 gap-3">
           <VariantOption
@@ -665,7 +677,16 @@ const VariantEngravingSelection = (props) => {
     return (
       <VariantSelection id="variantEngraving" allowSelect={allowSelect}>
         <div className="mb-5">
-          <h4 className="text-lg font-bold">ใส่ความเป็นคุณบนอุปกรณ์</h4>
+          <h4 className="text-xl font-semibold">ใส่ความเป็นคุณบนอุปกรณ์</h4>
+        </div>
+        <div className="bg-gray-100 rounded-2xl p-5 mb-5">
+          <p className="text-xs">
+            <span className="font-bold">
+              ใส่ความเป็นคุณให้กับ iPad mini ได้ฟรี
+            </span>{' '}
+            สลักอิโมจิผสมกับข้อความและตัวเลขเพื่อทำให้ iPad mini
+            ของคุณเป็นของคุณคนเดียว ที่ Apple เท่านั้น
+          </p>
         </div>
         <div id="varaintEngravingOptions" className="space-y-3">
           <VariantOption
