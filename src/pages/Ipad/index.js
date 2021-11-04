@@ -76,8 +76,7 @@ const Ipad = () => {
   useEffect(() => {
     let calPrice;
     if (!variantType) {
-      calPrice =
-        ipadPrice['wifi'][!!variantStorage ? variantStorage : '64GB'];
+      calPrice = ipadPrice['wifi'][!!variantStorage ? variantStorage : '64GB'];
       setPriceText(`เริ่มต้นที่ ฿${Number(calPrice).toLocaleString('en')}`);
     } else {
       calPrice = ipadPrice[variantType][variantStorage];
@@ -100,10 +99,10 @@ const Ipad = () => {
     const product = {
       id: Date.now(),
       product: 'iphone13pro',
-      name: `iPad mini รุ่น ${
+      name: `iPad รุ่น 10.2 นิ้ว ${
         variantType === 'wifi' ? 'Wi-fi' : 'Wi-fi + Cellular'
       } ${variantStorage} - สี${colorNameTH[variantColor]}`,
-      shortName: `iPad mini (รุ่นที่ 6)`,
+      shortName: `iPad (รุ่นที่ 9)`,
       color: variantColor,
       type: variantType,
       storage: variantStorage,
