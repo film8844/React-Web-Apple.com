@@ -137,7 +137,7 @@ const Bag = () => {
                 <AppleButton className="px-5 w-full py-4 rounded-xl">
                   ลงชื่อเข้าใช้
                 </AppleButton>
-                <button className="bg-gray-200 hover:bg-gray-100 text-black rounded-xl px-5 py-4 w-full ">
+                <button className="apple-btn-secondary text-black rounded-xl px-5 py-4 w-full ">
                   เลือกซื้อสินค้าต่อ
                 </button>
               </div>

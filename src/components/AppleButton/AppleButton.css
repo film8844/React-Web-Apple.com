@@ -4,3 +4,10 @@
 .apple-btn:hover {
     background-color: #0077ed;
 }
+
+.apple-btn-secondary {
+    background-color: #ebebeb;
+}
+.apple-btn-secondary:hover {
+    background-color: #ededed;
+}
