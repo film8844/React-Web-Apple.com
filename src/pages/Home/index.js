@@ -1,19 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
-import './index.css';
-import { Link } from 'react-router-dom';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import './home.css';
 
 const Iphone13Pro = () => {
   return (
     <div className="pt-20 my-2 bg-iPhone13pro">
       <div className="text-center">
-        <h2 className="text-5xl font-bold">iPhone 13 Pro</h2>
+        <h2 className="text-5xl font-semibold">iPhone 13 Pro</h2>
         <p className="text-3xl mt-2">โปรสมชื่อ</p>
       </div>
       <div className="mt-5 text-center text-xl text-blue-600">
-        <a className="mr-4">ดูเพิ่มเติม{'>'}</a>
-        <Link to="/iphone13pro">ซื้อ{'>'}</Link>
+        <a
+          className="mr-4 hover:underline"
+          href="https://www.apple.com/th/iphone-13-pro/"
+        >
+          ดูเพิ่มเติม
+          <KeyboardArrowRightIcon />
+        </a>
+        <Link to="/iphone13pro" className="hover:underline">
+          ซื้อ
+          <KeyboardArrowRightIcon />
+        </Link>
       </div>
       <img
         src="/assets/home_images/hero_iphone13pro.jpg"
