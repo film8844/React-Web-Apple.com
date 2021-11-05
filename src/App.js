@@ -3,7 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import { Switch, Route } from 'react-router-dom';
 import GlobalNavBar from './components/GlobalNavBar';
-import Help from './pages/help';
+import Help from './pages/Help';
 import CompareTest from './components/CompareTest';
 import Bag from './pages/Bag';
 import Iphone13Pro from './pages/Iphone13Pro';
