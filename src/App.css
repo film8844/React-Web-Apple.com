@@ -4,45 +4,64 @@
   font-family: 'IBM Plex Sans Thai', sans-serif;
 }
 
-* {
-  scroll-behavior: smooth;
+/* Key Features of Products */
+.keyfeatures-container {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
 }
-
-.App {
-  text-align: center;
+.keyfeature-col {
+  height: 450px;
+  background-color: rgb(243, 244, 246);
+  border-radius: 16px;
+  position: relative;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.keyfeature-col-span-2 {
+  grid-column: span 2 / span 2;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.keyfeature-col-span-3 {
+  grid-column: span 3 / span 3;
+}
+.keyfeature-col-span-4 {
+  grid-column: span 4 / span 4;
+}
+@media screen and (max-width: 1024px) {
+  .keyfeatures-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .keyfeatures-container::-webkit-scrollbar {
+    height: 8px;
   }
-  to {
-    transform: rotate(360deg);
+  /* Track */
+  .keyfeatures-container::-webkit-scrollbar-track {
+    background: #e4e4e4;
+    border-radius: 10px;
+  }
+  /* Handle */
+  .keyfeatures-container::-webkit-scrollbar-thumb {
+    background: #a5a5a5;
+    border-radius: 10px;
+  }
+  /* Handle on hover */
+  .keyfeatures-container::-webkit-scrollbar-thumb:hover {
+    background: #bdbdbd;
+  }
+  .keyfeature-col {
+    width: 500px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  .keyfeature-col-span-2 {
+    width: 341.33px;
+  }
+  .keyfeature-col-span-3 {
+    width: 512px;
+  }
+  .keyfeature-col-span-4 {
+    width: 682.66px;
   }
 }
