@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useStore } from '../../store/store';
 
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
 import ProductNavBar from '../../components/ProductNavBar';
@@ -150,7 +151,7 @@ const Iphone13Pro = () => {
       appleCare: variantAppleCare === '1',
       appleCareCost: 8290,
       price: price,
-      image: `/assets/products/iphone13pro/${productImage}`
+      image: `/assets/products/iphone13pro/${productImage}`,
     };
     setBag([...bag, product]);
     history.push('/bag');
@@ -164,7 +165,13 @@ const Iphone13Pro = () => {
         <div className="max-w-screen-lg m-auto">
           <p className="text-sm text-center px-5 py-3">
             มีการผ่อนชำระในอัตราดอกเบี้ย 0% นานสูงสุด 10 เดือน{' '}
-            <span className="text-blue-600">ดูเพิ่มเติม</span>
+            <a
+              href="https://www.apple.com/th/shop/browse/finance/installment"
+              className="text-blue-600 hover:underline cursor-pointer"
+            >
+              ดูเพิ่มเติม
+              <KeyboardArrowRightIcon sx={{ fontSize: '14px' }} />
+            </a>
           </p>
         </div>
       </div>
@@ -652,10 +659,10 @@ const Iphone13Pro = () => {
             </div>
           </div>
         </div>
-        <Iphone13ProFeatures/>
+        <Iphone13ProFeatures />
         <WhatsInTheBox />
       </div>
-      <Iphone13ProFAQ/>
+      <Iphone13ProFAQ />
       <Footer />
     </>
   );

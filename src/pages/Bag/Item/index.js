@@ -1,4 +1,5 @@
 import React from "react";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const Item = (props) => {
   const { item } = props;
@@ -106,7 +107,7 @@ const Item = (props) => {
             <span className="text-2xl font-medium">{item.name}</span>
           </div>
           <div className="flex justify-between">
-            <span className="text-2xl font-medium md:ml-10">x1</span>
+            <span className="text-2xl font-medium md:ml-10">1<KeyboardArrowDownIcon className="text-blue-600"/></span>
             <div className="text-right">
               <p className="text-2xl font-medium">{`฿${Number(
                 price
@@ -124,8 +125,8 @@ const Item = (props) => {
         <div className="pt-5">
           <p className="text-lg font-medium">
             ดูว่าคุณจะได้รับสินค้ารายการนี้เร็วที่สุดเมื่อไหร่{" "}
-            <span className="font-normal text-blue-600">
-              โปรดระบุรหัสไปรษณีย์{" "}
+            <span className="font-normal text-blue-600 hover:underline cursor-pointer">
+              โปรดระบุรหัสไปรษณีย์<KeyboardArrowDownIcon/>
             </span>
           </p>
           <div className="mt-1 grid grid-cols-2">

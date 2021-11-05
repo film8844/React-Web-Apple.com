@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useStore } from '../../store/store';
 
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
 import ProductNavBar from '../../components/ProductNavBar';
@@ -122,7 +124,13 @@ const Ipad = () => {
         <div className="max-w-screen-lg m-auto">
           <p className="text-sm text-center px-5 py-3">
             มีการผ่อนชำระในอัตราดอกเบี้ย 0% นานสูงสุด 10 เดือน{' '}
-            <span className="text-blue-600">ดูเพิ่มเติม</span>
+            <a
+              href="https://www.apple.com/th/shop/browse/finance/installment"
+              className="text-blue-600 hover:underline cursor-pointer"
+            >
+              ดูเพิ่มเติม
+              <KeyboardArrowRightIcon sx={{ fontSize: '14px' }} />
+            </a>
           </p>
         </div>
       </div>
@@ -480,12 +488,13 @@ const VariantStorageSelection = (props) => {
         <div className="mb-5">
           <h4 className="text-xl font-semibold">พื้นที่จัดเก็บข้อมูล</h4>
         </div>
-        <div className="bg-gray-100 rounded-2xl p-5 mb-5">
+        <div className="flex bg-gray-100 rounded-2xl p-5 mb-5">
           <p className="text-xs">
             <span className="font-bold">วางแผนล่วงหน้า เผื่อวันข้างหน้า</span>{' '}
             ยิ่ง iPad ของคุณมีพื้นที่จัดเก็บข้อมูลมากขึ้นเท่าไหร่
             คุณก็ยิ่งมีพื้นที่ในการจัดเก็บคอนเทนต์แบบดิจิทัลทั้งในปัจจุบันและอนาคตมากขึ้นเท่านั้น
           </p>
+          <ErrorOutlineIcon className="ml-5 text-blue-600" />
         </div>
         <div id="variantStorageOptions" className="grid grid-cols-2 gap-3">
           <VariantOption
@@ -556,12 +565,13 @@ const VariantTypeSelection = (props) => {
         <div className="mb-5">
           <h4 className="text-xl font-semibold">การเชื่อมต่อ</h4>
         </div>
-        <div className="bg-gray-100 rounded-2xl p-5 mb-5">
+        <div className="flex bg-gray-100 rounded-2xl p-5 mb-5">
           <p className="text-xs">
             <span className="font-bold">สองวิธีในการต่อติดที่รวดเร็ว</span> iPad
             ทุกเครื่องสามารถเชื่อมต่อกับเครือข่าย Wi-Fi ได้ รุ่น Wi-Fi +
             Cellular ช่วยให้คุณต่อติดกับทุกเรื่องได้เสมอ แม้ไม่มีสัญญาณ Wi-Fi
           </p>
+          <ErrorOutlineIcon className="ml-5 text-blue-600" />
         </div>
         <div id="variantTypeOptions" className="grid grid-cols-2 gap-3">
           <VariantOption
@@ -646,14 +656,13 @@ const VariantEngravingSelection = (props) => {
         <div className="mb-5">
           <h4 className="text-xl font-semibold">ใส่ความเป็นคุณบนอุปกรณ์</h4>
         </div>
-        <div className="bg-gray-100 rounded-2xl p-5 mb-5">
+        <div className="flex bg-gray-100 rounded-2xl p-5 mb-5">
           <p className="text-xs">
-            <span className="font-bold">
-              ใส่ความเป็นคุณให้กับ iPad ได้ฟรี
-            </span>{' '}
+            <span className="font-bold">ใส่ความเป็นคุณให้กับ iPad ได้ฟรี</span>{' '}
             สลักอิโมจิผสมกับข้อความและตัวเลขเพื่อทำให้ iPad
             ของคุณเป็นของคุณคนเดียว ที่ Apple เท่านั้น
           </p>
+          <ErrorOutlineIcon className="ml-5 text-blue-600" />
         </div>
         <div id="varaintEngravingOptions" className="space-y-3">
           <VariantOption
