@@ -12,6 +12,7 @@ import VariantSelection from '../../components/VariantSelection';
 
 import WhatsInTheBox from './WhatsInTheBox';
 import AppleButton from '../../components/AppleButton';
+import IpadMiniFeatures from './Features';
 
 const ipadminiPrice = {
   wifi: {
@@ -388,6 +389,7 @@ const IpadMini = () => {
             </div>
           </div>
         </div>
+        <IpadMiniFeatures />
         <WhatsInTheBox />
       </div>
       <Footer />
