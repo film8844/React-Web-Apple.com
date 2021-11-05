@@ -11,6 +11,7 @@ import VariantSelection from '../../components/VariantSelection';
 import WhatsInTheBox from './WhatsInTheBox';
 import AppleButton from '../../components/AppleButton';
 import Iphone13FAQ from './FAQ';
+import Iphone13Features from './Features';
 
 const iphone13Price = {
   mini: {
@@ -149,7 +150,7 @@ const Iphone13 = () => {
       appleCare: variantAppleCare === '1',
       appleCareCost: 5990,
       price: price,
-      image: `/assets/products/iphone13/${productImage}`
+      image: `/assets/products/iphone13/${productImage}`,
     };
     setBag([...bag, product]);
     history.push('/bag');
@@ -639,9 +640,10 @@ const Iphone13 = () => {
             </div>
           </div>
         </div>
+        <Iphone13Features />
         <WhatsInTheBox />
       </div>
-      <Iphone13FAQ/>
+      <Iphone13FAQ />
       <Footer />
     </>
   );
