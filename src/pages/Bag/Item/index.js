@@ -74,7 +74,7 @@ const Item = (props) => {
                 <li>
                   บริการซ่อมที่ผ่านการรับรองจาก Apple ซึ่งใช้อะไหล่แท้ของ Apple
                 </li>
-                <li>ความคุ้มครองสำหรับ iPhone รวมถึงแบตเตอรี่</li>
+                <li>ความคุ้มครองสำหรับ iPhone หรือ iPad รวมถึงแบตเตอรี่</li>
                 <li>ความคุ้มครองด้านความเสียหายจากอุบัติเหตุ</li>
               </ul>
               <span className="text-sm text-blue-600 hover:underline cursor-pointer">
