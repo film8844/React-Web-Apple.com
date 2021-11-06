@@ -288,7 +288,7 @@ const Home = () => {
 
       <Watch />
 
-      <div className="grid grid-cols-1 gap-3 md:grid-cols-2 text-center m-3">
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-2 text-center md:m-3">
         <IMac />
         <IpadMini />
         <Airtag />
@@ -303,7 +303,15 @@ const Home = () => {
           <div className="mt-16 text-center text-md text-blue-600">
             <a className="mr-4 hover:underline">สตรีมตอนแรกฟรี <ArrowDropDownCircleIcon className=" transform -rotate-90"/></a>
           </div>
-          
+        </div>
+        <div className="block md:hidden" style={{ height: '500px', backgroundImage: `url('assets/src_image/homepage/small/promo_foundation_small.jpg')`, backgroundPosition: 'center', backgroundSize: 'cover' ,backgroundRepeat: 'no-repeat',backgroundColor: '#fbfbfd'}}>
+        <div className="text-center mt-14">
+            <img className=" mx-auto" style={{ maxWidth: '100px' }} src="assets/src_image/homepage/large/logo_tv+__cfvl40z2nzau_large.png"></img>
+          </div>
+          <img className=" mx-auto mt-60"  src="assets/src_image/homepage/small/logo_foundation_s1_small.png"></img>
+          <div className="mt-16 text-center text-md text-blue-600">
+            <a className="mr-4 hover:underline">สตรีมตอนแรกฟรี <ArrowDropDownCircleIcon className=" transform -rotate-90"/></a>
+          </div>
         </div>
       </div>
 
