@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
 import './home.css';
 
 const Iphone13Pro = () => {
@@ -54,7 +55,7 @@ const Iphone13 = () => {
       </div>
       <div className="mt-5 text-center text-xl text-blue-600">
         <a className="mr-4 hover:underline">ดูเพิ่มเติม</a>
-        <Link className='hover:underline' to="/iphone13">ซื้อ<KeyboardArrowRightIcon /></Link>
+        <Link className='hover:underline' to="/iphone13">ซื้อ <KeyboardArrowRightIcon /></Link>
       </div>
       <img
         src="/assets/home_images/hero_iphone13.png"
@@ -108,22 +109,22 @@ const IpadMini = () => {
   return (
     <div className="bg-gray">
 
-      <div className="text-center mt-10">
+      <div className="text-center mt-14">
 
         <img className=" mx-auto" style={{ maxWidth: '150px' }} src="assets/src_image/homepage/large/promo_logo_ipad_mini__n5nqff6gq8yu_large.png"></img>
         <p className="text-2xl mt-2">พลังยักษ์ใหญ่ในไซส์มินิ</p>
       </div>
-      <div className="mt-5 text-center text-xl text-blue-600">
+      <div className="mt-2 text-center text-xl text-blue-600">
       <a
           className="mr-4 hover:underline"
         >
           ดูเพิ่มเติม
           <KeyboardArrowRightIcon />
         </a>
-        <a  className="hover:underline">
+        <Link to="/ipadmini" className="hover:underline">
           ซื้อ
           <KeyboardArrowRightIcon />
-        </a>
+        </Link>
       </div>
 
 
@@ -144,7 +145,7 @@ const IpadMini = () => {
 const Airtag = () => {
   return (
     <div className="bg-gray">
-      <div className="text-center mt-10">
+      <div className="text-center mt-14">
         
         <h2 className="text-4xl font-semibold">Airtag</h2>
         <p className="text-2xl">ลืมไปเลยว่าเคยขี้ลืม</p>
@@ -163,7 +164,7 @@ const Airtag = () => {
       </div>
       <img
         src="/assets/src_image/homepage/medium/promo_airtag_medium_2x.jpg"
-        className="hidden md:block mx-auto px-5 mt-10"
+        className="hidden md:block mx-auto px-5 mt-5"
         style={{ maxHeight: '400px' }}
       />
       <img
@@ -178,22 +179,21 @@ const Airtag = () => {
 const IMac = () => {
   return (
     <div className="bg-gray overflow-hidden">
-      <div className="text-center mt-10">
+      <div className="text-center mt-14">
         <h2 className="text-4xl font-semibold">iMac</h2>
         <p className="text-2xl mt-2">สวัสดี</p>
       </div>
       <div className="my-5 text-center text-1xl text-blue-600">
         <a
           className="mr-4 hover:underline"
-          href="https://www.apple.com/th/iphone-13-pro/"
         >
           ดูเพิ่มเติม
           <KeyboardArrowRightIcon />
         </a>
-        <Link to="/iphone13pro" className="hover:underline">
+        <a  className="hover:underline">
           ซื้อ
           <KeyboardArrowRightIcon />
-        </Link>
+        </a>
       </div>
       <img
         src="/assets/home_images/hero_imac.png"
@@ -222,22 +222,22 @@ const Ipad = () => {
         className="block md:hidden mx-auto px-5 "
         style={{ maxHeight: '300px' }}
       />
-      <div className="text-center ">
+      <div className="text-center mt-2">
         <p className="text-md">ใหม่</p>
         <h2 className="text-4xl font-semibold">iPad</h2>
         <p className="text-2xl ">ง่ายไปหมดทุกอย่าง</p>
       </div>
-      <div className=" text-center mb-5 text-xl text-blue-600">
+      <div className=" text-center mb-5 mt-2 text-md text-blue-600">
       <a
           className="mr-4 hover:underline"
         >
           ดูเพิ่มเติม
           <KeyboardArrowRightIcon />
         </a>
-        <a  className="hover:underline">
+        <Link to="/ipad" className="hover:underline">
           ซื้อ
           <KeyboardArrowRightIcon />
-        </a>
+        </Link>
       </div>
     </div>
   );
@@ -245,12 +245,12 @@ const Ipad = () => {
 
 const Arcade1 = () => {
   return (
-  <div className="hidden md:block" style={{ height: '550px', backgroundImage: `url('assets/src_image/homepage/large/tile__cauwwcyyn9hy_large.jpg')`, backgroundPosition: 'center', backgroundSize: 'cover' ,backgroundRepeat: 'no-repeat'}}>
-  <div className="text-center mt-10">
+  <div className="hidden md:block" style={{ height: '570px', backgroundImage: `url('assets/src_image/homepage/large/tile__cauwwcyyn9hy_large.jpg')`, backgroundPosition: 'center', backgroundSize: 'cover' ,backgroundRepeat: 'no-repeat'}}>
+  <div className="text-center mt-14">
     <img className=" mx-auto" style={{ maxWidth: '150px' }} src="assets/src_image/homepage/large/logo__acade_large.png"></img>
     <p className="text-2xl mt-2">ได้เวลาสนุกของคอเกม</p>
   </div>
-  <div className="mt-5 text-center text-xl text-blue-600">
+  <div className="mt-2 text-center text-md text-blue-600">
     <a className="mr-4 hover:underline">ดูเพิ่มเติม{'>'}</a>
     <Link className="hover:underline" to="/iphone13pro">ลองใช้ฟรี* <ArrowForwardIcon className="transform -rotate-45"/>  </Link>
   </div>
@@ -260,11 +260,11 @@ const Arcade1 = () => {
 const Arcade2 = () => {
   return (
   <div className="block md:hidden" style={{ height: '500px', backgroundImage: `url('assets/src_image/homepage/small/tile__cauwwcyyn9hy_small.png')`, backgroundPosition: 'center', backgroundSize: 'cover' ,backgroundRepeat: 'no-repeat',backgroundColor: '#fbfbfd'}}>
-  <div className="text-center mt-10">
+  <div className="text-center mt-14">
     <img className=" mx-auto" style={{ maxWidth: '150px' }} src="assets/src_image/homepage/large/logo__acade_large.png"></img>
     <p className="text-2xl mt-2">ได้เวลาสนุกของคอเกม</p>
   </div>
-  <div className="mt-5 text-center text-xl text-blue-600">
+  <div className="mt-2 text-center text-md text-blue-600">
     <a className="mr-4 hover:underline">ดูเพิ่มเติม{'>'}</a>
     <Link className="hover:underline" to="/iphone13pro">ลองใช้ฟรี* <ArrowForwardIcon className="transform -rotate-45"/>  </Link>
   </div>
@@ -288,13 +288,23 @@ const Home = () => {
 
       <Watch />
 
-      <div className="grid grid-cols-1 gap-2 md:grid-cols-2 text-center m-2">
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-2 text-center m-3">
         <IMac />
         <IpadMini />
         <Airtag />
         <Ipad />
         <Arcade1 />
         <Arcade2 />
+        <div className="hidden md:block" style={{ height: '570px', backgroundImage: `url('assets/src_image/homepage/large/promo_foundation_s1__fih0re3y8zu6_large.jpg')`, backgroundPosition: 'center', backgroundSize: 'cover' ,backgroundRepeat: 'no-repeat'}}>
+          <div className="text-center mt-14">
+            <img className=" mx-auto" style={{ maxWidth: '150px' }} src="assets/src_image/homepage/large/logo_tv+__cfvl40z2nzau_large.png"></img>
+          </div>
+          <img className=" mx-auto mt-80"  src="assets/src_image/homepage/large/logo_foundation_s1__fpga2losku6i_large.png"></img>
+          <div className="mt-16 text-center text-md text-blue-600">
+            <a className="mr-4 hover:underline">สตรีมตอนแรกฟรี <ArrowDropDownCircleIcon className=" transform -rotate-90"/></a>
+          </div>
+          
+        </div>
       </div>
 
       <Footer />
