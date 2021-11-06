@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import './home.css';
 
 const Iphone13Pro = () => {
@@ -52,8 +53,8 @@ const Iphone13 = () => {
         <p className="text-3xl mt-2 color-iPhone13">พลังพิเศษในมือคุณ</p>
       </div>
       <div className="mt-5 text-center text-xl text-blue-600">
-        <a className="mr-4">ดูเพิ่มเติม</a>
-        <Link to="/iphone13">ซื้อ{'>'}</Link>
+        <a className="mr-4 hover:underline">ดูเพิ่มเติม</a>
+        <Link className='hover:underline' to="/iphone13">ซื้อ<KeyboardArrowRightIcon /></Link>
       </div>
       <img
         src="/assets/home_images/hero_iphone13.png"
@@ -78,8 +79,16 @@ const Watch = () => {
         <p className="text-3xl mt-2">จัดเต็มแบบเต็มจอ</p>
       </div>
       <div className="mt-5 text-center text-xl text-blue-600">
-        <a className="mr-4">ดูเพิ่มเติม</a>
-        <a>ซื้อ</a>
+        <a
+          className="mr-4 hover:underline"
+        >
+          ดูเพิ่มเติม
+          <KeyboardArrowRightIcon />
+        </a>
+        <a  className="hover:underline">
+          ซื้อ
+          <KeyboardArrowRightIcon />
+        </a>
       </div>
       <img
         src="/assets/home_images/apple_watch.jpg"
@@ -105,8 +114,16 @@ const IpadMini = () => {
         <p className="text-2xl mt-2">พลังยักษ์ใหญ่ในไซส์มินิ</p>
       </div>
       <div className="mt-5 text-center text-xl text-blue-600">
-        <a className="mr-4">ดูเพิ่มเติม{'>'}</a>
-        <Link to="/iphone13pro">ซื้อ{'>'}</Link>
+      <a
+          className="mr-4 hover:underline"
+        >
+          ดูเพิ่มเติม
+          <KeyboardArrowRightIcon />
+        </a>
+        <a  className="hover:underline">
+          ซื้อ
+          <KeyboardArrowRightIcon />
+        </a>
       </div>
 
 
@@ -128,12 +145,21 @@ const Airtag = () => {
   return (
     <div className="bg-gray">
       <div className="text-center mt-10">
+        
         <h2 className="text-4xl font-semibold">Airtag</h2>
-        <p className="text-2xl mt-2">ลืมไปเลยว่าเคยขี้ลืม</p>
+        <p className="text-2xl">ลืมไปเลยว่าเคยขี้ลืม</p>
       </div>
-      <div className="mt-5 text-center text-xl text-blue-600">
-        <a className="mr-4">ดูเพิ่มเติม{'>'}</a>
-        <Link to="/iphone13pro">ซื้อ{'>'}</Link>
+      <div className="mt-2 text-center text-xl text-blue-600">
+      <a
+          className="mr-4 hover:underline"
+        >
+          ดูเพิ่มเติม
+          <KeyboardArrowRightIcon />
+        </a>
+        <a  className="hover:underline">
+          ซื้อ
+          <KeyboardArrowRightIcon />
+        </a>
       </div>
       <img
         src="/assets/src_image/homepage/medium/promo_airtag_medium_2x.jpg"
@@ -196,13 +222,22 @@ const Ipad = () => {
         className="block md:hidden mx-auto px-5 "
         style={{ maxHeight: '300px' }}
       />
-      <div className="text-center mt-10">
+      <div className="text-center ">
+        <p className="text-md">ใหม่</p>
         <h2 className="text-4xl font-semibold">iPad</h2>
-        <p className="text-2xl mt-2">ง่ายไปหมดทุกอย่าง</p>
+        <p className="text-2xl ">ง่ายไปหมดทุกอย่าง</p>
       </div>
-      <div className="mt-5 text-center text-xl text-blue-600">
-        <a className="mr-4">ดูเพิ่มเติม{'>'}</a>
-        <Link to="/iphone13pro">ซื้อ{'>'}</Link>
+      <div className=" text-center mb-5 text-xl text-blue-600">
+      <a
+          className="mr-4 hover:underline"
+        >
+          ดูเพิ่มเติม
+          <KeyboardArrowRightIcon />
+        </a>
+        <a  className="hover:underline">
+          ซื้อ
+          <KeyboardArrowRightIcon />
+        </a>
       </div>
     </div>
   );
@@ -216,8 +251,8 @@ const Arcade1 = () => {
     <p className="text-2xl mt-2">ได้เวลาสนุกของคอเกม</p>
   </div>
   <div className="mt-5 text-center text-xl text-blue-600">
-    <a className="mr-4">ดูเพิ่มเติม{'>'}</a>
-    <Link to="/iphone13pro">ลองใช้ฟรี*{'>'}</Link>
+    <a className="mr-4 hover:underline">ดูเพิ่มเติม{'>'}</a>
+    <Link className="hover:underline" to="/iphone13pro">ลองใช้ฟรี* <ArrowForwardIcon className="transform -rotate-45"/>  </Link>
   </div>
 </div>)
 }
@@ -230,8 +265,8 @@ const Arcade2 = () => {
     <p className="text-2xl mt-2">ได้เวลาสนุกของคอเกม</p>
   </div>
   <div className="mt-5 text-center text-xl text-blue-600">
-    <a className="mr-4">ดูเพิ่มเติม{'>'}</a>
-    <Link to="/iphone13pro">ลองใช้ฟรี*{'>'}</Link>
+    <a className="mr-4 hover:underline">ดูเพิ่มเติม{'>'}</a>
+    <Link className="hover:underline" to="/iphone13pro">ลองใช้ฟรี* <ArrowForwardIcon className="transform -rotate-45"/>  </Link>
   </div>
 </div>)
 }
