@@ -13,6 +13,7 @@ import AppleButton from '../../components/AppleButton';
 import WhatsInTheBox from './WhatsInTheBox';
 import Iphone13ProFAQ from './FAQ';
 import Iphone13ProFeatures from './Features';
+import Iphone13ProCompare from './Compare';
 
 const iphone13proPrice = {
   pro: {
@@ -661,6 +662,7 @@ const Iphone13Pro = () => {
         </div>
         <Iphone13ProFeatures />
         <WhatsInTheBox />
+        <Iphone13ProCompare />
       </div>
       <Iphone13ProFAQ />
       <Footer />

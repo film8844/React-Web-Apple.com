@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const FAQAccordion = (props) => {
+  const [expanded, setExpanded] = useState(true);
+  const toggleAccordion = () => {
+    setExpanded(!expanded);
+  };
   return (
     <div className="border-t  border-gray-300">
       <div className="max-w-screen-lg mx-auto">
-        <Accordion elevation={0} sx={{ padding: 0, border: 'none' }}>
+        <Accordion
+          expanded={expanded}
+          onChange={toggleAccordion}
+          elevation={0}
+          sx={{ padding: 0, border: 'none' }}
+        >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             sx={{ paddingTop: '25px', paddingBottom: '25px' }}

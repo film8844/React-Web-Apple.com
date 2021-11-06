@@ -13,6 +13,7 @@ import WhatsInTheBox from './WhatsInTheBox';
 import AppleButton from '../../components/AppleButton';
 import Iphone13FAQ from './FAQ';
 import Iphone13Features from './Features';
+import Iphone13Compare from './Compare';
 
 const iphone13Price = {
   mini: {
@@ -649,6 +650,7 @@ const Iphone13 = () => {
         </div>
         <Iphone13Features />
         <WhatsInTheBox />
+        <Iphone13Compare/>
       </div>
       <Iphone13FAQ />
       <Footer />
