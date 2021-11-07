@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const GlobalNavBar = (props) => {
   return (
     <nav
-      className={`global-nav ${!!props.disableSticky ? '' : 'sticky top-0'}`}
+      className={`global-nav z-10 ${!!props.disableSticky ? '' : 'sticky top-0'}`}
     >
       <div className="hidden md:flex max-w-screen-lg px-5 mx-auto flex-row text-white text-xs font-extralight justify-between items-center">
         <Link to="/">
