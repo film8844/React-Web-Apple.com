@@ -14,6 +14,7 @@ import WhatsInTheBox from './WhatsInTheBox';
 import AppleButton from '../../components/AppleButton';
 import IpadMiniFeatures from './Features';
 import IpadMiniFAQ from './FAQ';
+import IpadCompare from './Compare';
 
 const ipadminiPrice = {
   wifi: {
@@ -410,9 +411,7 @@ const IpadMini = () => {
                   หากมีคำถามเกี่ยวกับการซื้อ iPad
                 </span>
                 <br />
-                <span
-                  className="text-blue-600 hover:underline cursor-pointer"
-                >
+                <span className="text-blue-600 hover:underline cursor-pointer">
                   แชทกับผู้เชี่ยวชาญด้าน iPad
                 </span>
               </p>
@@ -421,6 +420,7 @@ const IpadMini = () => {
         </div>
         <IpadMiniFeatures />
         <WhatsInTheBox />
+        <IpadCompare />
       </div>
       <IpadMiniFAQ />
       <Footer />

@@ -14,6 +14,7 @@ import WhatsInTheBox from './WhatsInTheBox';
 import AppleButton from '../../components/AppleButton';
 import IpadFeatures from './Features';
 import IpadFAQ from './FAQ';
+import IpadCompare from './Compare';
 
 const ipadPrice = {
   wifi: {
@@ -418,6 +419,7 @@ const Ipad = () => {
         </div>
         <IpadFeatures />
         <WhatsInTheBox />
+        <IpadCompare/>
       </div>
       <IpadFAQ />
       <Footer />
