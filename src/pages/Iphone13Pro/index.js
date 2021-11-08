@@ -67,6 +67,8 @@ const Iphone13Pro = () => {
           setProductImage('iphone13pro-promax-family.jfif');
         }
         break;
+      default:
+        break;
     }
 
     const element = document.getElementById('variantColor');

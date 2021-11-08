@@ -66,6 +66,8 @@ const Iphone13 = () => {
           setProductImage('iphone13-regular-family.jpg');
         }
         break;
+      default:
+        break;
     }
 
     const element = document.getElementById('variantColor');
