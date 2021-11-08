@@ -115,9 +115,9 @@ const Footer = () => {
                   ร้านค้าอื่นๆ ใกล้คุณ หรือโทร. 001-800-65-6957
                 </p>
               </div>
-              <div className="mt-2 md:mt-0 divide-x divide-gray-300 text-xs text-gray-500">
-                <span className="pr-1">ไทย</span>
-                <span className="pl-1">Shop in English</span>
+              <div className="mt-2 md:mt-0 divide-x divide-gray-300 text-xs">
+                <span className="pr-2 font-medium text-gray-600">ไทย</span>
+                <span className="pl-2 text-gray-500">English</span>
               </div>
             </div>
           </div>
@@ -125,12 +125,11 @@ const Footer = () => {
             <p className="text-xs text-gray-500">
               Copyright © 2021 Apple Inc. สงวนสิทธิ์ทุกประการ
             </p>
-            <div className="mt-2 divide-x divide-gray-300 text-xs text-gray-500">
-              <span className="pr-1">นโยบายความเป็นส่วนตัว</span>
-              <span className="px-1">นโยบายความเป็นส่วนตัว</span>
-              <span className="px-1">ข้อกำหนดการใช้งาน</span>
-              <span className="px-1">การขายและการคืนเงิน</span>
-              <span className="pl-1">ข้อมูลทางกฎหมาย</span>
+            <div className="mt-2 divide-x divide-gray-300 text-xs font-medium text-gray-600">
+              <span className="pr-2">นโยบายความเป็นส่วนตัว</span>
+              <span className="px-2">ข้อกำหนดการใช้งาน</span>
+              <span className="px-2">การขายและการคืนเงิน</span>
+              <span className="pl-2">ข้อมูลทางกฎหมาย</span>
             </div>
           </div>
         </div>
