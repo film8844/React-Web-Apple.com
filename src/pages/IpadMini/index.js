@@ -13,7 +13,7 @@ import AppleButton from '../../components/AppleButton';
 import Breadcrumb from '../../components/Breadcrumb';
 
 import IpadMiniFeatures from './Features';
-import WhatsInTheBox from './WhatsInTheBox';
+import IpadMiniWITB from './WhatsInTheBox';
 import IpadMiniFAQ from './FAQ';
 import IpadCompare from './Compare';
 
@@ -420,7 +420,7 @@ const IpadMini = () => {
           </div>
         </div>
         <IpadMiniFeatures />
-        <WhatsInTheBox />
+        <IpadMiniWITB />
         <IpadCompare />
       </div>
       <IpadMiniFAQ />

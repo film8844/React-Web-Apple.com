@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
 import 'swiper/components/pagination/pagination.min.css';
 
-const WhatsInTheBox = () => {
+const Iphone13ProWITB = () => {
   return (
     <div className="mb-20">
       <h2 className="text-4xl font-semibold text-center mt-20">
@@ -116,4 +116,4 @@ const WhatsInTheBox = () => {
   );
 };
 
-export default WhatsInTheBox;
+export default Iphone13ProWITB;

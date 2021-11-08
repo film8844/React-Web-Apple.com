@@ -13,7 +13,7 @@ import AppleButton from '../../components/AppleButton';
 import Breadcrumb from '../../components/Breadcrumb';
 
 import IpadFeatures from './Features';
-import WhatsInTheBox from './WhatsInTheBox';
+import IpadWITB from './WhatsInTheBox';
 import IpadCompare from './Compare';
 import IpadFAQ from './FAQ';
 
@@ -419,7 +419,7 @@ const Ipad = () => {
           </div>
         </div>
         <IpadFeatures />
-        <WhatsInTheBox />
+        <IpadWITB />
         <IpadCompare/>
       </div>
       <IpadFAQ />
