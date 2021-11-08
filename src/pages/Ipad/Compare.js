@@ -192,12 +192,12 @@ const IpadCompare = () => {
         <div className="p-3">
           <div>
             <img
-              alt="iPad Pro"
+              alt="iPad mini"
               className="mx-auto mb-5"
-              src="/assets/compareProduct/ipad/ipad-pro-compare.jpg"
+              src="/assets/compareProduct/ipad/ipad-mini-compare.jpg"
             />
             <p className="text-sm text-red-600">ใหม่</p>
-            <h6 className="text-2xl font-semibold">iPad Pro</h6>
+            <h6 className="text-2xl font-semibold">iPad mini</h6>
             <p className="mt-2 text-sm mx-auto">
               พลังยักษ์ใหญ่
               <br />
