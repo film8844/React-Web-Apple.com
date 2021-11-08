@@ -8,12 +8,13 @@ import GlobalNavBar from '../../components/GlobalNavBar';
 import ProductNavBar from '../../components/ProductNavBar';
 import VariantOption from '../../components/VariantOption';
 import VariantSelection from '../../components/VariantSelection';
-
-import WhatsInTheBox from './WhatsInTheBox';
 import AppleButton from '../../components/AppleButton';
-import Iphone13FAQ from './FAQ';
+import Breadcrumb from '../../components/Breadcrumb';
+
 import Iphone13Features from './Features';
+import WhatsInTheBox from './WhatsInTheBox';
 import Iphone13Compare from './Compare';
+import Iphone13FAQ from './FAQ';
 
 const iphone13Price = {
   mini: {
@@ -656,6 +657,7 @@ const Iphone13 = () => {
         <Iphone13Compare />
       </div>
       <Iphone13FAQ />
+      <Breadcrumb breadcrumb={['iPhone', 'iPhone 13','ซื้อ iPhone 13 และ iPhone 13 mini']}/>
       <Footer />
     </>
   );

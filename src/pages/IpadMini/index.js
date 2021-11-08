@@ -9,10 +9,11 @@ import GlobalNavBar from '../../components/GlobalNavBar';
 import ProductNavBar from '../../components/ProductNavBar';
 import VariantOption from '../../components/VariantOption';
 import VariantSelection from '../../components/VariantSelection';
-
-import WhatsInTheBox from './WhatsInTheBox';
 import AppleButton from '../../components/AppleButton';
+import Breadcrumb from '../../components/Breadcrumb';
+
 import IpadMiniFeatures from './Features';
+import WhatsInTheBox from './WhatsInTheBox';
 import IpadMiniFAQ from './FAQ';
 import IpadCompare from './Compare';
 
@@ -423,6 +424,7 @@ const IpadMini = () => {
         <IpadCompare />
       </div>
       <IpadMiniFAQ />
+      <Breadcrumb breadcrumb={['iPad', 'iPad mini','ซื้อ iPad mini']}/>
       <Footer />
     </>
   );

@@ -9,12 +9,13 @@ import GlobalNavBar from '../../components/GlobalNavBar';
 import ProductNavBar from '../../components/ProductNavBar';
 import VariantOption from '../../components/VariantOption';
 import VariantSelection from '../../components/VariantSelection';
-
-import WhatsInTheBox from './WhatsInTheBox';
 import AppleButton from '../../components/AppleButton';
+import Breadcrumb from '../../components/Breadcrumb';
+
 import IpadFeatures from './Features';
-import IpadFAQ from './FAQ';
+import WhatsInTheBox from './WhatsInTheBox';
 import IpadCompare from './Compare';
+import IpadFAQ from './FAQ';
 
 const ipadPrice = {
   wifi: {
@@ -422,6 +423,7 @@ const Ipad = () => {
         <IpadCompare/>
       </div>
       <IpadFAQ />
+      <Breadcrumb breadcrumb={['iPad', 'iPad รุ่น 10.2 นิ้ว','ซื้อ iPad รุ่น 10.2 นิ้ว']}/>
       <Footer />
     </>
   );
