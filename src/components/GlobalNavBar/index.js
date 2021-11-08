@@ -76,14 +76,14 @@ const MenuIcon = () => {
     <svg height="44" viewBox="0 0 14 44" width="14" className="global-nav-icon">
       <g transform="matrix(1.29 0 0 0.1 6.51 19.07)">
         <path
-          vector-effect="non-scaling-stroke"
+          vectorEffect="non-scaling-stroke"
           transform=" translate(0, 0)"
           d="M -5.00634 -5.00634 L 5.00633 -5.00634 L 5.00633 5.00633 L -5.00634 5.00633 z"
         />
       </g>
       <g transform="matrix(1.29 0 0 0.1 6.53 24.93)">
         <path
-          vector-effect="non-scaling-stroke"
+          vectorEffect="non-scaling-stroke"
           transform=" translate(0, 0)"
           d="M -5.00634 -5.00634 L 5.00633 -5.00634 L 5.00633 5.00633 L -5.00634 5.00633 z"
         />
