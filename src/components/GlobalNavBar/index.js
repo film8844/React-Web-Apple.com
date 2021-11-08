@@ -33,7 +33,7 @@ const GlobalNavBar = (props) => {
         </Link>
       </div>
       <div className="flex md:hidden px-5 mx-auto flex-row text-white text-sm font-extralight justify-between items-center">
-        <span>เมนู</span>
+        <MenuIcon />
         <Link to="/">
           <AppleIcon />
         </Link>
@@ -67,6 +67,27 @@ const BagIcon = () => {
   return (
     <svg height="44" viewBox="0 0 13 44" width="13" className="global-nav-icon">
       <path d="m12 25.9c0 .6-.5 1.1-1.1 1.1h-8.8c-.6 0-1.1-.5-1.1-1.1v-7.9c0-.5.5-1 1.1-1h8.9c.6 0 1.1.5 1.1 1.1v7.8zm-5.5-11.9c1.2 0 2.1.9 2.3 2h-4.6c.2-1.1 1.1-2 2.3-2zm4.4 2h-1.1c-.2-1.7-1.6-3-3.3-3s-3.1 1.3-3.3 3h-1.1c-1.2 0-2.1.9-2.1 2.1v7.9c0 1.1.9 2 2.1 2h8.9c1.1 0 2.1-.9 2.1-2.1v-7.9c-.1-1.1-1-2-2.2-2z" />
+    </svg>
+  );
+};
+
+const MenuIcon = () => {
+  return (
+    <svg height="44" viewBox="0 0 14 44" width="14" className="global-nav-icon">
+      <g transform="matrix(1.29 0 0 0.1 6.51 19.07)">
+        <path
+          vector-effect="non-scaling-stroke"
+          transform=" translate(0, 0)"
+          d="M -5.00634 -5.00634 L 5.00633 -5.00634 L 5.00633 5.00633 L -5.00634 5.00633 z"
+        />
+      </g>
+      <g transform="matrix(1.29 0 0 0.1 6.53 24.93)">
+        <path
+          vector-effect="non-scaling-stroke"
+          transform=" translate(0, 0)"
+          d="M -5.00634 -5.00634 L 5.00633 -5.00634 L 5.00633 5.00633 L -5.00634 5.00633 z"
+        />
+      </g>
     </svg>
   );
 };
