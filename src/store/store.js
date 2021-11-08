@@ -15,7 +15,7 @@ export const useStore = () => {
 const useProvideStore = () => {
   const [bag, setBag] = useState([]);
   const removeItemFromBag = (itemId) => {
-    let bagTemp = bag.filter((item) => item.id != itemId);
+    let bagTemp = bag.filter((item) => item.id !== itemId);
     setBag(bagTemp);
   };
   return {
