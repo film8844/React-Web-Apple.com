@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       outline: {
-        "blue-500": '1px solid rgb(59, 130, 246)',
+        'blue-500': '1px solid rgb(59, 130, 246)',
+      },
+      colors: {
+        'apple-link-blue': '#0066cc',
       },
     },
   },
