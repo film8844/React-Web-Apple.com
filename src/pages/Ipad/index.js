@@ -409,9 +409,7 @@ const Ipad = () => {
                   หากมีคำถามเกี่ยวกับการซื้อ iPad
                 </span>
                 <br />
-                <span
-                  className="text-blue-600 hover:underline cursor-pointer"
-                >
+                <span className="text-blue-600 hover:underline cursor-pointer">
                   แชทกับผู้เชี่ยวชาญด้าน iPad
                 </span>
               </p>
@@ -420,10 +418,12 @@ const Ipad = () => {
         </div>
         <IpadFeatures />
         <IpadWITB />
-        <IpadCompare/>
+        <IpadCompare />
       </div>
       <IpadFAQ />
-      <Breadcrumb breadcrumb={['iPad', 'iPad รุ่น 10.2 นิ้ว','ซื้อ iPad รุ่น 10.2 นิ้ว']}/>
+      <Breadcrumb
+        breadcrumb={['iPad', 'iPad รุ่น 10.2 นิ้ว', 'ซื้อ iPad รุ่น 10.2 นิ้ว']}
+      />
       <Footer />
     </>
   );

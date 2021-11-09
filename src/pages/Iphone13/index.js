@@ -657,7 +657,13 @@ const Iphone13 = () => {
         <Iphone13Compare />
       </div>
       <Iphone13FAQ />
-      <Breadcrumb breadcrumb={['iPhone', 'iPhone 13','ซื้อ iPhone 13 และ iPhone 13 mini']}/>
+      <Breadcrumb
+        breadcrumb={[
+          'iPhone',
+          'iPhone 13',
+          'ซื้อ iPhone 13 และ iPhone 13 mini',
+        ]}
+      />
       <Footer />
     </>
   );

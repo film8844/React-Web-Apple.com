@@ -424,7 +424,7 @@ const IpadMini = () => {
         <IpadCompare />
       </div>
       <IpadMiniFAQ />
-      <Breadcrumb breadcrumb={['iPad', 'iPad mini','ซื้อ iPad mini']}/>
+      <Breadcrumb breadcrumb={['iPad', 'iPad mini', 'ซื้อ iPad mini']} />
       <Footer />
     </>
   );
