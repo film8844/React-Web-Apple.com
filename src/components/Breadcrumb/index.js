@@ -6,16 +6,15 @@ const Breadcrumb = (props) => {
   return (
     <div style={{ backgroundColor: '#f5f5f7' }}>
       <div className="mx-auto max-w-screen-lg px-5 pt-3 -mb-5">
-        <Breadcrumbs
-          separator={<SeperatorIcon />}
-          aria-label="breadcrumb"
-        >
+        <Breadcrumbs separator={<SeperatorIcon />} aria-label="breadcrumb">
           <Link to="/">
             <AppleIcon />
           </Link>
           {!!props.breadcrumb &&
-            props.breadcrumb.map((item) => (
-              <span className="text-sm text-gray-500">{item}</span>
+            props.breadcrumb.map((item, i) => (
+              <span key={i} className="text-sm text-gray-500">
+                {item}
+              </span>
             ))}
         </Breadcrumbs>
       </div>
@@ -34,9 +33,9 @@ const AppleIcon = () => {
 };
 
 const SeperatorIcon = () => {
-    return (
-      <svg height="18" viewBox="0 0 8 18" width="8" style={{ fill: '#d6d6d6' }}>
-			<path d="M1.29,0.98L7.5,9l-6.21,8.01l-0.68-0.54L6.42,9l-5.8-7.49L1.29,0.98z" />
-      </svg>
-    );
-  };
+  return (
+    <svg height="18" viewBox="0 0 8 18" width="8" style={{ fill: '#d6d6d6' }}>
+      <path d="M1.29,0.98L7.5,9l-6.21,8.01l-0.68-0.54L6.42,9l-5.8-7.49L1.29,0.98z" />
+    </svg>
+  );
+};
