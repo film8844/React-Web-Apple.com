@@ -1,6 +1,7 @@
 import React from 'react';
 import './GlobalNavBar.css';
 import { Link } from 'react-router-dom';
+import Bag from './BagPopover';
 
 const GlobalNavBar = (props) => {
   return (
@@ -28,9 +29,7 @@ const GlobalNavBar = (props) => {
           </span>
         </Link>
         <SearchIcon />
-        <Link to="/bag">
-          <BagIcon />
-        </Link>
+        <Bag />
       </div>
       <div className="flex md:hidden px-5 mx-auto flex-row text-white text-sm font-extralight justify-between items-center">
         <MenuIcon />

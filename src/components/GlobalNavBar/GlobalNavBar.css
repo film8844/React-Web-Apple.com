@@ -1,11 +1,42 @@
 .global-nav {
-    backdrop-filter: blur(12px);
-    background-color: rgba(0,0,0,0.8);
+  backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .global-nav-icon {
-    fill: rgb(209, 213, 219);
+  fill: rgb(209, 213, 219);
 }
 .global-nav-icon:hover {
-    fill: rgb(255, 255, 255);
+  fill: rgb(255, 255, 255);
+}
+
+.css-12awvsk-MuiPaper-root-MuiPopover-paper {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.bag-popover-body {
+  margin-top: 10px;
+  width: 286px;
+  background-color: rgb(255, 255, 255);
+  padding: 0 20px;
+  border: 1px solid rgb(209, 213, 219);
+  border-radius: 16px;
+}
+
+.bag-popover-body::after {
+  left: 50%;
+  border-top: 1px solid rgb(209, 213, 219);
+  border-left: 1px solid rgb(209, 213, 219);
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg) skew(4deg, 4deg);
+  transform: rotate(45deg) skew(4deg, 4deg);
+  -webkit-transform-origin: 0% 0;
+  transform-origin: 0% 0;
+  z-index: 9 !important;
+  background-color: #fff;
 }
