@@ -1,7 +1,8 @@
 import React from 'react';
-import Footer from '../../components/Footer';
-import GlobalNavBar from '../../components/GlobalNavBar';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import GlobalNavBar from '../../components/GlobalNavBar';
+import Breadcrumb from '../../components/Breadcrumb';
+import Footer from '../../components/Footer';
 
 const Help = () => {
   return (
@@ -327,7 +328,7 @@ const Help = () => {
           </ul>
         </div>
       </div>
-
+      <Breadcrumb breadcrumb={['บริการช่วยเหลือ']} />
       <Footer />
     </>
   );
