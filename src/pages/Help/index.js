@@ -7,13 +7,30 @@ const Help = () => {
   return (
     <>
       <GlobalNavBar />
-      <div class="relative text-center">
-        <img
-          src="assets/src_image/help/psp-hero-banner-homepage-welcome.image.large_2x.jpg"
-          className="object-cover"
-        />
-        <div class="relative mt-10 md:mt-0 md:inset-x-0 md:top-40 md:absolute">
-          <h1 className="text-3xl text-black font-medium md:text-white md:text-5xl mt-4">
+      <div id="title">
+        <div
+          className="hidden md:block"
+          style={{
+            backgroundImage:
+              'url("/assets/src_image/help/psp-hero-banner-homepage-welcome.image.large_2x.jpg")',
+            height: '540px',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+          }}
+        >
+            <h1 className="text-5xl font-medium text-white text-center" style={{paddingTop:'150px'}}>
+              บริการช่วยเหลือของ Apple
+            </h1>
+        </div>
+        <div className="md:hidden">
+          <img
+            style={{ height: '326px' }}
+            src="assets/src_image/help/psp-hero-banner-homepage-welcome.image.large_2x.jpg"
+            className="object-cover"
+            alt=""
+          />
+          <h1 className="text-3xl font-medium text-center pt-14">
             บริการช่วยเหลือของ Apple
           </h1>
         </div>
@@ -145,15 +162,13 @@ const Help = () => {
             เลือกผลิตภัณฑ์ แล้วเราจะหาวิธีแก้ปัญหาที่ดีที่สุดให้กับคุณ
             <br />
           </p>
-          <a className="text-xl " style={{ color: '#6BF' }}>
+          <p className="text-xl " style={{ color: '#6BF' }}>
             เริ่มเลย <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
-            <br />
-            <br />
-          </a>
-          <a className="text-xl " style={{ color: '#6BF' }}>
+          </p>
+          <p className="text-xl " style={{ color: '#6BF' }}>
             ดาวน์โหลดแอพ Apple Support{' '}
             <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
-          </a>
+          </p>
         </div>
       </div>
       <div className="grid grid-cols-1  mx-10 xl:w-5/12 xl:mx-auto my-12 xl:grid-cols-2">
@@ -190,52 +205,41 @@ const Help = () => {
           <h1 className="text-5xl text-black font-medium my-4">
             การรับประกันและการซ่อมแซม
           </h1>
-          <a className="text-xl inline" style={{ color: '#0070c9' }}>
-            ดูว่าผลิตภัณฑ์ Apple ของคุณเข้าเกณฑ์
-          </a>
-          <p className="text-xl text-gray-600 inline ">
-            การรับบริการและบริการช่วยเหลือภายใต้การรับประกันแบบจำกัดของเราหรือไม่
-            มีการซ่อมที่อยู่ระหว่างดำเนินการแล้วใช่หรือไม่
-          </p>
-          <a className="text-xl inline" style={{ color: '#0070c9' }}>
-            {' '}มาตรวจสอบสถานะกัน
-          </a>
+          <div className="mx-auto max-w-screen-md px-5">
+            <p className="text-xl text-gray-600 ">
+              <span style={{ color: '#0070c9' }}>
+                ดูว่าผลิตภัณฑ์ Apple ของคุณเข้าเกณฑ์
+              </span>
+              การรับบริการและบริการช่วยเหลือภายใต้การรับประกันแบบจำกัดของเราหรือไม่
+              มีการซ่อมที่อยู่ระหว่างดำเนินการแล้วใช่หรือไม่{' '}
+              <span style={{ color: '#0070c9' }}>มาตรวจสอบสถานะกัน</span>
+            </p>
+          </div>
         </div>
       </div>
       <hr className="w-8/12 mx-auto" />
-      <div className="grid grid-cols-1 justify-items-center my-12 text-center">
-        <h1 className="text-3xl text-black  font-medium">
-          โปรดระวังชิ้นส่วนของปลอม
-        </h1>
-      </div>
-      <div className="grid grid-cols-1 justify-items-center my-12 text-center">
-        <div className="mx-10 xl:w-7/12">
-          <p className="text-xl text-gray-600 inline ">
-            อะแดปเตอร์แปลงไฟและแบตเตอรี่ที่เป็นของปลอมหรือของผู้ให้บริการรายอื่นอาจไม่ได้รับการออกแบบมาอย่างเหมาะ
-            สมและสามารถส่งผลให้เกิดปัญหาด้านความปลอดภัยได้
-            เพื่อให้แน่ใจว่าคุณได้รับแบตเตอรี่ Apple ของแท้ในระหว่าง
-            ที่ส่งเครื่องเข้ารับการเปลี่ยนแบตเตอรี่
-            เราขอแนะนำให้คุณไปรับบริการที่
-          </p>
-          <a className="text-xl inline" style={{ color: '#0070c9' }}>
-            {' '}Apple Store
-          </a>
-          <p className="text-xl text-gray-600 inline "> หรือ</p>
-          <a className="text-xl inline" style={{ color: '#0070c9' }}>
-            ผู้ให้บริการที่ได้รับอนุญาตจาก Apple{' '}
-          </a>
-          <p className="text-xl text-gray-600 inline ">
-            หากคุณจำเป็นต้องเปลี่ยนเป็นอะแดปเตอร์ใหม่เพื่อชาร์จอุปกรณ์ Apple
-            เราขอแนะนำให้คุณซื้ออะแดปเตอร์แปลงไฟของ Apple
-          </p>
-          <p className="text-xl text-gray-600">
-            <br />
-            นอกจากนี้
-            จอแสดงผลหน้าจอที่ไม่ใช่ชิ้นส่วนของแท้ที่นำมาเปลี่ยนอาจทำงานผิดปกติและส่งผลให้คุณภาพของภาพลดลง
-            การซ่อมหน้าจอที่ได้รับการรับรองจาก Apple จะดำเนินการโดยผู้เชี่ยว
-            ชาญที่เชื่อถือได้ ซึ่งจะใช้ชิ้นส่วนของแท้จาก Apple
-          </p>
-        </div>
+      <h1 className="text-center mt-10 mb-3 text-3xl text-black  font-medium">
+        โปรดระวังชิ้นส่วนของปลอม
+      </h1>
+      <div className="mx-auto max-w-screen-md mb-10 px-5">
+        <p className="text-center text-xl text-gray-600">
+          อะแดปเตอร์แปลงไฟและแบตเตอรี่ที่เป็นของปลอมหรือของผู้ให้บริการรายอื่นอาจไม่ได้รับการออกแบบมาอย่างเหมาะ
+          สมและสามารถส่งผลให้เกิดปัญหาด้านความปลอดภัยได้
+          เพื่อให้แน่ใจว่าคุณได้รับแบตเตอรี่ Apple ของแท้ในระหว่าง
+          ที่ส่งเครื่องเข้ารับการเปลี่ยนแบตเตอรี่ เราขอแนะนำให้คุณไปรับบริการที่{' '}
+          <span style={{ color: '#0070c9' }}>Apple Store</span> หรือ{' '}
+          <span style={{ color: '#0070c9' }}>
+            ผู้ให้บริการที่ได้รับอนุญาตจาก Apple
+          </span>{' '}
+          หากคุณจำเป็นต้องเปลี่ยนเป็นอะแดปเตอร์ใหม่เพื่อชาร์จอุปกรณ์ Apple
+          เราขอแนะนำให้คุณซื้ออะแดปเตอร์แปลงไฟของ Apple
+        </p>
+        <p className="mt-3 text-center text-xl text-gray-600">
+          นอกจากนี้
+          จอแสดงผลหน้าจอที่ไม่ใช่ชิ้นส่วนของแท้ที่นำมาเปลี่ยนอาจทำงานผิดปกติและส่งผลให้คุณภาพของภาพลดลง
+          การซ่อมหน้าจอที่ได้รับการรับรองจาก Apple จะดำเนินการโดยผู้เชี่ยว
+          ชาญที่เชื่อถือได้ ซึ่งจะใช้ชิ้นส่วนของแท้จาก Apple
+        </p>
       </div>
       <hr />
       <div className="grid grid-cols-1  mx-10 xl:w-5/12 xl:mx-auto my-12 xl:grid-cols-2">
