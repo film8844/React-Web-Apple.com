@@ -10,6 +10,7 @@ import ProductNavBar from '../../components/ProductNavBar';
 import VariantOption from '../../components/VariantOption';
 import VariantSelection from '../../components/VariantSelection';
 import AppleButton from '../../components/AppleButton';
+import Footnote from '../../components/Footnote';
 import Breadcrumb from '../../components/Breadcrumb';
 
 import IpadFeatures from './Features';
@@ -421,6 +422,33 @@ const Ipad = () => {
         <IpadCompare />
       </div>
       <IpadFAQ />
+      <Footnote>
+        <p className="text-xs text-gray-500">
+          ราคาสินค้าดังกล่าวได้รวมภาษีมูลค่าเพิ่มแล้ว
+          และไม่มีค่าธรรมเนียมการจัดส่งสินค้าทุกประเภท
+          <br />* โดยประมาณ ค่าธรรมเนียมอาจเปลี่ยนแปลงได้
+          <ol className="pl-3 list-decimal list-outside">
+            <li>
+              พื้นที่ว่างจะน้อยกว่าที่กำหนดและอาจแตกต่างกันไปอันเนื่องมาจากปัจจัยหลายประการ
+              โดยการกำหนดค่าตามมาตรฐานที่ให้มานั้นจะใช้พื้นที่ประมาณ 10GB ถึง
+              13GB (รวม iPadOS และแอพที่ติดตั้งล่วงหน้า)
+              ทั้งนี้ขึ้นอยู่กับรุ่นและการตั้งค่า
+              แอพที่ติดตั้งไว้ให้แล้วใช้พื้นที่ประมาณ 4GB
+              และคุณสามารถลบแอพเหล่านี้และเรียกคืนกลับมาได้
+              พื้นที่จัดเก็บข้อมูลอาจเปลี่ยนแปลงได้ขึ้นอยู่กับเวอร์ชั่นของซอฟต์แวร์
+              และอาจแตกต่างกันไปตามอุปกรณ์
+            </li>
+            <li>
+              Apple Pencil และ Smart Keyboard จำหน่ายแยกต่างหาก
+              อุปกรณ์เสริมจำหน่ายแยกต่างหาก
+            </li>
+          </ol>
+          §§ ระยะเวลาการใช้งานแบตเตอรี่แตกต่างกันไปตามการใช้งานและการกำหนดค่า
+          ดูข้อมูลเพิ่มเติมได้ที่www.apple.com/batteries
+          <br />
+          † การใช้ Apple TV+ และ Apple Arcade ต้องสมัครสมาชิกก่อน
+        </p>
+      </Footnote>
       <Breadcrumb
         breadcrumb={['iPad', 'iPad รุ่น 10.2 นิ้ว', 'ซื้อ iPad รุ่น 10.2 นิ้ว']}
       />

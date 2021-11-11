@@ -9,6 +9,7 @@ import GlobalNavBar from '../../components/GlobalNavBar';
 import Item from './Item';
 import NewArrivals from './NewArrivals';
 import Recommendations from './Recommentdations';
+import Footnote from '../../components/Footnote';
 
 const Bag = () => {
   const store = useStore();
@@ -159,6 +160,12 @@ const Bag = () => {
         </div>
         <Recommendations />
         <NewArrivals />
+        <Footnote>
+          <p className="text-xs text-gray-500">
+            ราคาสินค้าดังกล่าวได้รวมภาษีมูลค่าเพิ่มแล้ว
+            และไม่มีค่าธรรมเนียมการจัดส่งสินค้าทุกประเภท
+          </p>
+        </Footnote>
         <Breadcrumb breadcrumb={['ถุง']} />
         <Footer />
       </>
