@@ -1,7 +1,7 @@
 import React from 'react';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
-const IpadCompare = () => {
+const IpadMiniCompare = () => {
   return (
     <div className="my-20">
       <h2 className="text-4xl font-semibold text-center">
@@ -248,4 +248,4 @@ const IpadCompare = () => {
   );
 };
 
-export default IpadCompare;
+export default IpadMiniCompare;
