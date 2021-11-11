@@ -85,7 +85,7 @@ const BagItems = (props) => {
               <img src={item.image} alt=""/>
             </div>
             <div className="col-span-3 flex items-center">
-              <p>{item.name}</p>
+              <p className="text-sm">{item.name}</p>
             </div>
           </div>
         ))}

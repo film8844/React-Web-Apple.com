@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
 import AppleButton from '../../components/AppleButton';
 import Breadcrumb from '../../components/Breadcrumb';
 import Footer from '../../components/Footer';
@@ -106,7 +108,7 @@ const Bag = () => {
             </div>
           </div>
         </div>
-        <div className="border-t border-gray-300">
+        <div className="border-t border-b border-gray-300">
           <div className="max-w-screen-lg mx-auto px-5 py-5">
             <p>
               ต้องการความช่วยเหลือเพิ่มเติม{' '}
@@ -117,6 +119,8 @@ const Bag = () => {
             </p>
           </div>
         </div>
+        <Recommendations />
+        <NewArrivals />
         <Footer />
       </>
     );
@@ -124,37 +128,36 @@ const Bag = () => {
     return (
       <>
         <GlobalNavBar />
-        <div className="divide-y">
-          <div>
-            <div className="max-w-screen-lg mx-auto px-5 py-14">
-              <h1 className="font-semibold text-3xl md:text-4xl">
-                ถุงของคุณว่างเปล่า
-              </h1>
-              <p className="text-lg pt-5">
-                ลงชื่อเข้าใช้เพื่อดูว่าคุณมีรายการสินค้าที่บันทึกไว้หรือไม่
-                หรือไปเลือกซื้อสินค้าต่อ
-              </p>
-              <div className="mt-8 flex flex-col md:flex-row gap-5 md:max-w-screen-md">
-                <AppleButton className="px-5 w-full py-4 rounded-xl">
-                  ลงชื่อเข้าใช้
-                </AppleButton>
-                <button className="apple-btn-secondary text-black rounded-xl px-5 py-4 w-full ">
-                  เลือกซื้อสินค้าต่อ
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="max-w-screen-lg mx-auto px-5 py-5">
-              <p>
-                ต้องการความช่วยเหลือเพิ่มเติม{' '}
-                <span className="text-blue-600">แชท</span> หรือโทร
-                001‑800‑65‑6957
-              </p>
+        <div>
+          <div className="max-w-screen-lg mx-auto px-5 py-14">
+            <h1 className="font-semibold text-3xl md:text-4xl">
+              ถุงของคุณว่างเปล่า
+            </h1>
+            <p className="text-lg pt-5">
+              ลงชื่อเข้าใช้เพื่อดูว่าคุณมีรายการสินค้าที่บันทึกไว้หรือไม่
+              หรือไปเลือกซื้อสินค้าต่อ
+            </p>
+            <div className="mt-8 flex flex-col md:flex-row gap-5 md:max-w-screen-md">
+              <AppleButton className="px-5 w-full py-4 rounded-xl">
+                ลงชื่อเข้าใช้
+              </AppleButton>
+              <button className="apple-btn-secondary text-black rounded-xl px-5 py-4 w-full ">
+                เลือกซื้อสินค้าต่อ
+              </button>
             </div>
           </div>
         </div>
-        <Breadcrumb breadcrumb={['ถุง']}/>
+        <div className="border-t border-b border-gray-300">
+          <div className="max-w-screen-lg mx-auto px-5 py-5">
+            <p>
+              ต้องการความช่วยเหลือเพิ่มเติม{' '}
+              <span className="text-blue-600">แชท</span> หรือโทร 001‑800‑65‑6957
+            </p>
+          </div>
+        </div>
+        <Recommendations />
+        <NewArrivals />
+        <Breadcrumb breadcrumb={['ถุง']} />
         <Footer />
       </>
     );
@@ -162,3 +165,127 @@ const Bag = () => {
 };
 
 export default Bag;
+
+const Recommendations = () => {
+  return (
+    <div className="max-w-screen-lg mx-auto px-5 pt-14 pb-5">
+      <h2 className="text-4xl font-semibold text-center mt-10">
+        สินค้าแนะนำเล็กๆ น้อยๆ
+      </h2>
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-24">
+        <div className="flex flex-col">
+          <div>
+            <img
+              className="mx-auto"
+              src="/assets/bag_images/20w-adapter.jfif"
+              alt=""
+              style={{ maxWidth: '194px' }}
+            />
+            <p className="mt-5 text-lg font-medium">
+              อะแดปเตอร์แปลงไฟ USB-C ขนาด 20 วัตต์
+            </p>
+            <p className="mb-10">฿690.00</p>
+          </div>
+          <div className="mt-auto">
+            <AppleButton className="px-5 w-full py-3 rounded-xl">
+              ใส่ลงถุง
+            </AppleButton>
+          </div>
+        </div>
+        <div className="flex flex-col">
+          <div>
+            <img
+              className="mx-auto"
+              src="/assets/bag_images/magsafe.jfif"
+              alt=""
+              style={{ maxWidth: '194px' }}
+            />
+            <p className="mt-5 text-lg font-medium">ที่ชาร์จ MagSafe</p>
+            <p className="mb-10">฿1,490.00</p>
+          </div>
+          <div className="mt-auto">
+            <AppleButton className="px-5 w-full py-3 rounded-xl">
+              ใส่ลงถุง
+            </AppleButton>
+          </div>
+        </div>
+        <div className="flex flex-col">
+          <div>
+            <img
+              className="mx-auto"
+              src="/assets/bag_images/polishing-cloth.jfif"
+              alt=""
+              style={{ maxWidth: '194px' }}
+            />
+            <p className="mt-5 text-xs text-red-600">ใหม่</p>
+            <p className="text-lg font-medium">ผ้าเช็ดรอย</p>
+            <p className="mb-10">฿690.00</p>
+          </div>
+          <div className="mt-auto">
+            <AppleButton className="px-5 w-full py-3 rounded-xl">
+              ใส่ลงถุง
+            </AppleButton>
+          </div>
+        </div>
+      </div>
+      <p className="mt-12 text-center text-apple-link-blue hover:underline">
+        แสดงผลิตภัณฑ์เพิ่มเติม
+        <KeyboardArrowDown sx={{ fontSize: '18px' }} />
+      </p>
+    </div>
+  );
+};
+
+const NewArrivals = () => {
+  return (
+    <div className="max-w-screen-lg mx-auto px-5 py-14">
+      <div
+        className="hidden md:block"
+        style={{
+          backgroundImage:
+            'url("/assets/bag_images/apple-new-arrivals-checkout.jfif")',
+          height: '400px',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        <div
+          className="h-full flex flex-col items-center justify-center text-center"
+          style={{ maxWidth: '500px' }}
+        >
+          <div>
+            <h6 className="text-3xl font-medium">สินค้าเข้าใหม่</h6>
+            <p className="text-lg">ลองดูอุปกรณ์เสริมล่าสุด</p>
+            <p className="text-apple-link-blue hover:underline">
+              เลือกซื้อ
+              <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="md:hidden"
+        style={{
+          backgroundImage:
+            'url("/assets/bag_images/apple-new-arrivals-checkout-sm.jfif")',
+          height: '400px',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        <div className="pt-10 flex flex-col items-center justify-center text-center">
+          <div>
+            <h6 className="text-3xl font-medium">สินค้าเข้าใหม่</h6>
+            <p className="text-lg">ลองดูอุปกรณ์เสริมล่าสุด</p>
+            <p className="text-apple-link-blue hover:underline">
+              เลือกซื้อ
+              <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
