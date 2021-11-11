@@ -680,7 +680,7 @@ const Iphone13Pro = () => {
           และไม่มีค่าธรรมเนียมการจัดส่งสินค้าทุกประเภท
           <br />* โดยประมาณ ค่าธรรมเนียมอาจเปลี่ยนแปลงได้
         </p>
-        <ol className="pl-3 list-decimal list-outside">
+        <ol className="pl-3 list-decimal list-outside text-xs text-gray-500">
           <li>
             จอภาพมีมุมมนที่รับกับดีไซน์แบบโค้งอันงดงาม
             และมุมทั้งหมดนี้อยู่ในสี่เหลี่ยมมุมฉากมาตรฐาน
@@ -716,7 +716,7 @@ const Iphone13Pro = () => {
             apple.com/th/iphone/battery.html
           </li>
         </ol>
-        <p>
+        <p className="text-xs text-gray-500">
           iPhone 13 Pro และ iPhone 13 Pro Max มีความสามารถในการทนน้ำ
           น้ำที่กระเด็นใส่ และฝุ่น
           ซึ่งผ่านการทดสอบตามหลักเกณฑ์ของห้องปฏิบัติการที่ได้รับการควบคุมที่ระดับ

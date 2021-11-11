@@ -668,7 +668,7 @@ const Iphone13 = () => {
           และไม่มีค่าธรรมเนียมการจัดส่งสินค้าทุกประเภท
           <br />* โดยประมาณ ค่าธรรมเนียมอาจเปลี่ยนแปลงได้
         </p>
-        <ol className="pl-3 list-decimal list-outside">
+        <ol className="pl-3 list-decimal list-outside text-xs text-gray-500">
           <li>
             จอภาพมีมุมมนที่รับกับดีไซน์แบบโค้งอันงดงาม
             และมุมทั้งหมดนี้อยู่ในสี่เหลี่ยมมุมฉากมาตรฐาน
@@ -704,7 +704,7 @@ const Iphone13 = () => {
             apple.com/th/iphone/cellular
           </li>
         </ol>
-        <p>
+        <p className="text-xs text-gray-500">
           รายได้ส่วนหนึ่งจากทุกการจำหน่าย (PRODUCT)RED
           มอบให้กับกองทุนโลกเพื่อต่อต้านโรคเอดส์ และตั้งแต่วันนี้จนถึงวันที่ 31
           ธันวาคม
