@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 const Help = () => {
   return (
@@ -11,14 +12,13 @@ const Help = () => {
           src="assets/src_image/help/psp-hero-banner-homepage-welcome.image.large_2x.jpg"
           className="object-cover"
         />
-        <div class="relative md:inset-x-0 md:top-40 md:absolute">
+        <div class="relative mt-10 md:mt-0 md:inset-x-0 md:top-40 md:absolute">
           <h1 className="text-3xl text-black font-medium md:text-white md:text-5xl mt-4">
             บริการช่วยเหลือของ Apple
           </h1>
         </div>
       </div>
       <div className="grid grid-cols-2 my-12 gap-y-8 md:grid-cols-3 justify-items-center xl:grid-cols-7 text-center xl:mx-96 xl:my-24 ">
-        {/* <div className="flex flex-row space-x-20 text-center"> */}
         <div className="w-16 flex flex-col space-y-4">
           <img src="assets/src_image/help/homepage_productnav_iphone_family_2x.png" />
           <a>iPhone</a>
@@ -45,9 +45,8 @@ const Help = () => {
         </div>
         <div className="w-16 flex flex-col space-y-4">
           <img src="assets/src_image/help/homepage-productdrawer-appletv_2x.png" />
-          <a>Tv</a>
+          <a>TV</a>
         </div>
-        {/* </div> */}
       </div>
       <hr />
       <div
@@ -59,21 +58,30 @@ const Help = () => {
             src="assets/src_image/help/promo-icon-homepage-password_2x.png"
             className="mx-auto mb-4 w-10"
           />
-          <a>ลืม Apple ID หรือรหัสผ่าน {'>'}</a>
+          <a>
+            ลืม Apple ID หรือรหัสผ่าน
+            <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
+          </a>
         </div>
         <div className="flex-1 ">
           <img
             src="assets/src_image/help/promo-icon-homepage-subscriptions_2x.png"
             className="mx-auto mb-4 w-10"
           />
-          <a>การเรียกเก็บเงินและการสมัครรับ {'>'}</a>
+          <a>
+            การเรียกเก็บเงินและการสมัครรับ
+            <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
+          </a>
         </div>
         <div className="flex-1 ">
           <img
             src="assets/src_image/help/promo-icon-find-my_2x.png"
             className="mx-auto mb-4 w-10"
           />
-          <a>ค้นหาของฉัน {'>'}</a>
+          <a>
+            ค้นหาของฉัน
+            <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
+          </a>
         </div>
       </div>
       <hr />
@@ -120,8 +128,7 @@ const Help = () => {
             ได้มากกว่าเดิม
           </p>
           <a className="text-xl " style={{ color: '#0070c9' }}>
-            {' '}
-            รับเวอร์ชั่นล่าสุด {'>'}
+            รับเวอร์ชั่นล่าสุด <KeyboardArrowRightIcon />
           </a>
         </div>
       </div>
@@ -139,12 +146,13 @@ const Help = () => {
             <br />
           </p>
           <a className="text-xl " style={{ color: '#6BF' }}>
-            เริ่มเลย {'>'}
+            เริ่มเลย <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
             <br />
             <br />
           </a>
           <a className="text-xl " style={{ color: '#6BF' }}>
-            ดาวน์โหลดแอพ Apple Support {'>'}
+            ดาวน์โหลดแอพ Apple Support{' '}
+            <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
           </a>
         </div>
       </div>
@@ -165,8 +173,8 @@ const Help = () => {
             Apple
           </p>
           <a className="text-xl " style={{ color: '#0070c9' }}>
-            {' '}
-            ดูข้อมูลเกี่ยวกับแผน AppleCare{'>'}
+            ดูข้อมูลเกี่ยวกับแผน AppleCare
+            <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
           </a>
         </div>
       </div>
@@ -183,15 +191,14 @@ const Help = () => {
             การรับประกันและการซ่อมแซม
           </h1>
           <a className="text-xl inline" style={{ color: '#0070c9' }}>
-            ดูว่าผลิตภัณฑ์ Apple ของคุณเข้าเกณฑ์{' '}
+            ดูว่าผลิตภัณฑ์ Apple ของคุณเข้าเกณฑ์
           </a>
           <p className="text-xl text-gray-600 inline ">
             การรับบริการและบริการช่วยเหลือภายใต้การรับประกันแบบจำกัดของเราหรือไม่
             มีการซ่อมที่อยู่ระหว่างดำเนินการแล้วใช่หรือไม่
           </p>
           <a className="text-xl inline" style={{ color: '#0070c9' }}>
-            {' '}
-            มาตรวจสอบสถานะกัน
+            {' '}มาตรวจสอบสถานะกัน
           </a>
         </div>
       </div>
@@ -211,13 +218,11 @@ const Help = () => {
             เราขอแนะนำให้คุณไปรับบริการที่
           </p>
           <a className="text-xl inline" style={{ color: '#0070c9' }}>
-            {' '}
-            Apple Store
+            {' '}Apple Store
           </a>
           <p className="text-xl text-gray-600 inline "> หรือ</p>
           <a className="text-xl inline" style={{ color: '#0070c9' }}>
-            {' '}
-            ผู้ให้บริการที่ได้รับอนุญาตจาก Apple
+            ผู้ให้บริการที่ได้รับอนุญาตจาก Apple{' '}
           </a>
           <p className="text-xl text-gray-600 inline ">
             หากคุณจำเป็นต้องเปลี่ยนเป็นอะแดปเตอร์ใหม่เพื่อชาร์จอุปกรณ์ Apple
@@ -243,8 +248,8 @@ const Help = () => {
             และรับข้อมูลเกี่ยวกับผลิตภัณฑ์ Apple ของคุณได้ในที่เดียว
           </p>
           <a className="text-xl " style={{ color: '#0070c9' }}>
-            {' '}
-            ดูข้อมูลเกี่ยวกับแผน AppleCare{'>'}
+            ดูข้อมูลเกี่ยวกับแผน AppleCare
+            <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
           </a>
         </div>
         <div className="flex">
@@ -263,41 +268,37 @@ const Help = () => {
           <ul className="list-none space-y-4 ">
             <li>
               <a className="text-xl mt-14" style={{ color: '#0070c9' }}>
-                {' '}
                 โปรแกรมการให้บริการสำหรับ iPhone 12 และ iPhone 12 Pro
-                สำหรับปัญหาเครื่องในกรณีที่ไม่มีเสียง{'>'}
+                สำหรับปัญหาเครื่องในกรณีที่ไม่มีเสียง
+                <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
               </a>
             </li>
             <li>
               <a className="text-xl mt-14" style={{ color: '#0070c9' }}>
-                {' '}
                 โปรแกรมการเปลี่ยนโมดูลจอแสดงผล iPhone 11
                 สำหรับปัญหาเกี่ยวกับพื้นผิวระบบสัมผัส
               </a>
             </li>
             <li>
               <a className="text-xl mt-14" style={{ color: '#0070c9' }}>
-                {' '}
                 โปรแกรมการบริการ AirPods Pro สำหรับปัญหาเกี่ยวกับเสียง
               </a>
             </li>
             <li>
               <a className="text-xl mt-14" style={{ color: '#0070c9' }}>
-                {' '}
                 โปรแกรมการให้บริการ iPad Air (รุ่นที่ 3)
                 สำหรับปัญหาหน้าจอว่างเปล่า
               </a>
             </li>
             <li>
               <a className="text-xl mt-14" style={{ color: '#0070c9' }}>
-                {' '}
                 โปรแกรมการเรียกคืนแบตเตอรี่ MacBook Pro รุ่น 15 นิ้ว
               </a>
             </li>
             <li>
               <a className="text-xl mt-14" style={{ color: '#0070c9' }}>
-                {' '}
-                ดูโปรแกรมทั้งหมด {'>'}
+                ดูโปรแกรมทั้งหมด
+                <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
               </a>
             </li>
           </ul>

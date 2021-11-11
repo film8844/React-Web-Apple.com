@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import AppleButton from '../../components/AppleButton';
+import Breadcrumb from '../../components/Breadcrumb';
 import Footer from '../../components/Footer';
 import GlobalNavBar from '../../components/GlobalNavBar';
 import { useStore } from '../../store/store';
@@ -153,6 +154,7 @@ const Bag = () => {
             </div>
           </div>
         </div>
+        <Breadcrumb breadcrumb={['ถุง']}/>
         <Footer />
       </>
     );

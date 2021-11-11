@@ -1,7 +1,10 @@
-import React from "react";
+import React from 'react';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { useStore } from '../../../store/store';
 
 const Item = (props) => {
+  const store = useStore();
+  const { removeItemFromBag } = store;
   const { item } = props;
   let price;
   if (item.appleCare) {
@@ -9,6 +12,11 @@ const Item = (props) => {
   } else {
     price = item.price;
   }
+
+  const handleRemoveItem = (event) => {
+    console.log(event.target.value);
+    removeItemFromBag(event.target.value)
+  };
 
   const AppleCare = () => {
     if (item.appleCare) {
@@ -37,7 +45,7 @@ const Item = (props) => {
           <div className="text-right">
             <p className="text-xl font-medium">{`฿${Number(
               item.appleCareCost
-            ).toLocaleString("en", {
+            ).toLocaleString('en', {
               minimumFractionDigits: 2,
               maximumFractionDigits: 2,
             })}`}</p>
@@ -63,8 +71,8 @@ const Item = (props) => {
             </div>
             <div>
               <p className="text-lg font-medium">
-                เพิ่ม AppleCare+ สำหรับ {item.shortName} ในราคา{" "}
-                {`฿${Number(item.appleCareCost).toLocaleString("en", {
+                เพิ่ม AppleCare+ สำหรับ {item.shortName} ในราคา{' '}
+                {`฿${Number(item.appleCareCost).toLocaleString('en', {
                   minimumFractionDigits: 2,
                   maximumFractionDigits: 2,
                 })}`}
@@ -95,7 +103,7 @@ const Item = (props) => {
     <div className="pt-20 mb-20 grid grid-cols-1 md:grid-cols-4">
       <div>
         <img
-          style={{ maxWidth: "200px" }}
+          style={{ maxWidth: '200px' }}
           className="mx-auto mb-5"
           src={item.image}
           alt={item.name}
@@ -107,26 +115,29 @@ const Item = (props) => {
             <span className="text-2xl font-medium">{item.name}</span>
           </div>
           <div className="flex justify-between">
-            <span className="text-2xl font-medium md:ml-10">1<KeyboardArrowDownIcon className="text-blue-600"/></span>
+            <span className="text-2xl font-medium md:ml-10">
+              1<KeyboardArrowDownIcon className="text-blue-600" />
+            </span>
             <div className="text-right">
               <p className="text-2xl font-medium">{`฿${Number(
                 price
-              ).toLocaleString("en", {
+              ).toLocaleString('en', {
                 minimumFractionDigits: 2,
                 maximumFractionDigits: 2,
               })}`}</p>
-              <span className="text-xl text-blue-600 hover:underline cursor-pointer">
-                ลบออก
-              </span>
+              <button value={item.id} onClick={handleRemoveItem} className="text-xl text-blue-600 hover:underline cursor-pointer">
+                  ลบออก
+              </button>
             </div>
           </div>
         </div>
         {AppleCare()}
         <div className="pt-5">
           <p className="text-lg font-medium">
-            ดูว่าคุณจะได้รับสินค้ารายการนี้เร็วที่สุดเมื่อไหร่{" "}
+            ดูว่าคุณจะได้รับสินค้ารายการนี้เร็วที่สุดเมื่อไหร่{' '}
             <span className="font-normal text-blue-600 hover:underline cursor-pointer">
-              โปรดระบุรหัสไปรษณีย์<KeyboardArrowDownIcon/>
+              โปรดระบุรหัสไปรษณีย์
+              <KeyboardArrowDownIcon />
             </span>
           </p>
           <div className="mt-1 grid grid-cols-2">

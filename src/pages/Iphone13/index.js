@@ -8,12 +8,13 @@ import GlobalNavBar from '../../components/GlobalNavBar';
 import ProductNavBar from '../../components/ProductNavBar';
 import VariantOption from '../../components/VariantOption';
 import VariantSelection from '../../components/VariantSelection';
-
-import WhatsInTheBox from './WhatsInTheBox';
 import AppleButton from '../../components/AppleButton';
-import Iphone13FAQ from './FAQ';
+import Breadcrumb from '../../components/Breadcrumb';
+
 import Iphone13Features from './Features';
+import Iphone13WITB from './WhatsInTheBox';
 import Iphone13Compare from './Compare';
+import Iphone13FAQ from './FAQ';
 
 const iphone13Price = {
   mini: {
@@ -65,6 +66,8 @@ const Iphone13 = () => {
         } else {
           setProductImage('iphone13-regular-family.jpg');
         }
+        break;
+      default:
         break;
     }
 
@@ -650,10 +653,17 @@ const Iphone13 = () => {
           </div>
         </div>
         <Iphone13Features />
-        <WhatsInTheBox />
+        <Iphone13WITB />
         <Iphone13Compare />
       </div>
       <Iphone13FAQ />
+      <Breadcrumb
+        breadcrumb={[
+          'iPhone',
+          'iPhone 13',
+          'ซื้อ iPhone 13 และ iPhone 13 mini',
+        ]}
+      />
       <Footer />
     </>
   );

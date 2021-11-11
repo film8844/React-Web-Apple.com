@@ -9,11 +9,12 @@ import ProductNavBar from '../../components/ProductNavBar';
 import VariantOption from '../../components/VariantOption';
 import VariantSelection from '../../components/VariantSelection';
 import AppleButton from '../../components/AppleButton';
+import Breadcrumb from '../../components/Breadcrumb';
 
-import WhatsInTheBox from './WhatsInTheBox';
-import Iphone13ProFAQ from './FAQ';
 import Iphone13ProFeatures from './Features';
+import Iphone13ProWITB from './WhatsInTheBox';
 import Iphone13ProCompare from './Compare';
+import Iphone13ProFAQ from './FAQ';
 
 const iphone13proPrice = {
   pro: {
@@ -66,6 +67,8 @@ const Iphone13Pro = () => {
         } else {
           setProductImage('iphone13pro-promax-family.jfif');
         }
+        break;
+      default:
         break;
     }
 
@@ -662,10 +665,17 @@ const Iphone13Pro = () => {
           </div>
         </div>
         <Iphone13ProFeatures />
-        <WhatsInTheBox />
+        <Iphone13ProWITB />
         <Iphone13ProCompare />
       </div>
       <Iphone13ProFAQ />
+      <Breadcrumb
+        breadcrumb={[
+          'iPhone',
+          'iPhone 13 Pro',
+          'ซื้อ iPhone 13 Pro และ iPhone 13 Pro Max',
+        ]}
+      />
       <Footer />
     </>
   );

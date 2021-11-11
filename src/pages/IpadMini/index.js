@@ -9,11 +9,13 @@ import GlobalNavBar from '../../components/GlobalNavBar';
 import ProductNavBar from '../../components/ProductNavBar';
 import VariantOption from '../../components/VariantOption';
 import VariantSelection from '../../components/VariantSelection';
-
-import WhatsInTheBox from './WhatsInTheBox';
 import AppleButton from '../../components/AppleButton';
+import Breadcrumb from '../../components/Breadcrumb';
+
 import IpadMiniFeatures from './Features';
+import IpadMiniWITB from './WhatsInTheBox';
 import IpadMiniFAQ from './FAQ';
+import IpadCompare from './Compare';
 
 const ipadminiPrice = {
   wifi: {
@@ -410,9 +412,7 @@ const IpadMini = () => {
                   หากมีคำถามเกี่ยวกับการซื้อ iPad
                 </span>
                 <br />
-                <span
-                  className="text-blue-600 hover:underline cursor-pointer"
-                >
+                <span className="text-blue-600 hover:underline cursor-pointer">
                   แชทกับผู้เชี่ยวชาญด้าน iPad
                 </span>
               </p>
@@ -420,9 +420,11 @@ const IpadMini = () => {
           </div>
         </div>
         <IpadMiniFeatures />
-        <WhatsInTheBox />
+        <IpadMiniWITB />
+        <IpadCompare />
       </div>
       <IpadMiniFAQ />
+      <Breadcrumb breadcrumb={['iPad', 'iPad mini', 'ซื้อ iPad mini']} />
       <Footer />
     </>
   );
