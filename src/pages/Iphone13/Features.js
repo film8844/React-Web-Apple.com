@@ -135,15 +135,12 @@ const Iphone13Features = () => {
         </div>
       </div>
       <p className="text-center text-lg font-medium mt-14">
-        <a
-          href="https://www.apple.com/th/iphone-13"
-          target="_blank"
-          rel="noreferrer"
+        <span
           className="text-blue-600 hover:underline"
         >
           ดูเพิ่มเติมเกี่ยวกับ iPhone 13
           <KeyboardArrowRightIcon />
-        </a>
+        </span>
       </p>
     </div>
   );

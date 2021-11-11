@@ -7,13 +7,12 @@ const IpadCompare = () => {
       <h2 className="text-4xl font-semibold text-center">
         เปรียบเทียบ iPad รุ่นต่างๆ
       </h2>
-      <a
-        className="block mt-5 text-lg text-center text-blue-600 hover:underline cursor-pointer"
-        href="https://www.apple.com/th/ipad/compare/"
+      <span
+        className="block mt-5 text-lg text-center text-blue-600 hover:underline"
       >
         ดูว่า iPad รุ่นไหนที่ใช่สำหรับคุณ
         <KeyboardArrowRightIcon sx={{fontSize:'18px'}}/>
-      </a>
+      </span>
       <div className="grid grid-cols-2 md:grid-cols-4 text-center mt-12">
         <div className="p-3">
           <div>

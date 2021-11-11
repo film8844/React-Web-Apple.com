@@ -1,4 +1,5 @@
 import React from 'react';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 const Iphone13ProCompare = () => {
   return (
@@ -222,6 +223,14 @@ const Iphone13ProCompare = () => {
           </div>
         </div>
       </div>
+      <p className="text-center text-lg font-medium mt-14">
+        <span
+          className="text-apple-link-blue hover:underline"
+        >
+          เปรียบเทียบ iPhone ทุกรุ่น
+          <KeyboardArrowRightIcon />
+        </span>
+      </p>
     </div>
   );
 };

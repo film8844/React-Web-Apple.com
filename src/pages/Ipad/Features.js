@@ -1,4 +1,5 @@
 import React from 'react';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 const IpadFeatures = () => {
   return (
@@ -126,6 +127,14 @@ const IpadFeatures = () => {
           </div>
         </div>
       </div>
+      <p className="text-center text-lg mt-14">
+        <span
+          className="text-blue-600 hover:underline"
+        >
+          ดูเพิ่มเติมเกี่ยวกับ iPad
+          <KeyboardArrowRightIcon sx={{fontSize:'18px'}}/>
+        </span>
+      </p>
     </div>
   );
 };

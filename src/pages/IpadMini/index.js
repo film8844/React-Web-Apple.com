@@ -131,13 +131,12 @@ const IpadMini = () => {
         <div className="max-w-screen-lg m-auto">
           <p className="text-sm text-center px-5 py-3">
             มีการผ่อนชำระในอัตราดอกเบี้ย 0% นานสูงสุด 10 เดือน{' '}
-            <a
-              href="https://www.apple.com/th/shop/browse/finance/installment"
-              className="text-blue-600 hover:underline cursor-pointer"
+            <span
+              className="text-blue-600 hover:underline"
             >
               ดูเพิ่มเติม
               <KeyboardArrowRightIcon sx={{ fontSize: '14px' }} />
-            </a>
+            </span>
           </p>
         </div>
       </div>
@@ -412,7 +411,7 @@ const IpadMini = () => {
                   หากมีคำถามเกี่ยวกับการซื้อ iPad
                 </span>
                 <br />
-                <span className="text-blue-600 hover:underline cursor-pointer">
+                <span className="text-blue-600 hover:underline">
                   แชทกับผู้เชี่ยวชาญด้าน iPad
                 </span>
               </p>

@@ -15,13 +15,12 @@ const Iphone13Pro = () => {
         <p className="text-3xl mt-2">โปรสมชื่อ</p>
       </div>
       <div className="mt-5 text-center text-xl text-apple-link-blue">
-        <a
+        <span
           className="mr-4 hover:underline"
-          href="https://www.apple.com/th/iphone-13-pro/"
         >
           ดูเพิ่มเติม
           <KeyboardArrowRightIcon />
-        </a>
+        </span>
         <Link to="/iphone13pro" className="hover:underline">
           ซื้อ
           <KeyboardArrowRightIcon />
@@ -59,13 +58,12 @@ const Iphone13 = () => {
         <p className="text-3xl mt-2 color-iPhone13">พลังพิเศษในมือคุณ</p>
       </div>
       <div className="mt-5 text-center text-xl" style={{ color: '#2997ff' }}>
-        <a
+        <span
           className="mr-4 hover:underline"
-          href="https://www.apple.com/th/iphone-13/"
         >
           ดูเพิ่มเติม
           <KeyboardArrowRightIcon />
-        </a>
+        </span>
         <Link className="hover:underline" to="/iphone13">
           ซื้อ
           <KeyboardArrowRightIcon />
@@ -99,20 +97,18 @@ const Watch = () => {
         <p className="text-3xl mt-2">จัดเต็มแบบเต็มจอ</p>
       </div>
       <div className="mt-5 text-center text-xl text-apple-link-blue">
-        <a
+        <span
           className="mr-4 hover:underline"
-          href="https://www.apple.com/th/apple-watch-series-7/"
         >
           ดูเพิ่มเติม
           <KeyboardArrowRightIcon />
-        </a>
-        <a
+        </span>
+        <span
           className="hover:underline"
-          href="https://www.apple.com/th/shop/goto/buy_watch/apple_watch_series_7"
         >
           ซื้อ
           <KeyboardArrowRightIcon />
-        </a>
+        </span>
       </div>
       <img
         alt=""
@@ -143,13 +139,12 @@ const IpadMini = () => {
         <p className="text-2xl mt-2">พลังยักษ์ใหญ่ในไซส์มินิ</p>
       </div>
       <div className="mt-2 text-center text-lg text-apple-link-blue">
-        <a
+        <span
           className="mr-4 hover:underline"
-          href="https://www.apple.com/th/ipad-mini/"
         >
           ดูเพิ่มเติม
           <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
-        </a>
+        </span>
         <Link to="/ipadmini" className="hover:underline">
           ซื้อ
           <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
@@ -180,20 +175,18 @@ const Airtag = () => {
         <p className="text-2xl">ลืมไปเลยว่าเคยขี้ลืม</p>
       </div>
       <div className="mt-2 text-center text-lg text-apple-link-blue">
-        <a
+        <span
           className="mr-4 hover:underline"
-          href="https://www.apple.com/th/airtag/"
         >
           ดูเพิ่มเติม
           <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
-        </a>
-        <a
+        </span>
+        <span
           className="hover:underline"
-          href="https://www.apple.com/th/shop/buy-airtag/airtag"
         >
           ซื้อ
           <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
-        </a>
+        </span>
       </div>
       <img
         alt=""
@@ -219,20 +212,18 @@ const IMac = () => {
         <p className="text-2xl -mt-1">สวัสดี</p>
       </div>
       <div className="my-5 mt-2 text-center text-lg text-apple-link-blue">
-        <a
+        <span
           className="mr-4 hover:underline"
-          href="https://www.apple.com/th/imac-24/"
         >
           ดูเพิ่มเติม
           <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
-        </a>
-        <a
+        </span>
+        <span
           className="hover:underline"
-          href="hhttps://www.apple.com/th/shop/buy-mac/imac"
         >
           ซื้อ
           <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
-        </a>
+        </span>
       </div>
       <img
         alt=""
@@ -271,13 +262,12 @@ const Ipad = () => {
         <p className="text-2xl ">ง่ายไปหมดทุกอย่าง</p>
       </div>
       <div className=" text-center mb-5 mt-2 text-lg text-apple-link-blue">
-        <a
+        <span
           className="mr-4 hover:underline"
-          href="https://www.apple.com/th/ipad-10.2/"
         >
           ดูเพิ่มเติม
           <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
-        </a>
+        </span>
         <Link to="/ipad" className="hover:underline">
           ซื้อ
           <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
@@ -310,14 +300,13 @@ const Arcade = () => {
           <p className="text-2xl mt-2">ได้เวลาสนุกของคอเกม</p>
         </div>
         <div className="mt-2 text-center text-lg text-apple-link-blue">
-          <a
+          <span
             className="mr-4 hover:underline"
-            href="https://www.apple.com/th/apple-arcade/"
           >
             ดูเพิ่มเติม
             <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
-          </a>
-          <span className="hover:underline cursor-pointer">
+          </span>
+          <span className="hover:underline">
             ลองใช้ฟรี*
             <ArrowForwardIcon
               className="transform -rotate-45"
@@ -347,14 +336,13 @@ const Arcade = () => {
           <p className="text-2xl mt-2">ได้เวลาสนุกของคอเกม</p>
         </div>
         <div className="mt-2 text-center text-lg text-apple-link-blue">
-          <a
+          <span
             className="mr-4 hover:underline"
-            href="https://www.apple.com/th/apple-arcade/"
           >
             ดูเพิ่มเติม
             <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
-          </a>
-          <span className="hover:underline cursor-pointer">
+          </span>
+          <span className="hover:underline">
             ลองใช้ฟรี*
             <ArrowForwardIcon
               className="transform -rotate-45"
@@ -394,13 +382,12 @@ const AppleTV = () => {
           src="assets/src_image/homepage/large/logo_foundation_s1__fpga2losku6i_large.png"
         />
         <div className="mt-16 text-center text-lg text-blue-500">
-          <a
+          <span
             className="mr-4 hover:underline"
-            href="https://tv.apple.com/th/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3?l=th"
           >
             สตรีมตอนแรกฟรี{' '}
             <ArrowDropDownCircleIcon className="transform -rotate-90" />
-          </a>
+          </span>
         </div>
       </div>
       <div
@@ -428,13 +415,12 @@ const AppleTV = () => {
           src="assets/src_image/homepage/small/logo_foundation_s1_small.png"
         />
         <div className="mt-16 text-center text-md text-blue-500">
-          <a
+          <span
             className="mr-4 hover:underline"
-            href="https://tv.apple.com/th/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3?l=th"
           >
             สตรีมตอนแรกฟรี
             <ArrowDropDownCircleIcon className="transform -rotate-90" />
-          </a>
+          </span>
         </div>
       </div>
     </>
