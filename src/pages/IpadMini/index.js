@@ -131,9 +131,7 @@ const IpadMini = () => {
         <div className="max-w-screen-lg m-auto">
           <p className="text-sm text-center px-5 py-3">
             มีการผ่อนชำระในอัตราดอกเบี้ย 0% นานสูงสุด 10 เดือน{' '}
-            <span
-              className="text-apple-link-blue hover:underline"
-            >
+            <span className="text-apple-link-blue hover:underline">
               ดูเพิ่มเติม
               <KeyboardArrowRightIcon sx={{ fontSize: '14px' }} />
             </span>
@@ -252,6 +250,7 @@ const IpadMini = () => {
                     *
                   </p>
                   <p className="text-sm text-apple-link-blue">
+                    ฿
                     {Number(price / 10).toLocaleString('en', {
                       minimumFractionDigits: 2,
                       maximumFractionDigits: 2,
@@ -344,7 +343,9 @@ const IpadMini = () => {
                     <br />
                     บริการจัดส่งฟรี
                     <br />
-                    <span className="text-apple-link-blue">ดูวันส่งมอบสินค้า</span>
+                    <span className="text-apple-link-blue">
+                      ดูวันส่งมอบสินค้า
+                    </span>
                   </p>
                 </div>
                 <div className="mb-8 flex gap-2">
@@ -543,7 +544,9 @@ const VariantStorageSelection = (props) => {
       <button onClick={toggleShow} className="block w-full">
         <div className="py-5 flex justify-between items-center hover:text-apple-link-blue">
           <h4 className="text-2xl font-medium">{variantStorage}¹</h4>
-          <span className="text-sm text-apple-link-blue hover:underline">เปลี่ยน</span>
+          <span className="text-sm text-apple-link-blue hover:underline">
+            เปลี่ยน
+          </span>
         </div>
       </button>
     );
@@ -620,7 +623,9 @@ const VariantTypeSelection = (props) => {
           <h4 className="text-2xl font-medium">
             {variantType === 'wifi' ? 'Wi-Fi' : 'Wi-Fi + Cellular'}
           </h4>
-          <span className="text-sm text-apple-link-blue hover:underline">เปลี่ยน</span>
+          <span className="text-sm text-apple-link-blue hover:underline">
+            เปลี่ยน
+          </span>
         </div>
       </button>
     );
@@ -711,7 +716,9 @@ const VariantEngravingSelection = (props) => {
           <h4 className="text-2xl font-medium">
             {variantEngraving === '1' ? 'เพิ่มการสลัก' : 'ไม่สลัก'}
           </h4>
-          <span className="text-sm text-apple-link-blue hover:underline">เปลี่ยน</span>
+          <span className="text-sm text-apple-link-blue hover:underline">
+            เปลี่ยน
+          </span>
         </div>
       </button>
     );
