@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { useStore } from '../../store/store';
 
+import GlobalNavBar from '../../components/GlobalNavBar';
 import AppleButton from '../../components/AppleButton';
 import Breadcrumb from '../../components/Breadcrumb';
+import Footnote from '../../components/Footnote';
 import Footer from '../../components/Footer';
-import GlobalNavBar from '../../components/GlobalNavBar';
 
 import Item from './Item';
 import NewArrivals from './NewArrivals';
 import Recommendations from './Recommentdations';
-import Footnote from '../../components/Footnote';
+import BagFAQ from './FAQ';
 
 const Bag = () => {
   const store = useStore();
@@ -124,6 +125,14 @@ const Bag = () => {
         </div>
         <Recommendations />
         <NewArrivals />
+        <BagFAQ/>
+        <Footnote>
+          <p className="text-xs text-gray-500">
+            ราคาสินค้าดังกล่าวได้รวมภาษีมูลค่าเพิ่มแล้ว
+            และไม่มีค่าธรรมเนียมการจัดส่งสินค้าทุกประเภท
+          </p>
+        </Footnote>
+        <Breadcrumb breadcrumb={['ถุง']} />
         <Footer />
       </>
     );
@@ -160,6 +169,7 @@ const Bag = () => {
         </div>
         <Recommendations />
         <NewArrivals />
+        <BagFAQ/>
         <Footnote>
           <p className="text-xs text-gray-500">
             ราคาสินค้าดังกล่าวได้รวมภาษีมูลค่าเพิ่มแล้ว
