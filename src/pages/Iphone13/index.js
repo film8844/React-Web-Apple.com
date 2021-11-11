@@ -15,6 +15,7 @@ import Breadcrumb from '../../components/Breadcrumb';
 import Iphone13Features from './Features';
 import Iphone13WITB from './WhatsInTheBox';
 import Iphone13Compare from './Compare';
+import Iphone13AR from './ViewAR';
 import Iphone13FAQ from './FAQ';
 
 const iphone13Price = {
@@ -659,6 +660,7 @@ const Iphone13 = () => {
         <Iphone13WITB />
         <Iphone13Compare />
       </div>
+      <Iphone13AR />
       <Iphone13FAQ />
       <Footnote>
         <p className="text-xs text-gray-500">

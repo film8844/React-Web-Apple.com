@@ -15,6 +15,7 @@ import Footnote from '../../components/Footnote';
 import Iphone13ProFeatures from './Features';
 import Iphone13ProWITB from './WhatsInTheBox';
 import Iphone13ProCompare from './Compare';
+import Iphone13ProAR from './ViewAR';
 import Iphone13ProFAQ from './FAQ';
 
 const iphone13proPrice = {
@@ -671,6 +672,7 @@ const Iphone13Pro = () => {
         <Iphone13ProWITB />
         <Iphone13ProCompare />
       </div>
+      <Iphone13ProAR />
       <Iphone13ProFAQ />
       <Footnote>
         <p className="text-xs text-gray-500">
