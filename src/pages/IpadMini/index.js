@@ -15,8 +15,9 @@ import Breadcrumb from '../../components/Breadcrumb';
 
 import IpadMiniFeatures from './Features';
 import IpadMiniWITB from './WhatsInTheBox';
-import IpadMiniFAQ from './FAQ';
+import IpadMiniServices from './Services';
 import IpadMiniCompare from './Compare';
+import IpadMiniFAQ from './FAQ';
 
 const ipadminiPrice = {
   wifi: {
@@ -422,6 +423,7 @@ const IpadMini = () => {
         </div>
         <IpadMiniFeatures />
         <IpadMiniWITB />
+        <IpadMiniServices />
         <IpadMiniCompare />
       </div>
       <IpadMiniFAQ />

@@ -15,6 +15,7 @@ import Breadcrumb from '../../components/Breadcrumb';
 
 import IpadFeatures from './Features';
 import IpadWITB from './WhatsInTheBox';
+import IpadServices from './Services';
 import IpadCompare from './Compare';
 import IpadFAQ from './FAQ';
 
@@ -419,6 +420,7 @@ const Ipad = () => {
         </div>
         <IpadFeatures />
         <IpadWITB />
+        <IpadServices />
         <IpadCompare />
       </div>
       <IpadFAQ />
@@ -445,8 +447,7 @@ const Ipad = () => {
           </ol>
           §§ ระยะเวลาการใช้งานแบตเตอรี่แตกต่างกันไปตามการใช้งานและการกำหนดค่า
           ดูข้อมูลเพิ่มเติมได้ที่www.apple.com/batteries
-          <br />
-          † การใช้ Apple TV+ และ Apple Arcade ต้องสมัครสมาชิกก่อน
+          <br />† การใช้ Apple TV+ และ Apple Arcade ต้องสมัครสมาชิกก่อน
         </p>
       </Footnote>
       <Breadcrumb
