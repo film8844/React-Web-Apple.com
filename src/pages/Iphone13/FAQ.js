@@ -76,7 +76,7 @@ const Iphone13FAQ = () => {
               href="https://support.apple.com/th-th/HT201269"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-apple-link-blue hover:underline"
             >
               support.apple.com/th-th/HT201269
             </a>
@@ -106,7 +106,7 @@ const Iphone13FAQ = () => {
               href="https://www.apple.com/th/iphone/LTE"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-apple-link-blue hover:underline"
             >
               ข้อมูลการรองรับเครือข่าย 5G และ LTE ของ iPhone
               แยกตามผู้ให้บริการเครือข่ายและประเทศหรือภูมิภาค
@@ -128,7 +128,7 @@ const Iphone13FAQ = () => {
               href="http://support.apple.com/kb/HT204039"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-apple-link-blue hover:underline"
             >
               ที่นี่
             </a>
@@ -158,7 +158,7 @@ const Iphone13FAQ = () => {
               href="https://www.apple.com/th/"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-apple-link-blue hover:underline"
             >
               apple.com
             </a>{' '}
@@ -183,7 +183,7 @@ const Iphone13FAQ = () => {
               href="https://www.apple.com/th/shop/help/returns_refund"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-apple-link-blue hover:underline"
             >
               ดูเพิ่มเติมเกี่ยวกับการคืนสินค้า การคืนเงิน และการเปลี่ยนสินค้า
             </a>

@@ -169,7 +169,7 @@ const Iphone13 = () => {
         <div className="max-w-screen-lg m-auto">
           <p className="text-sm text-center px-5 py-3">
             มีการผ่อนชำระในอัตราดอกเบี้ย 0% นานสูงสุด 10 เดือน{' '}
-            <span className="text-blue-600 hover:underline">
+            <span className="text-apple-link-blue hover:underline">
               ดูเพิ่มเติม
               <KeyboardArrowRightIcon sx={{ fontSize: '14px' }} />
             </span>
@@ -244,7 +244,7 @@ const Iphone13 = () => {
                       หากมีคำถามเกี่ยวกับการซื้อ iPhone
                     </span>
                     <br />
-                    <span className="text-blue-600 hover:underline">
+                    <span className="text-apple-link-blue hover:underline">
                       แชทกับ Specialist เรื่อง iPhone ได้เลย
                     </span>
                   </p>
@@ -263,7 +263,9 @@ const Iphone13 = () => {
                 <VariantSelection id="variantType" allowSelect={true}>
                   <div className="mb-2">
                     <h4 className="text-xl font-bold">เลือกรุ่น</h4>
-                    <span className="text-blue-600">รุ่นไหนเหมาะกับคุณ</span>
+                    <span className="text-apple-link-blue">
+                      รุ่นไหนเหมาะกับคุณ
+                    </span>
                   </div>
                   <div id="varaintTypeOptions" className="space-y-3">
                     <VariantOption
@@ -384,7 +386,7 @@ const Iphone13 = () => {
                 >
                   <div className="mb-2">
                     <h4 className="text-xl font-bold">เลือกความจุ</h4>
-                    <span className="text-blue-600">
+                    <span className="text-apple-link-blue">
                       ความจุเท่าไหร่ที่เหมาะกับคุณ
                     </span>
                   </div>
@@ -563,7 +565,8 @@ const Iphone13 = () => {
                   })}
                   *
                 </p>
-                <p className="text-sm text-blue-500">
+                <p className="text-sm text-apple-link-blue">
+                  ฿
                   {Number(price / 10).toLocaleString('en', {
                     minimumFractionDigits: 2,
                     maximumFractionDigits: 2,
@@ -592,7 +595,9 @@ const Iphone13 = () => {
                     <br />
                     บริการจัดส่งฟรี
                     <br />
-                    <span className="text-blue-500">ดูวันส่งมอบสินค้า</span>
+                    <span className="text-apple-link-blue">
+                      ดูวันส่งมอบสินค้า
+                    </span>
                   </p>
                 </div>
                 <div className="mb-8 flex gap-2">
@@ -614,7 +619,7 @@ const Iphone13 = () => {
                     <br />
                     ขณะนี้ยังไม่มีจำหน่ายที่ Apple Iconsiam
                     <br />
-                    <span className="text-blue-500">ดูร้านอื่น</span>
+                    <span className="text-apple-link-blue">ดูร้านอื่น</span>
                   </p>
                 </div>
                 <div className="flex">

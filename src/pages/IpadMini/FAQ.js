@@ -39,7 +39,7 @@ const IpadMiniFAQ = () => {
               href="https://support.apple.com/th-th/HT203089"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-apple-link-blue hover:underline"
             >
               https://support.apple.com/th-th/HT203089
             </a>
@@ -57,7 +57,7 @@ const IpadMiniFAQ = () => {
               href="https://support.apple.com/th-th/HT203089"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-apple-link-blue hover:underline"
             >
               https://support.apple.com/th-th/HT203089
             </a>
@@ -67,7 +67,7 @@ const IpadMiniFAQ = () => {
               href="https://www.apple.com/th/ipad/LTE"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-apple-link-blue hover:underline"
             >
               ข้อมูลเพิ่มเติมเกี่ยวกับการรองรับเครือข่าย LTE ของ iPad
               แยกตามผู้ให้บริการเครือข่ายและประเทศหรือภูมิภาค
@@ -119,7 +119,7 @@ const IpadMiniFAQ = () => {
               href="https://www.apple.com/th/shop/help/payments"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-apple-link-blue hover:underline"
             >
               ดูเพิ่มเติมเกี่ยวกับตัวเลือกการชำระเงิน
             </a>
@@ -159,7 +159,7 @@ const IpadMiniFAQ = () => {
               href="https://www.apple.com/th/support/products/ipad"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-apple-link-blue hover:underline"
             >
               ดูเพิ่มเติมเกี่ยวกับ AppleCare+
             </a>
@@ -196,7 +196,7 @@ const IpadMiniFAQ = () => {
               href="https://www.apple.com/th/"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-apple-link-blue hover:underline"
             >
               apple.com
             </a>{' '}
@@ -222,7 +222,7 @@ const IpadMiniFAQ = () => {
               href="https://www.apple.com/th/shop/help/returns_refund"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-apple-link-blue hover:underline"
             >
               ดูเพิ่มเติมเกี่ยวกับการคืนสินค้า การคืนเงิน และการเปลี่ยนสินค้า
             </a>

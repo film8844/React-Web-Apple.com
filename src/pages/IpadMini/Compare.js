@@ -8,7 +8,7 @@ const IpadCompare = () => {
         เปรียบเทียบ iPad รุ่นต่างๆ
       </h2>
       <span
-        className="block mt-5 text-lg text-center text-blue-600 hover:underline"
+        className="block mt-5 text-lg text-center text-apple-link-blue hover:underline"
       >
         ดูว่า iPad รุ่นไหนที่ใช่สำหรับคุณ
         <KeyboardArrowRightIcon sx={{fontSize:'18px'}}/>

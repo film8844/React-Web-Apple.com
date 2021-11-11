@@ -136,7 +136,7 @@ const Iphone13Features = () => {
       </div>
       <p className="text-center text-lg font-medium mt-14">
         <span
-          className="text-blue-600 hover:underline"
+          className="text-apple-link-blue hover:underline"
         >
           ดูเพิ่มเติมเกี่ยวกับ iPhone 13
           <KeyboardArrowRightIcon />

@@ -99,7 +99,7 @@ const Iphone13ProWITB = () => {
       </div>
       <p className="text-sm text-center mt-10 text-gray-600">
         iPhone 13 และ iPhone 13 mini ไม่มีอะแดปเตอร์แปลงไฟหรือ EarPods ให้มาด้วย{' '}
-        <span className="text-blue-500">
+        <span className="text-apple-link-blue">
           ซึ่งเป็นส่วนหนึ่งในความพยายามของเราที่จะลดผลกระทบต่อสิ่งแวดล้อม
         </span>{' '}
         สิ่งที่มีมาให้ในกล่องได้แก่สาย USB‑C เป็น Lightning
