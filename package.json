@@ -2,7 +2,7 @@
   "name": "apple",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "/project/g18apple/",
   "dependencies": {
     "@craco/craco": "^6.3.0",
     "@emotion/react": "^11.5.0",
