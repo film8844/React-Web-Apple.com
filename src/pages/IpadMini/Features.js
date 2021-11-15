@@ -29,7 +29,7 @@ const IpadMiniFeatures = () => {
               style={{ height: '450px' }}
               className="rounded-l-2xl"
               alt="Display Feature"
-              src="/assets/features/ipadmini/ipad-mini-key-features-display.jpeg"
+              src="assets/features/ipadmini/ipad-mini-key-features-display.jpeg"
             />
           </div>
         </div>
@@ -51,7 +51,7 @@ const IpadMiniFeatures = () => {
           <div className="absolute bottom-0 rounded-b-2xl overflow-hidden">
             <video loop autoPlay>
               <source
-                src="/assets/features/ipadmini/ipad-mini-key-features-touchid.mp4"
+                src="assets/features/ipadmini/ipad-mini-key-features-touchid.mp4"
                 type="video/mp4"
               />
               Your browser does not support the video tag.
@@ -73,7 +73,7 @@ const IpadMiniFeatures = () => {
             <img
               alt="Chip Feature"
               className="mx-auto rounded-b-2xl"
-              src="/assets/features/ipadmini/ipad-mini-key-features-chip.jpeg"
+              src="assets/features/ipadmini/ipad-mini-key-features-chip.jpeg"
             />
           </div>
         </div>
@@ -97,7 +97,7 @@ const IpadMiniFeatures = () => {
             <img
               alt="Chip Feature"
               className="mx-auto rounded-b-2xl"
-              src="/assets/features/ipadmini/ipad-mini-key-features-camera.jpeg"
+              src="assets/features/ipadmini/ipad-mini-key-features-camera.jpeg"
             />
           </div>
         </div>
@@ -122,7 +122,7 @@ const IpadMiniFeatures = () => {
               style={{ height: '450px' }}
               className="rounded-l-2xl"
               alt="Display Feature"
-              src="/assets/features/ipadmini/ipad-mini-key-features-pencil.jpeg"
+              src="assets/features/ipadmini/ipad-mini-key-features-pencil.jpeg"
             />
           </div>
         </div>
@@ -133,7 +133,7 @@ const IpadMiniFeatures = () => {
           <div>
             <img
               alt="Cellular Feature"
-              src="/assets/features/ipadmini/ipad-mini-key-features-cellular.jpeg"
+              src="assets/features/ipadmini/ipad-mini-key-features-cellular.jpeg"
             />
           </div>
           <div className="p-7">

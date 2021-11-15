@@ -13,7 +13,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="iPhone 13 Pro"
               className="mx-auto mb-5"
-              src="/assets/compareProduct/iphone/iphone-compare-iphone-13-pro.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-iphone-13-pro.jpg"
             />
             <p className="text-sm text-red-600">ใหม่</p>
             <h6 className="text-2xl font-medium">iPhone 13 Pro</h6>
@@ -22,7 +22,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="iPhone 13 Pro"
               className="mx-auto mt-5"
-              src="/assets/compareProduct/iphone/iphone-compare-iphone-13-pro-swatch.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-iphone-13-pro-swatch.jpg"
             />
           </div>
           <div className="my-10">
@@ -35,7 +35,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="5G"
               className="mx-auto"
-              src="/assets/compareProduct/iphone/iphone-compare-icon-5g.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-icon-5g.jpg"
             />
             <p className="mt-4 font-semibold">5G ที่เร็วสุดแรง³</p>
           </div>
@@ -43,7 +43,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="5G"
               className="mx-auto"
-              src="/assets/compareProduct/iphone/iphone-compare-icon-a15-chip.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-icon-a15-chip.jpg"
             />
             <p className="mt-4 font-semibold">ชิพ A15 Bionic</p>
             <p className="font-semibold text-gray-400">
@@ -54,7 +54,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="iPhone 13 Pro Camera"
               className="mx-auto"
-              src="/assets/compareProduct/iphone/iphone-compare-icon-iphone-13-pro-camera.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-icon-iphone-13-pro-camera.jpg"
             />
             <p className="mt-4 font-semibold">ระบบกล้องระดับโปร</p>
             <p className="font-semibold text-gray-400">
@@ -65,7 +65,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="Battery"
               className="mx-auto"
-              src="/assets/compareProduct/iphone/iphone-compare-icon-battery.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-icon-battery.jpg"
             />
             <p className="mt-4 font-semibold">
               เล่นวิดีโอ นานสูงสุด 28 ชั่วโมง⁴
@@ -76,7 +76,7 @@ const Iphone13ProCompare = () => {
               alt="MagSafe"
               className="mx-auto"
               style={{width:'23px'}}
-              src="/assets/compareProduct/iphone/iphone-compare-icon-iphone-13-pro-magsafe.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-icon-iphone-13-pro-magsafe.jpg"
             />
             <p className="mt-4 font-semibold">สามารถใช้งานได้กับ</p>
             <p className="font-semibold">อุปกรณ์เสริม MagSafe</p>
@@ -88,7 +88,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="iPhone 13"
               className="mx-auto mb-5"
-              src="/assets/compareProduct/iphone/iphone-compare-iphone-13.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-iphone-13.jpg"
             />
             <p className="text-sm text-red-600">ใหม่</p>
             <h6 className="text-2xl font-medium">iPhone 13</h6>
@@ -97,7 +97,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="iPhone 13 Pro"
               className="mx-auto mt-5"
-              src="/assets/compareProduct/iphone/iphone-compare-iphone-13-swatch.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-iphone-13-swatch.jpg"
             />
           </div>
           <div className="my-10">
@@ -108,7 +108,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="5G"
               className="mx-auto"
-              src="/assets/compareProduct/iphone/iphone-compare-icon-5g.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-icon-5g.jpg"
             />
             <p className="mt-4 font-semibold">5G ที่เร็วสุดแรง³</p>
           </div>
@@ -116,7 +116,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="Chip"
               className="mx-auto"
-              src="/assets/compareProduct/iphone/iphone-compare-icon-a15-chip.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-icon-a15-chip.jpg"
             />
             <p className="mt-4 font-semibold">ชิพ A15 Bionic</p>
             <p className="font-semibold text-gray-400">
@@ -127,7 +127,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="Camera"
               className="mx-auto"
-              src="/assets/compareProduct/iphone/iphone-compare-icon-iphone-13-camera.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-icon-iphone-13-camera.jpg"
             />
             <p className="mt-4 font-semibold">ระบบกล้องคู่สุดล้ำ</p>
             <p className="font-semibold text-gray-400">ไวด์ และอัลตร้าไวด์</p>
@@ -136,7 +136,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="Battery"
               className="mx-auto"
-              src="/assets/compareProduct/iphone/iphone-compare-icon-battery.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-icon-battery.jpg"
             />
             <p className="mt-4 font-semibold">
               เล่นวิดีโอ นานสูงสุด 19 ชั่วโมง⁴
@@ -147,7 +147,7 @@ const Iphone13ProCompare = () => {
               alt="MagSafe"
               className="mx-auto"
               style={{width:'23px'}}
-              src="/assets/compareProduct/iphone/iphone-compare-icon-iphone-13-magsafe.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-icon-iphone-13-magsafe.jpg"
             />
             <p className="mt-4 font-semibold">สามารถใช้งานได้กับ</p>
             <p className="font-semibold">อุปกรณ์เสริม MagSafe</p>
@@ -159,7 +159,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="iPhone 12"
               className="mx-auto mb-5"
-              src="/assets/compareProduct/iphone/iphone-compare-iphone-12.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-iphone-12.jpg"
             />
             <p className="text-sm text-white">-</p>
             <h6 className="text-2xl font-medium">iPhone 12</h6>
@@ -168,7 +168,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="iPhone 13 Pro"
               className="mx-auto mt-5"
-              src="/assets/compareProduct/iphone/iphone-compare-iphone-12-swatch.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-iphone-12-swatch.jpg"
             />
           </div>
           <div className="my-10">
@@ -179,7 +179,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="5G"
               className="mx-auto"
-              src="/assets/compareProduct/iphone/iphone-compare-icon-5g.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-icon-5g.jpg"
             />
             <p className="mt-4 font-semibold">5G ที่เร็วสุดแรง³</p>
           </div>
@@ -187,7 +187,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="Chip"
               className="mx-auto"
-              src="/assets/compareProduct/iphone/iphone-compare-icon-a14-chip.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-icon-a14-chip.jpg"
             />
             <p className="mt-4 font-semibold">ชิพ A14 Bionic</p>
             <p className="font-semibold text-white">-</p>
@@ -196,7 +196,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="Camera"
               className="mx-auto"
-              src="/assets/compareProduct/iphone/iphone-compare-icon-iphone-12-camera.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-icon-iphone-12-camera.jpg"
             />
             <p className="mt-4 font-semibold">ระบบกล้องคู่</p>
             <p className="font-semibold text-gray-400">ไวด์ และอัลตร้าไวด์</p>
@@ -205,7 +205,7 @@ const Iphone13ProCompare = () => {
             <img
               alt="Battery"
               className="mx-auto"
-              src="/assets/compareProduct/iphone/iphone-compare-icon-battery.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-icon-battery.jpg"
             />
             <p className="mt-4 font-semibold">
               เล่นวิดีโอ นานสูงสุด 17 ชั่วโมง⁴
@@ -216,7 +216,7 @@ const Iphone13ProCompare = () => {
               alt="MagSafe"
               className="mx-auto"
               style={{width:'23px'}}
-              src="/assets/compareProduct/iphone/iphone-compare-icon-iphone-12-magsafe.jpg"
+              src="assets/compareProduct/iphone/iphone-compare-icon-iphone-12-magsafe.jpg"
             />
             <p className="mt-4 font-semibold">สามารถใช้งานได้กับ</p>
             <p className="font-semibold">อุปกรณ์เสริม MagSafe</p>

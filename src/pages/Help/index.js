@@ -13,7 +13,7 @@ const Help = () => {
           className="hidden md:block"
           style={{
             backgroundImage:
-              'url("/assets/src_image/help/psp-hero-banner-homepage-welcome.image.large_2x.jpg")',
+              'url("assets/src_image/help/psp-hero-banner-homepage-welcome.image.large_2x.jpg")',
             height: '540px',
             backgroundPosition: 'center',
             backgroundSize: 'cover',

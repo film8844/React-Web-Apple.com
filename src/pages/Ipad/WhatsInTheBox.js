@@ -21,7 +21,7 @@ const IpadWITB = () => {
         >
           <div>
             <img
-              src="/assets/whatsInTheBox/ipad.jpg"
+              src="assets/whatsInTheBox/ipad.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
               alt="WITB iPad"
@@ -29,7 +29,7 @@ const IpadWITB = () => {
           </div>
           <div>
             <img
-              src="/assets/whatsInTheBox/lightning-cable.jpg"
+              src="assets/whatsInTheBox/lightning-cable.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
               alt="WITB Lightning Cable"
@@ -37,7 +37,7 @@ const IpadWITB = () => {
           </div>
           <div>
             <img
-              src="/assets/whatsInTheBox/20w-adapter.jpg"
+              src="assets/whatsInTheBox/20w-adapter.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
               alt="WITB 20W Adapter"
@@ -75,7 +75,7 @@ const IpadWITB = () => {
                 }}
               >
                 <img
-                  src="/assets/whatsInTheBox/ipad.jpg"
+                  src="assets/whatsInTheBox/ipad.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
                   alt="WITB iPad"
@@ -95,7 +95,7 @@ const IpadWITB = () => {
                 }}
               >
                 <img
-                  src="/assets/whatsInTheBox/lightning-cable.jpg"
+                  src="assets/whatsInTheBox/lightning-cable.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
                   alt="WITB Lightning Cable"
@@ -115,7 +115,7 @@ const IpadWITB = () => {
                 }}
               >
                 <img
-                  src="/assets/whatsInTheBox/20w-adapter.jpg"
+                  src="assets/whatsInTheBox/20w-adapter.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
                   alt="WITB 20W Adapter"

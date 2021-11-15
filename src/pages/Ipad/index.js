@@ -116,7 +116,7 @@ const Ipad = () => {
       appleCare: variantAppleCare,
       appleCareCost: 2590,
       price: price,
-      image: `/assets/products/ipad/${productImage}`,
+      image: `assets/products/ipad/${productImage}`,
     };
     setBag([...bag, product]);
     history.push('/bag');
@@ -149,7 +149,7 @@ const Ipad = () => {
                 <h1 className="text-4xl font-semibold">ซื้อ iPad</h1>
               </div>
               <img
-                src={`/assets/products/ipad/${productImage}`}
+                src={`assets/products/ipad/${productImage}`}
                 alt="iPad"
                 className="block mx-auto mb-5"
               />
@@ -504,7 +504,7 @@ const VariantColorSelection = (props) => {
             onChange={handleChangeVariantColor}
           >
             <img
-              src="/assets/productVariantColors/ipad/spacegray.png"
+              src="assets/productVariantColors/ipad/spacegray.png"
               alt="variant-color-spacegray"
               style={{ maxWidth: '32px' }}
               className="block mx-auto"
@@ -518,7 +518,7 @@ const VariantColorSelection = (props) => {
             onChange={handleChangeVariantColor}
           >
             <img
-              src="/assets/productVariantColors/ipad/silver.png"
+              src="assets/productVariantColors/ipad/silver.png"
               alt="variant-color-silver"
               style={{ maxWidth: '32px' }}
               className="block mx-auto"

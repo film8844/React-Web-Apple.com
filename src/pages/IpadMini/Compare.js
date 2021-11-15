@@ -19,7 +19,7 @@ const IpadMiniCompare = () => {
             <img
               alt="iPad Pro"
               className="mx-auto mb-5"
-              src="/assets/compareProduct/ipad/ipad-pro-compare.jpg"
+              src="assets/compareProduct/ipad/ipad-pro-compare.jpg"
             />
             <p className="text-sm text-white">-</p>
             <h6 className="text-2xl font-semibold">iPad Pro</h6>
@@ -30,7 +30,7 @@ const IpadMiniCompare = () => {
             <img
               alt="Swatch"
               className="mx-auto mt-5"
-              src="/assets/compareProduct/ipad/ipad-compare-ipadpro-swatch.jpg"
+              src="assets/compareProduct/ipad/ipad-compare-ipadpro-swatch.jpg"
             />
           </div>
           <div className="mt-5 mb-10">
@@ -45,7 +45,7 @@ const IpadMiniCompare = () => {
             <img
               alt="Chip"
               className="mx-auto"
-              src="/assets/compareProduct/ipad/ipad-compare-icon-m1.jpg"
+              src="assets/compareProduct/ipad/ipad-compare-icon-m1.jpg"
             />
             <p className="mt-2 text-xs">ชิป M1</p>
           </div>
@@ -54,7 +54,7 @@ const IpadMiniCompare = () => {
             <img
               alt="Pencil"
               className="mx-auto"
-              src="/assets/compareProduct/ipad/ipad-compare-icon-pencil.jpg"
+              src="assets/compareProduct/ipad/ipad-compare-icon-pencil.jpg"
             />
             <p className="mt-2 text-xs">Apple Pencil (รุ่นที่ 2)</p>
           </div>
@@ -62,7 +62,7 @@ const IpadMiniCompare = () => {
             <img
               alt="Keyboard"
               className="mx-auto"
-              src="/assets/compareProduct/ipad/ipad-compare-icon-magic-keyboard.jpg"
+              src="assets/compareProduct/ipad/ipad-compare-icon-magic-keyboard.jpg"
             />
             <p className="mt-2 text-xs">
               Magic Keyboard
@@ -77,7 +77,7 @@ const IpadMiniCompare = () => {
             <img
               alt="iPad Air"
               className="mx-auto mb-5"
-              src="/assets/compareProduct/ipad/ipad-air-compare.jpg"
+              src="assets/compareProduct/ipad/ipad-air-compare.jpg"
             />
             <p className="text-sm text-white">-</p>
             <h6 className="text-2xl font-semibold">iPad Air</h6>
@@ -88,7 +88,7 @@ const IpadMiniCompare = () => {
             <img
               alt="Swatch"
               className="mx-auto mt-5"
-              src="/assets/compareProduct/ipad/ipad-compare-ipadair-swatch.jpg"
+              src="assets/compareProduct/ipad/ipad-compare-ipadair-swatch.jpg"
             />
           </div>
           <div className="mt-5 mb-10">
@@ -99,7 +99,7 @@ const IpadMiniCompare = () => {
             <img
               alt="Chip"
               className="mx-auto"
-              src="/assets/compareProduct/ipad/ipad-compare-icon-a14.jpg"
+              src="assets/compareProduct/ipad/ipad-compare-icon-a14.jpg"
             />
             <p className="mt-2 text-xs">
               ชิป A14 Bionic
@@ -112,7 +112,7 @@ const IpadMiniCompare = () => {
             <img
               alt="Pencil"
               className="mx-auto"
-              src="/assets/compareProduct/ipad/ipad-compare-icon-pencil.jpg"
+              src="assets/compareProduct/ipad/ipad-compare-icon-pencil.jpg"
             />
             <p className="mt-2 text-xs">Apple Pencil (รุ่นที่ 2)</p>
           </div>
@@ -120,7 +120,7 @@ const IpadMiniCompare = () => {
             <img
               alt="Keyboard"
               className="mx-auto"
-              src="/assets/compareProduct/ipad/ipad-compare-icon-magic-keyboard.jpg"
+              src="assets/compareProduct/ipad/ipad-compare-icon-magic-keyboard.jpg"
             />
             <p className="mt-2 text-xs">
               Magic Keyboard
@@ -135,7 +135,7 @@ const IpadMiniCompare = () => {
             <img
               alt="iPad"
               className="mx-auto mb-5"
-              src="/assets/compareProduct/ipad/ipad-compare.jpg"
+              src="assets/compareProduct/ipad/ipad-compare.jpg"
             />
             <p className="text-sm text-red-600">ใหม่</p>
             <h6 className="text-2xl font-semibold">iPad</h6>
@@ -146,7 +146,7 @@ const IpadMiniCompare = () => {
             <img
               alt="Swatch"
               className="mx-auto mt-5"
-              src="/assets/compareProduct/ipad/ipad-compare-ipad-swatch.jpg"
+              src="assets/compareProduct/ipad/ipad-compare-ipad-swatch.jpg"
             />
           </div>
           <div className="mt-5 mb-10">
@@ -161,7 +161,7 @@ const IpadMiniCompare = () => {
             <img
               alt="Chip"
               className="mx-auto"
-              src="/assets/compareProduct/ipad/ipad-compare-icon-a13.jpg"
+              src="assets/compareProduct/ipad/ipad-compare-icon-a13.jpg"
             />
             <p className="mt-2 text-xs">
               ชิป A13 Bionic
@@ -174,7 +174,7 @@ const IpadMiniCompare = () => {
             <img
               alt="Pencil"
               className="mx-auto"
-              src="/assets/compareProduct/ipad/ipad-compare-icon-pencil.jpg"
+              src="assets/compareProduct/ipad/ipad-compare-icon-pencil.jpg"
             />
             <p className="mt-2 text-xs">Apple Pencil (รุ่นที่ 1)</p>
           </div>
@@ -182,7 +182,7 @@ const IpadMiniCompare = () => {
             <img
               alt="Keyboard"
               className="mx-auto"
-              src="/assets/compareProduct/ipad/ipad-compare-icon-smart-keyboard.jpg"
+              src="assets/compareProduct/ipad/ipad-compare-icon-smart-keyboard.jpg"
             />
             <p className="mt-2 text-xs">Smart Keyboard</p>
           </div>
@@ -193,7 +193,7 @@ const IpadMiniCompare = () => {
             <img
               alt="iPad mini"
               className="mx-auto mb-5"
-              src="/assets/compareProduct/ipad/ipad-mini-compare.jpg"
+              src="assets/compareProduct/ipad/ipad-mini-compare.jpg"
             />
             <p className="text-sm text-red-600">ใหม่</p>
             <h6 className="text-2xl font-semibold">iPad mini</h6>
@@ -206,7 +206,7 @@ const IpadMiniCompare = () => {
             <img
               alt="Swatch"
               className="mx-auto mt-5"
-              src="/assets/compareProduct/ipad/ipad-compare-ipadmini-swatch.jpg"
+              src="assets/compareProduct/ipad/ipad-compare-ipadmini-swatch.jpg"
             />
           </div>
           <div className="mt-5 mb-10">
@@ -217,7 +217,7 @@ const IpadMiniCompare = () => {
             <img
               alt="Chip"
               className="mx-auto"
-              src="/assets/compareProduct/ipad/ipad-compare-icon-a15.jpg"
+              src="assets/compareProduct/ipad/ipad-compare-icon-a15.jpg"
             />
             <p className="mt-2 text-xs">
               ชิป A15 Bionic
@@ -230,7 +230,7 @@ const IpadMiniCompare = () => {
             <img
               alt="Pencil"
               className="mx-auto"
-              src="/assets/compareProduct/ipad/ipad-compare-icon-pencil.jpg"
+              src="assets/compareProduct/ipad/ipad-compare-icon-pencil.jpg"
             />
             <p className="mt-2 text-xs">Apple Pencil (รุ่นที่ 2)</p>
           </div>
@@ -238,7 +238,7 @@ const IpadMiniCompare = () => {
             <img
               alt="Keyboard"
               className="mx-auto"
-              src="/assets/compareProduct/ipad/ipad-compare-icon-keyboard.jpg"
+              src="assets/compareProduct/ipad/ipad-compare-icon-keyboard.jpg"
             />
             <p className="mt-2 text-xs">คีย์บอร์ด Bluetooth</p>
           </div>

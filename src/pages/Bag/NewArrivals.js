@@ -8,7 +8,7 @@ const NewArrivals = () => {
         className="hidden md:block"
         style={{
           backgroundImage:
-            'url("/assets/bag_images/apple-new-arrivals-checkout.jfif")',
+            'url("assets/bag_images/apple-new-arrivals-checkout.jfif")',
           height: '400px',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
@@ -33,7 +33,7 @@ const NewArrivals = () => {
         className="md:hidden"
         style={{
           backgroundImage:
-            'url("/assets/bag_images/apple-new-arrivals-checkout-sm.jfif")',
+            'url("assets/bag_images/apple-new-arrivals-checkout-sm.jfif")',
           height: '400px',
           backgroundPosition: 'center',
           backgroundSize: 'cover',

@@ -119,7 +119,7 @@ const IpadMini = () => {
       appleCare: variantAppleCare,
       appleCareCost: 2590,
       price: price,
-      image: `/assets/products/ipadmini/${productImage}`,
+      image: `assets/products/ipadmini/${productImage}`,
     };
     setBag([...bag, product]);
     history.push('/bag');
@@ -152,7 +152,7 @@ const IpadMini = () => {
                 <h1 className="text-4xl font-semibold">ซื้อ iPad mini</h1>
               </div>
               <img
-                src={`/assets/products/ipadmini/${productImage}`}
+                src={`assets/products/ipadmini/${productImage}`}
                 alt="iPad mini"
                 className="block mx-auto pt-10 mt-28 md:mt-14 mb-5"
               />
@@ -520,7 +520,7 @@ const VariantColorSelection = (props) => {
             onChange={handleChangeVariantColor}
           >
             <img
-              src="/assets/productVariantColors/ipadmini/spacegray.png"
+              src="assets/productVariantColors/ipadmini/spacegray.png"
               alt="variant-color-spacegray"
               style={{ maxWidth: '32px' }}
               className="block mx-auto"
@@ -534,7 +534,7 @@ const VariantColorSelection = (props) => {
             onChange={handleChangeVariantColor}
           >
             <img
-              src="/assets/productVariantColors/ipadmini/pink.png"
+              src="assets/productVariantColors/ipadmini/pink.png"
               alt="variant-color-pink"
               style={{ maxWidth: '32px' }}
               className="block mx-auto"
@@ -548,7 +548,7 @@ const VariantColorSelection = (props) => {
             onChange={handleChangeVariantColor}
           >
             <img
-              src="/assets/productVariantColors/ipadmini/purple.png"
+              src="assets/productVariantColors/ipadmini/purple.png"
               alt="variant-color-purple"
               style={{ maxWidth: '32px' }}
               className="block mx-auto"
@@ -562,7 +562,7 @@ const VariantColorSelection = (props) => {
             onChange={handleChangeVariantColor}
           >
             <img
-              src="/assets/productVariantColors/ipadmini/starlight.png"
+              src="assets/productVariantColors/ipadmini/starlight.png"
               alt="variant-color-starlight"
               style={{ maxWidth: '32px' }}
               className="block mx-auto"

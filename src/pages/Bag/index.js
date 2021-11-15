@@ -125,7 +125,7 @@ const Bag = () => {
         </div>
         <Recommendations />
         <NewArrivals />
-        <BagFAQ/>
+        <BagFAQ />
         <Footnote>
           <p className="text-xs text-gray-500">
             ราคาสินค้าดังกล่าวได้รวมภาษีมูลค่าเพิ่มแล้ว
@@ -169,7 +169,7 @@ const Bag = () => {
         </div>
         <Recommendations />
         <NewArrivals />
-        <BagFAQ/>
+        <BagFAQ />
         <Footnote>
           <p className="text-xs text-gray-500">
             ราคาสินค้าดังกล่าวได้รวมภาษีมูลค่าเพิ่มแล้ว

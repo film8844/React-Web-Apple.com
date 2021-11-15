@@ -23,7 +23,7 @@ const Iphone13ProFeatures = () => {
               style={{ height: '450px' }}
               alt="Camera Feature"
               className="w-full rounded-r-2xl"
-              src="/assets/features/iphone13pro/iphone-13-pro-key-features-camera.png"
+              src="assets/features/iphone13pro/iphone-13-pro-key-features-camera.png"
             />
           </div>
         </div>
@@ -39,7 +39,7 @@ const Iphone13ProFeatures = () => {
             <img
               alt="Cinematic Feature"
               className="h-full rounded-b-2xl"
-              src="/assets/features/iphone13pro/iphone-13-pro-key-features-cinematic.png"
+              src="assets/features/iphone13pro/iphone-13-pro-key-features-cinematic.png"
             />
           </div>
         </div>
@@ -55,7 +55,7 @@ const Iphone13ProFeatures = () => {
           <div className="absolute bottom-0 right-0">
             <img
               alt="Display Feature"
-              src="/assets/features/iphone13pro/iphone-13-pro-key-features-display.png"
+              src="assets/features/iphone13pro/iphone-13-pro-key-features-display.png"
             />
           </div>
         </div>
@@ -65,7 +65,7 @@ const Iphone13ProFeatures = () => {
               alt="Chip Feature"
               className="mx-auto rounded-r-2xl"
               style={{ maxWidth: '400px' }}
-              src="/assets/features/iphone13pro/iphone-13-pro-key-features-chip.png"
+              src="assets/features/iphone13pro/iphone-13-pro-key-features-chip.png"
             />
           </div>
           <div className="absolute bottom-0 p-7">
@@ -92,7 +92,7 @@ const Iphone13ProFeatures = () => {
             <img
               alt="Battery Feature"
               className="rounded-r-2xl"
-              src="/assets/features/iphone13pro/iphone-13-pro-key-features-battery.png"
+              src="assets/features/iphone13pro/iphone-13-pro-key-features-battery.png"
             />
           </div>
         </div>
@@ -109,7 +109,7 @@ const Iphone13ProFeatures = () => {
               alt="Glass Feature"
               className="h-full rounded-b-2xl"
               style={{ maxWidth: '280px' }}
-              src="/assets/features/iphone13pro/iphone-13-pro-key-features-glass.png"
+              src="assets/features/iphone13pro/iphone-13-pro-key-features-glass.png"
             />
           </div>
         </div>

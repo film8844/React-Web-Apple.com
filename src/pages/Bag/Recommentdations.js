@@ -13,7 +13,7 @@ const Recommendations = () => {
           <div>
             <img
               className="mx-auto"
-              src="/assets/bag_images/20w-adapter.jfif"
+              src="assets/bag_images/20w-adapter.jfif"
               alt=""
               style={{ maxWidth: '194px' }}
             />
@@ -32,7 +32,7 @@ const Recommendations = () => {
           <div>
             <img
               className="mx-auto"
-              src="/assets/bag_images/magsafe.jfif"
+              src="assets/bag_images/magsafe.jfif"
               alt=""
               style={{ maxWidth: '194px' }}
             />
@@ -49,7 +49,7 @@ const Recommendations = () => {
           <div>
             <img
               className="mx-auto"
-              src="/assets/bag_images/polishing-cloth.jfif"
+              src="assets/bag_images/polishing-cloth.jfif"
               alt=""
               style={{ maxWidth: '194px' }}
             />

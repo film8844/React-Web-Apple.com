@@ -21,7 +21,7 @@ const IpadMiniWITB = () => {
         >
           <div>
             <img
-              src="/assets/whatsInTheBox/ipadmini.jpg"
+              src="assets/whatsInTheBox/ipadmini.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
               alt="WITB iPad mini"
@@ -29,7 +29,7 @@ const IpadMiniWITB = () => {
           </div>
           <div>
             <img
-              src="/assets/whatsInTheBox/typec-cable.jpg"
+              src="assets/whatsInTheBox/typec-cable.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
               alt="WITB Type-C Cable"
@@ -37,7 +37,7 @@ const IpadMiniWITB = () => {
           </div>
           <div>
             <img
-              src="/assets/whatsInTheBox/20w-adapter.jpg"
+              src="assets/whatsInTheBox/20w-adapter.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
               alt="WITB 20W Adapter"
@@ -75,7 +75,7 @@ const IpadMiniWITB = () => {
                 }}
               >
                 <img
-                  src="/assets/whatsInTheBox/ipadmini.jpg"
+                  src="assets/whatsInTheBox/ipadmini.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
                   alt="WITB iPad mini"
@@ -95,7 +95,7 @@ const IpadMiniWITB = () => {
                 }}
               >
                 <img
-                  src="/assets/whatsInTheBox/typec-cable.jpg"
+                  src="assets/whatsInTheBox/typec-cable.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
                   alt="WITB Type-C Cable"
@@ -115,7 +115,7 @@ const IpadMiniWITB = () => {
                 }}
               >
                 <img
-                  src="/assets/whatsInTheBox/20w-adapter.jpg"
+                  src="assets/whatsInTheBox/20w-adapter.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
                   alt="WITB 20W Adapter"

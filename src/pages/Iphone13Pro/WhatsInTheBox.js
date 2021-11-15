@@ -21,7 +21,7 @@ const Iphone13ProWITB = () => {
         >
           <div>
             <img
-              src="/assets/whatsInTheBox/iphone13pro.jpg"
+              src="assets/whatsInTheBox/iphone13pro.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
               alt="WITB iPhone 13 Pro"
@@ -29,7 +29,7 @@ const Iphone13ProWITB = () => {
           </div>
           <div>
             <img
-              src="/assets/whatsInTheBox/lightning-cable.jpg"
+              src="assets/whatsInTheBox/lightning-cable.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
               alt="WITB Lightning Cable"
@@ -64,7 +64,7 @@ const Iphone13ProWITB = () => {
                 }}
               >
                 <img
-                  src="/assets/whatsInTheBox/iphone13pro.jpg"
+                  src="assets/whatsInTheBox/iphone13pro.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
                   alt="WITB iPhone 13 Pro"
@@ -84,7 +84,7 @@ const Iphone13ProWITB = () => {
                 }}
               >
                 <img
-                  src="/assets/whatsInTheBox/lightning-cable.jpg"
+                  src="assets/whatsInTheBox/lightning-cable.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
                   alt="WITB Lightning Cable"

@@ -157,7 +157,7 @@ const Iphone13Pro = () => {
       appleCare: variantAppleCare === '1',
       appleCareCost: 8290,
       price: price,
-      image: `/assets/products/iphone13pro/${productImage}`,
+      image: `assets/products/iphone13pro/${productImage}`,
     };
     setBag([...bag, product]);
     history.push('/bag');
@@ -190,7 +190,7 @@ const Iphone13Pro = () => {
                 <h1 className="text-4xl font-semibold">ซื้อ iPhone 13 Pro</h1>
               </div>
               <img
-                src={`/assets/products/iphone13pro/${productImage}`}
+                src={`assets/products/iphone13pro/${productImage}`}
                 alt="iPhone 13 Pro"
                 className="block mx-auto md:mt-14 mb-5"
               />
@@ -318,7 +318,7 @@ const Iphone13Pro = () => {
                       onChange={handleChangeVariantColor}
                     >
                       <img
-                        src="/assets/productVariantColors/iphone13pro/blue.jpg"
+                        src="assets/productVariantColors/iphone13pro/blue.jpg"
                         alt="variant-color-blue"
                         style={{ maxWidth: '32px' }}
                         className="block mx-auto"
@@ -332,7 +332,7 @@ const Iphone13Pro = () => {
                       onChange={handleChangeVariantColor}
                     >
                       <img
-                        src="/assets/productVariantColors/iphone13pro/silver.jpg"
+                        src="assets/productVariantColors/iphone13pro/silver.jpg"
                         alt="variant-color-silver"
                         style={{ maxWidth: '32px' }}
                         className="block mx-auto"
@@ -346,7 +346,7 @@ const Iphone13Pro = () => {
                       onChange={handleChangeVariantColor}
                     >
                       <img
-                        src="/assets/productVariantColors/iphone13pro/gold.jpg"
+                        src="assets/productVariantColors/iphone13pro/gold.jpg"
                         alt="variant-color-gold"
                         style={{ maxWidth: '32px' }}
                         className="block mx-auto"
@@ -360,7 +360,7 @@ const Iphone13Pro = () => {
                       onChange={handleChangeVariantColor}
                     >
                       <img
-                        src="/assets/productVariantColors/iphone13pro/graphite.jpg"
+                        src="assets/productVariantColors/iphone13pro/graphite.jpg"
                         alt="variant-color-graphite"
                         style={{ maxWidth: '32px' }}
                         className="block mx-auto"

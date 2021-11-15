@@ -29,13 +29,13 @@ const Iphone13Pro = () => {
       <div>
         <img
           alt=""
-          src="/assets/home_images/hero_iphone13pro.jpg"
+          src="assets/home_images/hero_iphone13pro.jpg"
           className="hidden md:block mx-auto px-5 mt-2"
           style={{ maxWidth: '1024px' }}
         />
         <img
           alt=""
-          src="/assets/home_images/hero_iphone13pro_small.jpg"
+          src="assets/home_images/hero_iphone13pro_small.jpg"
           className="block md:hidden mx-auto px-5 mt-10"
           style={{ maxWidth: '300px' }}
         />
@@ -49,7 +49,7 @@ const Iphone13 = () => {
     <div className="my-2 bg-iPhone13 overflow-hidden">
       <img
         alt=""
-        src="/assets/home_images/top_iPhone13_small.png"
+        src="assets/home_images/top_iPhone13_small.png"
         className="block md:hidden mx-auto px-5 mb-5"
         style={{ maxWidth: '300px' }}
       />
@@ -71,13 +71,13 @@ const Iphone13 = () => {
       </div>
       <img
         alt=""
-        src="/assets/home_images/hero_iphone13.png"
+        src="assets/home_images/hero_iphone13.png"
         className="hidden md:block mx-auto px-5 mt-10"
         style={{ maxWidth: '1050px' }}
       />
       <img
         alt=""
-        src="/assets/home_images/bottom_iPhone13_small.png"
+        src="assets/home_images/bottom_iPhone13_small.png"
         className="block md:hidden mx-auto px-5 mt-5"
         style={{ maxWidth: '300px' }}
       />
@@ -112,13 +112,13 @@ const Watch = () => {
       </div>
       <img
         alt=""
-        src="/assets/home_images/apple_watch.jpg"
+        src="assets/home_images/apple_watch.jpg"
         className="hidden md:block mx-auto px-5 mt-10"
         style={{ maxWidth: '550px' }}
       />
       <img
         alt=""
-        src="/assets/home_images/apple_watch.jpg"
+        src="assets/home_images/apple_watch.jpg"
         className="block md:hidden mx-auto px-5 mt-10"
         style={{ maxWidth: '300px' }}
       />
@@ -153,13 +153,13 @@ const IpadMini = () => {
 
       <img
         alt=""
-        src="/assets/src_image/homepage/medium/promo_ipad_mini_medium_2x.jpg"
+        src="assets/src_image/homepage/medium/promo_ipad_mini_medium_2x.jpg"
         className="hidden md:block  mx-auto px-5 mt-10"
         style={{ maxHeight: '400px' }}
       />
       <img
         alt=""
-        src="/assets/src_image/homepage/medium/promo_ipad_mini_medium_2x.jpg"
+        src="assets/src_image/homepage/medium/promo_ipad_mini_medium_2x.jpg"
         className="block md:hidden  mx-auto px-5 mt-10"
         style={{ maxHeight: '400px' }}
       />
@@ -190,13 +190,13 @@ const Airtag = () => {
       </div>
       <img
         alt=""
-        src="/assets/src_image/homepage/medium/promo_airtag_medium_2x.jpg"
+        src="assets/src_image/homepage/medium/promo_airtag_medium_2x.jpg"
         className="hidden md:block mx-auto px-5 mt-5"
         style={{ maxHeight: '400px' }}
       />
       <img
         alt=""
-        src="/assets/src_image/homepage/medium/promo_airtag_medium_2x.jpg"
+        src="assets/src_image/homepage/medium/promo_airtag_medium_2x.jpg"
         className="block md:hidden mx-auto px-5 mt-10"
         style={{ maxHeight: '300px' }}
       />
@@ -227,13 +227,13 @@ const IMac = () => {
       </div>
       <img
         alt=""
-        src="/assets/home_images/hero_imac.png"
+        src="assets/home_images/hero_imac.png"
         className="hidden lg:block mx-auto px-5 mt-10"
         style={{ maxWidth: '600px' }}
       />
       <img
         alt=""
-        src="/assets/src_image/homepage/medium/promo_imac_medium_2x.jpg"
+        src="assets/src_image/homepage/medium/promo_imac_medium_2x.jpg"
         className="block lg:hidden mx-auto px-5 mt-10"
         style={{ maxWidth: '300px' }}
       />
@@ -246,13 +246,13 @@ const Ipad = () => {
     <div className="bg-gray ">
       <img
         alt=""
-        src="/assets/src_image/homepage/medium/promo_ipad_medium_2x.jpg"
+        src="assets/src_image/homepage/medium/promo_ipad_medium_2x.jpg"
         className="hidden md:block mx-auto px-5 "
         style={{ maxHeight: '420px' }}
       />
       <img
         alt=""
-        src="/assets/src_image/homepage/medium/promo_ipad_medium_2x.jpg"
+        src="assets/src_image/homepage/medium/promo_ipad_medium_2x.jpg"
         className="block md:hidden mx-auto px-5 "
         style={{ maxHeight: '300px' }}
       />

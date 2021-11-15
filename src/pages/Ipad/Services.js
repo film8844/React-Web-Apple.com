@@ -15,13 +15,13 @@ const IpadServices = () => {
           <img
             alt="Apple TV"
             className="mx-auto my-5"
-            src="/assets/productServices/ipad/ipad-services-tv.png"
+            src="assets/productServices/ipad/ipad-services-tv.png"
           />
           <div>
             <img
               alt="Apple TV Icon"
               className="mx-auto my-5"
-              src="/assets/productServices/ipad/ipad-services-tv-icon.png"
+              src="assets/productServices/ipad/ipad-services-tv-icon.png"
             />
             <p className=" text-2xl text-center text-white font-medium">
               Apple TV+
@@ -42,13 +42,13 @@ const IpadServices = () => {
           <img
             alt="Apple TV"
             className="mx-auto my-5"
-            src="/assets/productServices/ipad/ipad-services-arcade.png"
+            src="assets/productServices/ipad/ipad-services-arcade.png"
           />
           <div>
             <img
               alt="Apple TV Icon"
               className="mx-auto my-5"
-              src="/assets/productServices/ipad/ipad-services-arcade-icon.png"
+              src="assets/productServices/ipad/ipad-services-arcade-icon.png"
             />
             <p className=" text-2xl text-center text-white font-medium">
               Apple Arcade

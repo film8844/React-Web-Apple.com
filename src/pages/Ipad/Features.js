@@ -28,7 +28,7 @@ const IpadFeatures = () => {
             <img
               className="rounded-b-2xl"
               alt="Display Feature"
-              src="/assets/features/ipad/ipad-key-features-display.jpg"
+              src="assets/features/ipad/ipad-key-features-display.jpg"
             />
           </div>
         </div>
@@ -39,7 +39,7 @@ const IpadFeatures = () => {
           <div className="absolute top-16 left-10">
             <img
               alt="Chip Feature"
-              src="/assets/features/ipad/ipad-key-features-chip.png"
+              src="assets/features/ipad/ipad-key-features-chip.png"
             />
           </div>
           <div className="absolute bottom-0 p-7">
@@ -56,7 +56,7 @@ const IpadFeatures = () => {
           <div className="absolute top-16 left-8">
             <img
               alt="OS Feature"
-              src="/assets/features/ipad/ipad-key-features-os.png"
+              src="assets/features/ipad/ipad-key-features-os.png"
             />
           </div>
           <div className="absolute bottom-0 p-7">
@@ -84,7 +84,7 @@ const IpadFeatures = () => {
             <img
               className="rounded-b-2xl"
               alt="Camera Feature"
-              src="/assets/features/ipad/ipad-key-features-camera.jpg"
+              src="assets/features/ipad/ipad-key-features-camera.jpg"
             />
           </div>
         </div>
@@ -106,7 +106,7 @@ const IpadFeatures = () => {
             <img
               className="rounded-b-2xl"
               alt="Accessories Feature"
-              src="/assets/features/ipad/ipad-key-features-accessories.jpg"
+              src="assets/features/ipad/ipad-key-features-accessories.jpg"
             />
           </div>
         </div>
@@ -117,7 +117,7 @@ const IpadFeatures = () => {
           <div className="absolute top-28 left-10">
             <img
               alt="Battery Feature"
-              src="/assets/features/ipad/ipad-key-features-battery.png"
+              src="assets/features/ipad/ipad-key-features-battery.png"
             />
           </div>
           <div className="absolute bottom-5 p-10 pr-12">

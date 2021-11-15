@@ -25,7 +25,7 @@ const Iphone13Features = () => {
               style={{ height: '450px' }}
               alt="Camera Feature"
               className="w-full rounded-r-2xl"
-              src="/assets/features/iphone13/iphone-13-key-features-camera.png"
+              src="assets/features/iphone13/iphone-13-key-features-camera.png"
             />
           </div>
         </div>
@@ -43,7 +43,7 @@ const Iphone13Features = () => {
           <div className="absolute bottom-5">
             <img
               alt="Cinematic Feature"
-              src="/assets/features/iphone13/iphone-13-key-features-cinematic.png"
+              src="assets/features/iphone13/iphone-13-key-features-cinematic.png"
             />
           </div>
         </div>
@@ -64,7 +64,7 @@ const Iphone13Features = () => {
             <img
               alt="Battery Feature"
               className="mx-auto"
-              src="/assets/features/iphone13/iphone-13-key-features-battery.png"
+              src="assets/features/iphone13/iphone-13-key-features-battery.png"
             />
           </div>
         </div>
@@ -77,7 +77,7 @@ const Iphone13Features = () => {
               alt="Chip Feature"
               className="mx-auto rounded-r-2xl"
               style={{ maxWidth: '400px' }}
-              src="/assets/features/iphone13/iphone-13-key-features-chip.png"
+              src="assets/features/iphone13/iphone-13-key-features-chip.png"
             />
           </div>
           <div className="absolute bottom-8 p-7 w-full">
@@ -101,7 +101,7 @@ const Iphone13Features = () => {
             <img
               alt="Glass Feature"
               className="rounded-t-2xl"
-              src="/assets/features/iphone13/iphone-13-key-features-glass.png"
+              src="assets/features/iphone13/iphone-13-key-features-glass.png"
             />
           </div>
           <div className="p-7 absolute bottom-0">
@@ -129,7 +129,7 @@ const Iphone13Features = () => {
             <img
               alt="Display Feature"
               className="rounded-b-2xl"
-              src="/assets/features/iphone13/iphone-13-key-features-display.png"
+              src="assets/features/iphone13/iphone-13-key-features-display.png"
             />
           </div>
         </div>
