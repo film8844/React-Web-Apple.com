@@ -1,4 +1,14 @@
-# Getting Started with Create React App Film test
+# Apple | Web Technology
+
+Created by\
+Bukorree Madthing\
+Nonthapaht Taspan\
+Thanapat Teerarattanyu\
+Tunlaton Wongchai
+
+Web Technology, Academic Year of 2021, Faculty of Information Technology, King Mongkut's Institute of Technology Ladkrabang
+
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
