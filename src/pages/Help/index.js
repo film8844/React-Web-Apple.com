@@ -184,7 +184,7 @@ const Help = () => {
           src="assets/src_image/help/psp-hero-banner-homepage-getsupport.image.large_2x.jpg"
           className="object-contain h-full"
         />
-        <div className="relative ml-4 xl:inset-y-1/4 xl:left-1/4 xl:absolute ">
+        <div className="relative ml-4 xl:inset-y-1/4 xl:left-1/4 xl:absolute sm:py-5 sm:pl-5  ">
           <h1 className="text-3xl text-black font-medium xl:text-white md:text-5xl mt-4">
             รับบริการช่วยเหลือ
           </h1>
@@ -200,6 +200,7 @@ const Help = () => {
             <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
           </p>
         </div>
+        <hr></hr>
       </div>
       <div className="grid grid-cols-1  mx-10 xl:w-5/12 xl:mx-auto my-12 xl:grid-cols-2">
         <div className="flex ">
