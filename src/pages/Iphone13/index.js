@@ -166,7 +166,7 @@ const Iphone13 = () => {
   return (
     <>
       <GlobalNavBar disableSticky={true} />
-      <ProductNavBar productName="iPhone 13 Pro" priceText={priceText} />
+      <ProductNavBar productName="iPhone 13 " priceText={priceText} />
       <div className="bg-gray-100">
         <div className="max-w-screen-lg m-auto">
           <p className="text-sm text-center px-5 py-3">
